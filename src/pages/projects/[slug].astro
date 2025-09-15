@@ -1,21 +1,25 @@
 ---
 import { siteConfig } from "../../config";
-import Layout from "../../layouts/Layout.astro"; // assuming your navbar is here
+import Layout from "../../layouts/Layout.astro";
 
-const { slug } = Astro.params;
-const project = siteConfig.projects.find((p) => p.slug === slug);
-
-if (!project) {
-  throw new Error(`Project not found: ${slug}`);
+// 1. Generate all possible slugs at build time
+export async function getStaticPaths() {
+  return siteConfig.projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
 }
+
+// 2. Access project via Astro.props
+const { project } = Astro.props;
 ---
 
-<Layout>
-  <main class="p-8 sm:p-12 md:p-16 lg:p-24">
+<Layout title={project.name}>
+  <section class="p-8 sm:p-12 md:p-16 lg:p-24">
     <h1 class="text-4xl font-bold text-gray-900">{project.name}</h1>
     <p class="mt-4 text-lg text-gray-600">{project.description}</p>
 
-    {project.skills && project.skills.length > 0 && (
+    {project.skills?.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-6">
         {project.skills.map((skill) => (
           <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">
@@ -27,9 +31,8 @@ if (!project) {
 
     <div class="mt-8">
       <p class="text-gray-700">
-        {/* ✍️ Write more details about this project here */}
         Coming soon: full write-up about {project.name}.
       </p>
     </div>
-  </main>
+  </section>
 </Layout>
