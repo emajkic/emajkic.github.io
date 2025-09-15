@@ -21,6 +21,7 @@ export const siteConfig = {
       skills: ["React", "Node.js", "AWS"],
     },
     {
+      img1: "/robot1.png",
       slug: "259-motor-control",
       name: "PID Motor Controller",
       description:
@@ -28,6 +29,7 @@ export const siteConfig = {
       skills: ["React", "Node.js", "AWS"],
     },
     {
+      img1: "/robot1.png",
       slug: "java-project",
       name: "Java Tic-Tac-Toe GUI Game",
       description:
@@ -35,6 +37,7 @@ export const siteConfig = {
       skills: ["React", "Node.js", "AWS"],
     },
     {
+      img1: "/robot1.png",
       slug: "353-simulation",
       name: "ROS Machine Learning Project",
       description:
