@@ -1,6 +1,7 @@
 ---
 import { siteConfig } from "../../config";
 import Layout from "../../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 
 export async function getStaticPaths() {
   return siteConfig.projects.map((project) => ({
@@ -11,6 +12,7 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 ---
+  <Header />
 
 <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
   <a href="/projects" class="text-sm text-gray-500 hover:underline">
