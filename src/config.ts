@@ -53,7 +53,7 @@ export const siteConfig = {
     {
       slug: "triumf-experience",
       company: "TRIUMF Particle Accelerator",
-      title: "Student Research Assistant - PIONNER Experiment",
+      title: "Student Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 205",
       bullets: [
         "Led development of microservices architecture serving 1M+ users",
