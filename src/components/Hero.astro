@@ -129,8 +129,11 @@ import { siteConfig } from "../config";
       height="100%"
       stroke-width={0}></rect>
   </svg>
-  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
-    <div>
+
+  <!-- Main content -->
+  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex flex-col md:flex-row items-center justify-center gap-8">
+    <!-- Text -->
+    <div class="text-center md:text-left">
       <h2
         class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
       >
@@ -149,7 +152,18 @@ import { siteConfig } from "../config";
         {siteConfig.title}
       </p>
     </div>
+
+    <!-- Photo -->
+    <div class="flex-shrink-0 animate-fade-in animation-delay-400">
+      <img
+        src="cover_img.jpg"
+        alt="Profile photo"
+        class="w-32 h-32 rounded-full object-cover mx-auto md:mx-0 shadow-lg"
+      />
+    </div>
   </div>
+
+  <!-- Social links -->
   <div
     class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
   >
