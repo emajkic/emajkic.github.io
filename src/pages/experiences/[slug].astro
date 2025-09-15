@@ -4,7 +4,8 @@ import { siteConfig } from '../../config';
 import "../../styles/global.css";
 
 export async function getStaticPaths() {
-  return siteConfig.experiences.map((exp) => ({
+  // Make sure this matches the array in config.ts
+  return siteConfig.experience.map((exp) => ({
     params: { slug: exp.slug },
     props: { experience: exp },
   }));
@@ -14,44 +15,22 @@ const { experience } = Astro.props;
 ---
 <Layout>
   <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
-    <!-- Back link -->
-    <a href="../../index" class="text-sm text-gray-500 hover:underline">
+    <a href="/#experience" class="text-sm text-gray-500 hover:underline">
       ← Back to Home
     </a>
 
-    <!-- Experience Title -->
     <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
       {experience.company}
     </h1>
 
-    <!-- Position & Duration -->
     <p class="mt-2 text-lg text-gray-600">
-      {experience.position} | {experience.duration}
+      {experience.position} | {experience.dateRange}
     </p>
 
-    <!-- Description -->
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      {experience.description?.map((item) => (
-        <p>{item}</p>
+      {experience.bullets.map((bullet) => (
+        <p>{bullet}</p>
       ))}
-    </div>
-
-    <!-- Skills / Technologies used -->
-    {experience.skills?.length > 0 && (
-      <div class="flex flex-wrap gap-2 mt-6">
-        {experience.skills.map((skill) => (
-          <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">
-            {skill}
-          </span>
-        ))}
-      </div>
-    )}
-
-    <!-- Optional: coming soon or note -->
-    <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
-      <p class="text-gray-700 leading-relaxed">
-        More details about this experience coming soon.
-      </p>
     </div>
   </section>
 </Layout>
