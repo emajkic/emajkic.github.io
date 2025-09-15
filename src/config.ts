@@ -22,8 +22,8 @@ export const siteConfig = {
       skills: ["React", "Node.js", "AWS"],
     },
     {
-      img1: "/motor1.png",
-      img2: "/motor1.png",
+      img1: "/motor1.jpg",
+      img2: "/motor1.jpg",
       slug: "259-motor-control",
       name: "PID Motor Controller",
       description:
