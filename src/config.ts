@@ -36,6 +36,7 @@ export const siteConfig = {
   ],
   experience: [
     {
+      slug: "exp-1",
       company: "Tech Company",
       title: "Senior Software Engineer",
       dateRange: "Jan 2022 - Present",
@@ -46,6 +47,7 @@ export const siteConfig = {
       ],
     },
     {
+      slug: "exp-2",
       company: "Startup Inc",
       title: "Full Stack Developer",
       dateRange: "Jun 2020 - Dec 2021",
@@ -56,6 +58,7 @@ export const siteConfig = {
       ],
     },
     {
+      slug: "exp-3",
       company: "Digital Agency",
       title: "Frontend Developer",
       dateRange: "Aug 2018 - May 2020",
