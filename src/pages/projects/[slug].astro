@@ -1,6 +1,6 @@
 ---
-import { siteConfig } from "../../config";
-import Layout from "../../layouts/Layout.astro";
+import Layout from '../../layouts/Layout.astro';
+import { siteConfig } from '../../config';
 
 export async function getStaticPaths() {
   return siteConfig.projects.map((project) => ({
@@ -11,32 +11,34 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 ---
-<section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
-<a href="/" class="text-sm text-gray-500 hover:underline">
-  ← Back to Home
-</a>
+<Layout>
+  <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
+    <a href="/" class="text-sm text-gray-500 hover:underline">
+      ← Back to Home
+    </a>
 
-  <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
-    {project.name}
-  </h1>
+    <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
+      {project.name}
+    </h1>
 
-  <p class="mt-4 text-lg text-gray-600 leading-relaxed">
-    {project.description}
-  </p>
-
-  {project.skills?.length > 0 && (
-    <div class="flex flex-wrap gap-2 mt-6">
-      {project.skills.map((skill) => (
-        <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">
-          {skill}
-        </span>
-      ))}
-    </div>
-  )}
-
-  <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
-    <p class="text-gray-700 leading-relaxed">
-      Coming soon: full write-up about {project.name}.
+    <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+      {project.description}
     </p>
-  </div>
-</section>
+
+    {project.skills?.length > 0 && (
+      <div class="flex flex-wrap gap-2 mt-6">
+        {project.skills.map((skill) => (
+          <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">
+            {skill}
+          </span>
+        ))}
+      </div>
+    )}
+
+    <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
+      <p class="text-gray-700 leading-relaxed">
+        Coming soon: full write-up about {project.name}.
+      </p>
+    </div>
+  </section>
+</Layout>
