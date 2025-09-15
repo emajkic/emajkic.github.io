@@ -13,22 +13,29 @@ export const siteConfig = {
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
-      slug: "portfolio-site",
-      name: "AI Dev Roundup Newsletter",
+      slug: "robot-project",
+      name: "Autonomous Competition Robot",
       description:
         "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
       skills: ["React", "Node.js", "AWS"],
     },
     {
-      slug: "chrome",
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      slug: "259-motor-control",
+      name: "PID Motor Controller",
+      description:
+        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
+      skills: ["React", "Node.js", "AWS"],
+    },
+    {
+      slug: "java-project",
+      name: "Java Tic-Tac-Toe GUI Game",
       description:
         "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
       skills: ["React", "Node.js", "AWS"],
     },
     {
-      slug: "extension-kit",
-      name: "ExtensionKit",
+      slug: "353-simulation",
+      name: "ROS Machine Learning Project",
       description:
         "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
       skills: ["React", "Node.js", "AWS"],
@@ -36,10 +43,10 @@ export const siteConfig = {
   ],
   experience: [
     {
-      slug: "exp-1",
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      slug: "triumf-experience",
+      company: "TRIUMF Particle Accelerator",
+      title: "Student Research Assistant - PIONNER Experiment",
+      dateRange: "Jan 2025 - May 205",
       bullets: [
         "Led development of microservices architecture serving 1M+ users",
         "Reduced API response times by 40% through optimization",
@@ -47,10 +54,10 @@ export const siteConfig = {
       ],
     },
     {
-      slug: "exp-2",
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      slug: "opbots-experience",
+      company: "UBC Open Robotics Design Team",
+      title: "Software Engineer, Navigation Subteam",
+      dateRange: "Sept 2023 - May 2025",
       bullets: [
         "Built and launched MVP product from scratch using React and Node.js",
         "Implemented CI/CD pipeline reducing deployment time by 60%",
