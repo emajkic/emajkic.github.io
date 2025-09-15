@@ -68,13 +68,13 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "University of British Columbia",
+      degree: "Bachelor of Applied Science in Engineering Physics",
+      dateRange: "2023 - 2028",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "2023-2025: Dean's Scholar, Dean's List",
+        "2024: Trek Excellence Scholarship",
+        "2023-2025: UBC Open Robotics Design Team",
       ],
     },
     {
