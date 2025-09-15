@@ -13,7 +13,7 @@ export const siteConfig = {
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
-      img1 = "/robot1.png",
+      img1: "/robot1.png",
       slug: "robot-project",
       name: "Autonomous Competition Robot",
       description:
