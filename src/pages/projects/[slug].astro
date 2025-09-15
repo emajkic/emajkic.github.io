@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { siteConfig } from '../../config';
-import "../styles/global.css";
+import "../../styles/global.css";
 
 export async function getStaticPaths() {
   return siteConfig.projects.map((project) => ({
