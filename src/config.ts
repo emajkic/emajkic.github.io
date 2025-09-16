@@ -18,17 +18,17 @@ export const siteConfig = {
       slug: "robot-project",
       name: "Autonomous Competition Robot",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      skills: ["React", "Node.js", "AWS"],
+        "Designed and built an autonomous robot to participate in Engineering Physics 259 course competition.",
+      skills: ["Circuit Design", "PCB Design", "C++", "Soldering", "Prototyping"],
     },
     {
       img1: "/motor1.jpg",
       img2: "/motor2.jpg",
-      slug: "259-motor-control",
+      slug: "motor-control-project",
       name: "PID Motor Controller",
       description:
         "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["", "Node.js", "AWS"],
     },
     {
       img1: "/robot1.png",
