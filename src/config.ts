@@ -15,6 +15,7 @@ export const siteConfig = {
     {
       img1: "/robot1.png",
       img2: "/robot1.png",
+      img3: "/robot1.png",
       slug: "robot-project",
       name: "Autonomous Competition Robot",
       description:
@@ -24,6 +25,7 @@ export const siteConfig = {
     {
       img1: "/motor1.jpg",
       img2: "/motor2.jpg",
+      img3: "/robot1.png",
       slug: "motor-control-project",
       name: "PID Motor Controller",
       description:
@@ -33,6 +35,7 @@ export const siteConfig = {
     {
       img1: "/robot1.png",
       img2: "/robot1.png",
+      img3: "/robot1.png",
       slug: "java-project",
       name: "Java Tic-Tac-Toe GUI Game",
       description:
@@ -42,6 +45,7 @@ export const siteConfig = {
     {
       img1: "/robot1.png",
       img2: "/robot1.png",
+      img3: "/robot1.png",
       slug: "353-simulation",
       name: "ROS Machine Learning Project",
       description:
