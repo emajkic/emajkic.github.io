@@ -14,8 +14,8 @@ export const siteConfig = {
   projects: [
     {
       img1: "/robot1.png",
-      img2: "/robot1.png",
-      img3: "/robot1.png",
+      img2: "/robot2.png",
+      img3: "/robot3.png",
       slug: "robot-project",
       name: "Autonomous Competition Robot",
       description:
