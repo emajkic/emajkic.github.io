@@ -23,7 +23,7 @@ export const siteConfig = {
     },
     {
       img1: "/motor1.jpg",
-      img2: "/motor1.jpg",
+      img2: "/motor2.jpg",
       slug: "259-motor-control",
       name: "PID Motor Controller",
       description:
