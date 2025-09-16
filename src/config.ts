@@ -19,7 +19,7 @@ export const siteConfig = {
       slug: "robot-project",
       name: "Autonomous Competition Robot",
       description:
-        "Designed and built an autonomous robot to participate in Engineering Physics 259 course competition.",
+        "Designed and built an autonomous robot to participate in Engineering Physics 253 course competition.",
       skills: ["Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
     },
     {
