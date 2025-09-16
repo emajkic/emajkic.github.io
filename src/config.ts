@@ -19,7 +19,7 @@ export const siteConfig = {
       name: "Autonomous Competition Robot",
       description:
         "Designed and built an autonomous robot to participate in Engineering Physics 259 course competition.",
-      skills: ["Circuit Design", "PCB Design", "C++", "Soldering", "Prototyping"],
+      skills: ["Circuit Design", "C++", "PCB Design", "Prototyping", "Soldering", ""],
     },
     {
       img1: "/motor1.jpg",
