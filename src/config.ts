@@ -9,30 +9,33 @@ export const siteConfig = {
     github: "https://github.com/emajkic",
   },
   aboutMe:
-  "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia.",
+  "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. I am interested in applied mathematics, software development, machine learning, and physics.",
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
       img1: "/robot1.png",
       img2: "/robot1.png",
+      img3: "/robot1.png",
       slug: "robot-project",
       name: "Autonomous Competition Robot",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      skills: ["React", "Node.js", "AWS"],
+        "Designed and built an autonomous robot to participate in Engineering Physics 259 course competition.",
+      skills: ["Circuit Design", "C++", "PCB Design", "Prototyping", "Soldering", ""],
     },
     {
       img1: "/motor1.jpg",
       img2: "/motor2.jpg",
-      slug: "259-motor-control",
+      img3: "/robot1.png",
+      slug: "motor-control-project",
       name: "PID Motor Controller",
       description:
         "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["", "Node.js", "AWS"],
     },
     {
       img1: "/robot1.png",
       img2: "/robot1.png",
+      img3: "/robot1.png",
       slug: "java-project",
       name: "Java Tic-Tac-Toe GUI Game",
       description:
@@ -42,6 +45,7 @@ export const siteConfig = {
     {
       img1: "/robot1.png",
       img2: "/robot1.png",
+      img3: "/robot1.png",
       slug: "353-simulation",
       name: "ROS Machine Learning Project",
       description:
