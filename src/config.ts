@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/emajkic",
   },
   aboutMe:
-  "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia. I am passionate about . Outside of academics, I",
+  "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia. I am interested in applied mathematics, software development, machine learning, and physics.",
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
