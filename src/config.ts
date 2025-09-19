@@ -66,6 +66,7 @@ export const siteConfig = {
         "Reduced API response times by 40% through optimization",
         "Mentored team of 5 junior developers",
       ],
+      para1: "text1",
     },
     {
       slug: "opbots-experience",
@@ -77,6 +78,7 @@ export const siteConfig = {
         "Implemented CI/CD pipeline reducing deployment time by 60%",
         "Collaborated with product team to define technical requirements",
       ],
+      para1: "text1",
     },
     
   ],
