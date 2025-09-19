@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/emajkic",
   },
   aboutMe:
-  "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. I am interested in applied mathematics, software development, machine learning, and physics. My past experience includes working as a student research assistant at TRIUMF, where I worked on a rare pion decay experiment --- I developed simulations and built a vacuum system to test a high precision purity monitor instrument. ",
+  "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. I am interested in applied mathematics, software development, machine learning, and physics. My past experience includes working as a student research assistant at TRIUMF, where I worked with a rare pion decay experiment group. I also worked as a member of the Software subteam at UBC Open Robotics (a competitive student design team), developing navigation software for an autonomous helper robot.",
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
