@@ -61,24 +61,24 @@ export const siteConfig = {
       dateRange: "Jan 2025 - May 2025",
       pdf1: "/final_report.pdf",
       pdf2: "/final_poster.pdf",
-      bullets: [
-        "PUT FINAL REPORT LINK INNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
       para1: "text1",
+      bullets: [
+        "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment, PIONEER"
+        "Developed physics simulations of particle behaviour in PUMA",
+        "Designed and assembled a vacuum system for PUMA testing",
+      ],
     },
     {
       slug: "opbots-experience",
       company: "UBC Open Robotics Design Team",
       position: "Software Engineer, Navigation Subteam",
       dateRange: "Sept 2023 - May 2025",
+      para1: "text1",
       bullets: [
         "Built and launched MVP product from scratch using React and Node.js",
         "Implemented CI/CD pipeline reducing deployment time by 60%",
         "Collaborated with product team to define technical requirements",
       ],
-      para1: "text1",
     },
     
   ],
