@@ -58,7 +58,7 @@ export const siteConfig = {
       slug: "triumf-experience",
       company: "TRIUMF Particle Accelerator",
       title: "Student Research Assistant - PIONEER Experiment",
-      dateRange: "Jan 2025 - May 205",
+      dateRange: "Jan 2025 - May 2025",
       pdf: "../public/final_report.pdf",
       bullets: [
         "PUT FINAL REPORT LINK INNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
