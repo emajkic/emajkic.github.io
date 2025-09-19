@@ -57,7 +57,7 @@ export const siteConfig = {
     {
       slug: "triumf-experience",
       company: "TRIUMF Particle Accelerator",
-      title: "Student Research Assistant - PIONEER Experiment",
+      position: "Student Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 2025",
       pdf1: "/final_report.pdf",
       pdf2: "/final_poster.pdf",
@@ -70,7 +70,7 @@ export const siteConfig = {
     {
       slug: "opbots-experience",
       company: "UBC Open Robotics Design Team",
-      title: "Software Engineer, Navigation Subteam",
+      position: "Software Engineer, Navigation Subteam",
       dateRange: "Sept 2023 - May 2025",
       bullets: [
         "Built and launched MVP product from scratch using React and Node.js",
@@ -78,17 +78,7 @@ export const siteConfig = {
         "Collaborated with product team to define technical requirements",
       ],
     },
-    {
-      slug: "exp-3",
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
-    },
+    
   ],
   education: [
     {
