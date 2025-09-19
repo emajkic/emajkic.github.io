@@ -3,16 +3,15 @@ import Layout from '../../layouts/Layout.astro';
 import { siteConfig } from '../../config';
 import "../../styles/global.css";
 
-export async function getStaticPaths() {
-  // Make sure this matches the array in config.ts
-  return siteConfig.experience.map((exp) => ({
-    params: { slug: exp.slug },
-    props: { experience: exp },
-  }));
-}
+// Get the experience item based on the slug
+const { slug } = Astro.params;
+const experience = siteConfig.experience.find((exp) => exp.slug === slug);
 
-const { experience } = Astro.props;
+if (!experience) {
+  throw new Error(`Experience with slug "${slug}" not found.`);
+}
 ---
+
 <Layout>
   <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
     <a href="/#experience" class="text-sm text-gray-500 hover:underline">
@@ -27,17 +26,19 @@ const { experience } = Astro.props;
       {experience.title} | {experience.dateRange}
     </p>
 
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      {experience.bullets1.map((bullet) => (
-        <p>{bullet}</p>
-      ))}
-    </div>
+    {experience.bullets1?.length > 0 && (
+      <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+        {experience.bullets1.map((bullet) => (
+          <p>{bullet}</p>
+        ))}
+      </div>
+    )}
 
     {experience.pdf1 && (
       <div class="mt-8">
         <h2 class="text-xl font-semibold mb-4">Co-op Term Final Report</h2>
-        <iframe 
-          src={experience.pdf1} 
+        <iframe
+          src={experience.pdf1}
           class="w-full h-[600px] border rounded-lg"
         ></iframe>
       </div>
@@ -46,9 +47,11 @@ const { experience } = Astro.props;
     {experience.pdf2 && (
       <div class="mt-8">
         <h2 class="text-xl font-semibold mb-4">TRIUMF Undergrad Poster Presentation</h2>
-        <h2 class="text-l font-normal mb-4">This is the poster I made for the TRIUMF undergrad poter session. I was happy to have been awarded second place out of all of the co-ops.</h2>
-        <iframe 
-          src={experience.pdf2} 
+        <p class="text-l font-normal mb-4">
+          This is the poster I made for the TRIUMF undergrad poster session. I was happy to have been awarded second place out of all of the co-ops.
+        </p>
+        <iframe
+          src={experience.pdf2}
           class="w-full h-[600px] border rounded-lg"
         ></iframe>
       </div>
