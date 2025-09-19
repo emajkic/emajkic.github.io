@@ -61,7 +61,7 @@ export const siteConfig = {
       dateRange: "Jan 2025 - May 2025",
       pdf1: "/final_report.pdf",
       pdf2: "/final_poster.pdf",
-      bullets1: [
+      bullets: [
         "PUT FINAL REPORT LINK INNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
         "Reduced API response times by 40% through optimization",
         "Mentored team of 5 junior developers",
@@ -72,7 +72,7 @@ export const siteConfig = {
       company: "UBC Open Robotics Design Team",
       title: "Software Engineer, Navigation Subteam",
       dateRange: "Sept 2023 - May 2025",
-      bullets1: [
+      bullets: [
         "Built and launched MVP product from scratch using React and Node.js",
         "Implemented CI/CD pipeline reducing deployment time by 60%",
         "Collaborated with product team to define technical requirements",
@@ -83,7 +83,7 @@ export const siteConfig = {
       company: "Digital Agency",
       title: "Frontend Developer",
       dateRange: "Aug 2018 - May 2020",
-      bullets1: [
+      bullets: [
         "Developed responsive web applications for 20+ clients",
         "Improved site performance scores by 35% on average",
         "Introduced modern JavaScript frameworks to legacy codebases",
