@@ -32,5 +32,15 @@ const { experience } = Astro.props;
         <p>{bullet}</p>
       ))}
     </div>
+
+    {experience.pdf && (
+      <div class="mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Supporting Document</h2>
+        <iframe 
+          src={experience.pdf} 
+          class="w-full h-[600px] border rounded-lg"
+        ></iframe>
+      </div>
+    )}
   </section>
 </Layout>
