@@ -59,6 +59,7 @@ export const siteConfig = {
       company: "TRIUMF Particle Accelerator",
       title: "Student Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 205",
+      pdf: "../public/final_report.pdf",
       bullets: [
         "PUT FINAL REPORT LINK INNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
         "Reduced API response times by 40% through optimization",
