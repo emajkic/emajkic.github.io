@@ -19,7 +19,7 @@ export const siteConfig = {
       slug: "robot-project",
       name: "Autonomous Competition Robot",
       description:
-        "Designed and built an autonomous robot to participate in Engineering Physics 253 course competition.",
+        "Designed, prototyped, and built an autonomous robot to participate in Engineering Physics 253 course competition.",
       skills: ["Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
     },
     {
@@ -29,7 +29,7 @@ export const siteConfig = {
       slug: "motor-project",
       name: "PID Motor Controller",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
+        "Built a circuit capable of setting and actively controlling the speed of an electric motor using PI control.",
       skills: ["Circuitry", "Electrical Design", "Prototyping"],
     },
     {
@@ -39,7 +39,7 @@ export const siteConfig = {
       slug: "java-project",
       name: "Java Tic-Tac-Toe GUI Game",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
+        "Programmed an interactive tic-tac-toe GUI game using Java.",
       skills: ["Java", "Object Oriented Programming", "GUI design"],
     },
     
