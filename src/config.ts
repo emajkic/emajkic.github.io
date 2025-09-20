@@ -69,7 +69,7 @@ export const siteConfig = {
       para1: "text1",
       bullets: [
         "Developed Python scripts to program autonomous navigation of service robot for International RoboCup@Home competition",
-        "Worked with ROS (Robot Operating System) in Linux Ubuntu 20.04",
+        "Worked with ROS (Robot Operating System) in Linux Ubuntu 20.04 distrubution",
         "Collaborated with large student team to achieve group goals",
       ],
     }, 
