@@ -56,7 +56,7 @@ export const siteConfig = {
       pdf2: "/final_poster.pdf",
       para1: "text1",
       bullets: [
-        "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment, PIONEER",
+        "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
         "Designed and assembled a vacuum system for PUMA testing",
       ],
@@ -68,9 +68,9 @@ export const siteConfig = {
       dateRange: "Sept 2023 - May 2025",
       para1: "text1",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Developed Python scripts to program autonomous navigation of service robot for International RoboCup@Home competition",
+        "Worked with ROS (Robot Operating System) in Linux Ubuntu 20.04",
+        "Collaborated with large student team to achieve group goals",
       ],
     }, 
   ],
