@@ -25,7 +25,8 @@ export const siteConfig = {
     {
       img1: "/motor1.jpg",
       img2: "/motor3.jpg",
-      slug: "/motor2.jpg",
+      img3: "/motor2.jpg",
+      slug: "motor-project",
       name: "PID Motor Controller",
       description:
         "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
