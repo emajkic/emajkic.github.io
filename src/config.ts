@@ -25,7 +25,6 @@ export const siteConfig = {
     {
       img1: "/motor1.jpg",
       img2: "/motor2.jpg",
-      img3: "/robot1.png",
       slug: "motor-control-project",
       name: "PID Motor Controller",
       description:
@@ -42,17 +41,9 @@ export const siteConfig = {
         "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
       skills: ["Java", "Object Oriented Programming", "GUI design"],
     },
+    
     //add ROS ENPH353 project
-    {
-      img1: "/robot1.png",
-      img2: "/robot1.png",
-      img3: "/robot1.png",
-      slug: "353-simulation",
-      name: "ROS Machine Learning Project",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      skills: ["React", "Node.js", "AWS"],
-    },
+    
   ],
   experience: [
     {
