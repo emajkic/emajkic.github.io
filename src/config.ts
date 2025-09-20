@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/emajkic",
   },
   aboutMe:
-  "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. I am interested in applied mathematics, software development, machine learning, and physics. My past experience includes working as a student research assistant at TRIUMF, where I worked with a rare pion decay experiment group. I also worked as a member of the Software subteam at UBC Open Robotics (a competitive student design team), developing navigation software for an autonomous helper robot.",
+  "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. I am interested in applied mathematics, software development, machine learning, and physics. My past experience includes working as a student research assistant at TRIUMF, where I worked with a rare pion decay experiment group. I also worked as a member of the Software subteam at UBC Open Robotics (a student design team), developing navigation software for an autonomous helper robot.",
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
@@ -30,7 +30,7 @@ export const siteConfig = {
       name: "PID Motor Controller",
       description:
         "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      skills: ["", "Node.js", "AWS"],
+      skills: ["Circuitry", "Electrical Design", "Prototyping"],
     },
     {
       img1: "/robot1.png",
@@ -40,8 +40,9 @@ export const siteConfig = {
       name: "Java Tic-Tac-Toe GUI Game",
       description:
         "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["Java", "Object Oriented Programming", "GUI design"],
     },
+    //add ROS ENPH353 project
     {
       img1: "/robot1.png",
       img2: "/robot1.png",
