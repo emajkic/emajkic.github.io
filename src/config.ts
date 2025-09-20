@@ -64,7 +64,7 @@ export const siteConfig = {
       pdf2: "/final_poster.pdf",
       para1: "text1",
       bullets: [
-        "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment, PIONEER"
+        "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment, PIONEER",
         "Developed physics simulations of particle behaviour in PUMA",
         "Designed and assembled a vacuum system for PUMA testing",
       ],
@@ -80,8 +80,7 @@ export const siteConfig = {
         "Implemented CI/CD pipeline reducing deployment time by 60%",
         "Collaborated with product team to define technical requirements",
       ],
-    },
-    
+    }, 
   ],
   education: [
     {
