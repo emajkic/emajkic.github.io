@@ -33,9 +33,9 @@ export const siteConfig = {
       skills: ["Circuitry", "Electrical Design", "Prototyping"],
     },
     {
-      img1: "/robot1.png",
-      img2: "/java2.jpg.png",
-      img3: "/robot1.png",
+      img1: "/java1.png",
+      img2: "/java2.png",
+      img3: "/java3.png",
       slug: "java-project",
       name: "Java Tic-Tac-Toe GUI Game",
       description:
