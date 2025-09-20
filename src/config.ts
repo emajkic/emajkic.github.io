@@ -34,7 +34,7 @@ export const siteConfig = {
     },
     {
       img1: "/robot1.png",
-      img2: "/robot1.png",
+      img2: "/java2.jpg.png",
       img3: "/robot1.png",
       slug: "java-project",
       name: "Java Tic-Tac-Toe GUI Game",
