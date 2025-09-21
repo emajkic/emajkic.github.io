@@ -55,7 +55,7 @@ export const siteConfig = {
       dateRange: "Jan 2025 - May 2025",
       pdf1: "/final_report.pdf",
       pdf2: "/final_poster.pdf",
-      para1: "text1",
+      para1: "From ",
       bullets: [
         "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
