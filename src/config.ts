@@ -55,7 +55,8 @@ export const siteConfig = {
       dateRange: "Jan 2025 - May 2025",
       pdf1: "/final_report.pdf",
       pdf2: "/final_poster.pdf",
-      para1: "From ",
+      para1: "During my time at TRIUMF, I worked with the PIONEER experimental group on a rare pion decay experiment.  ",
+      para2: "blah",
       bullets: [
         "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
