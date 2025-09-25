@@ -55,7 +55,7 @@ export const siteConfig = {
       dateRange: "Jan 2025 - May 2025",
       pdf1: "/final_report.pdf",
       pdf2: "/final_poster.pdf",
-      para1: "During my time at TRIUMF, I worked with the PIONEER group on a rare pion decay experiment. The experiment is to be conducted in a large liquid xenon calorimeter, and of utmost importance is being able to monitor the purity of the xenon at all times during the experiment. To acheive this, I helped with the development of a Purity Monitor Assembly (PUMA) and its calibration device (little PUMA).",
+      para1: "During my time at TRIUMF, I worked with the PIONEER group on a rare pion decay experiment. The experiment is to be conducted in a large liquid xenon (LXe) calorimeter, and of utmost importance is to be able to monitor the purity levels of the xenon at all times during the experiment. To acheive this, I was invovled with the development of a Purity Monitor Assembly (PUMA) and its calibration device (little PUMA) to be used in high-precision experiments with LXe calorimeters.",
       para2: "blah",
       bullets: [
         "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
