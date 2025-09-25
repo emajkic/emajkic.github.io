@@ -35,6 +35,44 @@ const { experience } = Astro.props;
         <p>{experience.para2}</p>
     </div>
 
+{(experience.img1_1 || experience.img1_2 || experience.img1_3) && (
+  <div className="mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {experience.img1_1 && (
+        <div className="flex flex-col items-center">
+          <img 
+            src={experience.img1_1} 
+            alt="Co-op Term Image 1" 
+            className="w-full h-auto object-cover rounded-lg border"
+          />
+          <p className="mt-2 text-sm text-gray-600">Img 1</p>
+        </div>
+      )}
+      {experience.img1_2 && (
+        <div className="flex flex-col items-center">
+          <img 
+            src={experience.img1_2} 
+            alt="Co-op Term Image 2" 
+            className="w-full h-auto object-cover rounded-lg border"
+          />
+          <p className="mt-2 text-sm text-gray-600">Img 2</p>
+        </div>
+      )}
+      {experience.img1_3 && (
+        <div className="flex flex-col items-center">
+          <img 
+            src={experience.img1_3} 
+            alt="Co-op Term Image 3" 
+            className="w-full h-auto object-cover rounded-lg border"
+          />
+          <p className="mt-2 text-sm text-gray-600">Img 3</p>
+        </div>
+      )}
+    </div>
+  </div>
+)}
+
+
     {experience.pdf1 && (
       <div class="mt-8">
         <h2 class="text-2xl font-semibold mb-4">Co-op Term Final Report</h2>
