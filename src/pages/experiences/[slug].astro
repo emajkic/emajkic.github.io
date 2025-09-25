@@ -36,47 +36,23 @@ const { experience } = Astro.props;
     </div>
 
 {(experience.img1_1 || experience.img1_2 || experience.img1_3) && (
-  <div className="mt-8">
-    {/* Force images in a single horizontal row */}
-    <div className="flex justify-center items-start gap-4 flex-wrap">
-      {experience.img1_1 && (
-        <div className="flex flex-col items-center w-[250px]">
-          <img 
-            src={experience.img1_1} 
-            alt="Co-op Term Image 1" 
-            className="w-full h-auto object-cover rounded-lg border"
-          />
-          <p className="mt-2 text-sm text-gray-600 text-center italic">
-            {experience.cap1}
-          </p>
-        </div>
-      )}
-      {experience.img1_2 && (
-        <div className="flex flex-col items-center w-[250px]">
-          <img 
-            src={experience.img1_2} 
-            alt="Co-op Term Image 2" 
-            className="w-full h-auto object-cover rounded-lg border"
-          />
-          <p className="mt-2 text-sm text-gray-600 text-center italic">
-            {experience.cap2}
-          </p>
-        </div>
-      )}
-      {experience.img1_3 && (
-        <div className="flex flex-col items-center w-[250px]">
-          <img 
-            src={experience.img1_3} 
-            alt="Co-op Term Image 3" 
-            className="w-full h-auto object-cover rounded-lg border"
-          />
-          <p className="mt-2 text-sm text-gray-600 text-center italic">
-            {experience.cap3}
-          </p>
-        </div>
-      )}
-    </div>
-  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <img
+    src={experience.img1_1}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+  <img
+    src={experience.img1_2}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+  <img
+    src={experience.img1_3}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+</div>
 )}
 
 
