@@ -64,7 +64,7 @@ export const siteConfig = {
       img1_3: "/sim3.jpg",
       cap3: "Working on simulations",
       para3: "I also designed and built a vacuum system ",
-      para4: "Poster thing",
+      para4: "At the end of my term, I participated in TRIUMF's co-op poster session. I created a poster (shown below) to summarize the work I did. ",
       para5: "Below is the full report I wrote about my co-op term. It provides more details about my time at TRIUMF.",
       bullets: [
         "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
