@@ -45,7 +45,7 @@ const { experience } = Astro.props;
             alt="Co-op Term Image 1" 
             className="w-full h-auto object-cover rounded-lg border"
           />
-          <p className="mt-2 text-sm text-gray-600">Img 1</p>
+          <p className="mt-2 text-sm text-gray-600">{experience.cap1}</p>
         </div>
       )}
       {experience.img1_2 && (
@@ -55,7 +55,7 @@ const { experience } = Astro.props;
             alt="Co-op Term Image 2" 
             className="w-full h-auto object-cover rounded-lg border"
           />
-          <p className="mt-2 text-sm text-gray-600">Img 2</p>
+          <p className="mt-2 text-sm text-gray-600">{experience.cap2}</p>
         </div>
       )}
       {experience.img1_3 && (
@@ -65,7 +65,7 @@ const { experience } = Astro.props;
             alt="Co-op Term Image 3" 
             className="w-full h-auto object-cover rounded-lg border"
           />
-          <p className="mt-2 text-sm text-gray-600">Img 3</p>
+          <p className="mt-2 text-sm text-gray-600">{experience.cap3}</p>
         </div>
       )}
     </div>
