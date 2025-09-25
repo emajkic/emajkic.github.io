@@ -56,7 +56,7 @@ export const siteConfig = {
       pdf1: "/final_report.pdf",
       pdf2: "/final_poster.pdf",
       para1: "During my time at TRIUMF, I worked with the PIONEER group on a rare pion decay experiment. The experiment is to be conducted in a large liquid xenon (LXe) calorimeter, and of utmost importance is to be able to monitor the purity levels of the xenon at all times during the experiment. To acheive this, I was invovled with the development of a Purity Monitor Assembly (PUMA) and its calibration device (little PUMA) to be used in high-precision experiments with LXe calorimeters.",
-      para2: "I conducted physics simulations of PUMA to better understand particle behaviour inside the assembly in various media. I used COMSOL multiphysics to perform electrostatic finite element analysis on the CAD model of PUMA",
+      para2: "I conducted physics simulations of PUMA to better understand particle behaviour inside the assembly in various media. I used COMSOL multiphysics to perform electrostatic finite element analysis on the CAD model of PUMA. I also wrote C++ scripts in Linux using Garfield++, a library written by CERN for detailed simulation of particle detectors. Some results are shown below.",
       bullets: [
         "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
