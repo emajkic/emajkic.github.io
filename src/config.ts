@@ -59,7 +59,7 @@ export const siteConfig = {
       para2: "I conducted physics simulations of PUMA to better understand particle behaviour inside the assembly in various media. I used COMSOL multiphysics to perform electrostatic finite element analysis on the CAD model of PUMA. I also wrote C++ scripts in Linux using Garfield++, a library written by CERN for detailed simulation of particle detectors. Some results are shown below.",
       img1_1: "/sim1.png",
       img1_2: "/sim2.png",
-      img1_3: "/sim3.png",
+      img1_3: "/sim3.jpg",
       bullets: [
         "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
