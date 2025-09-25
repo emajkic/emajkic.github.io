@@ -63,6 +63,9 @@ export const siteConfig = {
       cap2: "Driftlines inside PUMA",
       img1_3: "/sim3.jpg",
       cap3: "Working on simulations",
+      para3: "I also designed and built a vacuum system ",
+      para4: "Poster thing",
+      para5: "Below is the full report I wrote about my co-op term. It provides more details about my time at TRIUMF.",
       bullets: [
         "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
