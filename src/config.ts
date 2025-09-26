@@ -83,7 +83,7 @@ export const siteConfig = {
       position: "Software Engineer, Navigation Subteam",
       dateRange: "Sept 2023 - May 2025",
       para1: "UBC Open Robotics is a large student design team working on several robotics projects. I was part of the Software subteam working on the RoboCup@Home project. ",
-      para2: "simul",
+      para2: "While working on the naigvation side of the software for our robot, I developed ROS (Robot Operating System) Python scripts to allow the robot to navigate new environments. This meant integrating with various sensors and developing communication within various subsystems. I did all ROS work on Linux (Ubuntu 20.04). I also worked a lot with Git to synchronize code bases within the large group.",
       img1_1: "/ros2.jpg",
       img1_2: "/ros3.png",
       img1_3: "/ros1.jpg",
