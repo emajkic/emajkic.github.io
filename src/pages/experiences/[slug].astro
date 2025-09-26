@@ -34,6 +34,7 @@ const { experience } = Astro.props;
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
         <p>{experience.para2}</p>
     </div>
+
 <br />
 {(experience.img1_1 || experience.img1_2 || experience.img1_3) && (
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -60,8 +61,33 @@ const { experience } = Astro.props;
         <p>{experience.para3}</p>
     </div>
 
+<br />
+{(experience.img2_1 || experience.img2_2 || experience.img2_3) && (
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <img
+    src={experience.img2_1}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+  <img
+    src={experience.img2_2}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+  <img
+    src={experience.img2_3}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+</div>
+)}
+
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
         <p>{experience.para4}</p>
+    </div>
+
+    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+        <p>{experience.para5}</p>
     </div>
 
     {experience.pdf1 && (
@@ -75,7 +101,7 @@ const { experience } = Astro.props;
     )}
 
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-        <p>{experience.para5}</p>
+        <p>{experience.para6}</p>
     </div>
 
     {experience.pdf2 && (
