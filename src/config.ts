@@ -70,7 +70,7 @@ export const siteConfig = {
       cap2_2: "Little PUMA integration",
       img2_3: "/vac3.jpg",
       cap2_3: "Final vacuum setup",
-      para4: "testing",
+      para4: "After ensuring vacuum system could reliably reach low pressures over extended periods of time, I began testing",
       img3_1: "/test1.jpg",
       cap3_1: "",
       img3_2: "/test2.PNG",
