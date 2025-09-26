@@ -36,6 +36,7 @@ const { experience } = Astro.props;
     </div>
 
 <br />
+
 {(experience.img1_1 || experience.img1_2 || experience.img1_3) && (
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
   <img
@@ -43,25 +44,34 @@ const { experience } = Astro.props;
     alt="Project photo"
     class="w-full aspect-square object-cover rounded-md shadow-lg"
   />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap1_1}
+  </p>
   <img
     src={experience.img1_2}
     alt="Project photo"
     class="w-full aspect-square object-cover rounded-md shadow-lg"
   />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap1_2}
+  </p>
   <img
     src={experience.img1_3}
     alt="Project photo"
     class="w-full aspect-square object-cover rounded-md shadow-lg"
   />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap1_3}
+  </p>
 </div>
 )}
 
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-        <p>{experience.para3}</p>
-    </div>
+<div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+    <p>{experience.para3}</p>
+</div>
 
 <br />
+
 {(experience.img2_1 || experience.img2_2 || experience.img2_3) && (
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
   <img
@@ -69,22 +79,62 @@ const { experience } = Astro.props;
     alt="Project photo"
     class="w-full aspect-square object-cover rounded-md shadow-lg"
   />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap2_1}
+  </p>
   <img
     src={experience.img2_2}
     alt="Project photo"
     class="w-full aspect-square object-cover rounded-md shadow-lg"
   />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap2_2}
+  </p>
   <img
     src={experience.img2_3}
     alt="Project photo"
     class="w-full aspect-square object-cover rounded-md shadow-lg"
   />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap2_3}
+  </p>
 </div>
 )}
 
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
         <p>{experience.para4}</p>
     </div>
+
+<br />
+
+{(experience.img3_1 || experience.img3_2 || experience.img3_3) && (
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <img
+    src={experience.img3_1}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap3_1}
+  </p>
+  <img
+    src={experience.img3_2}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap3_2}
+  </p>
+  <img
+    src={experience.img3_3}
+    alt="Project photo"
+    class="w-full aspect-square object-cover rounded-md shadow-lg"
+  />
+  <p className="mt-2 text-sm text-gray-600 italic text-center">
+          {experience.cap3_3}
+  </p>
+</div>
+)}
 
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
         <p>{experience.para5}</p>
