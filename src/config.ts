@@ -66,7 +66,7 @@ export const siteConfig = {
       img2_3: "/vac3.jpg",
       para4: "After ensuring vacuum system could reliably reach low pressures over extended periods of time, I began testing little PUMA inside of the vacuum. I collected data under various electric potential configurations inside the assembly. Later, we pumped gaseous argon into the vacuum system and continued tests in the new medium.",
       img3_1: "/test1.jpg",
-      img3_2: "/test2.PNG",
+      img3_2: "/test2.png",
       img3_3: "/test3.jpg",
       para5: "At the end of my term, I participated in TRIUMF's co-op poster session. I created a poster (shown below) to summarize the work I did. I was honoured to be awarded 2nd place out of all co-ops!",
       para6: "Below is the full report I wrote about my co-op term. It provides more details about my time at TRIUMF.",
