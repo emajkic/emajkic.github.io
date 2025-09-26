@@ -68,7 +68,7 @@ export const siteConfig = {
       img3_1: "/test1.jpg",
       img3_2: "/test2.png",
       img3_3: "/test3.jpg",
-      para5: "Working at TRIUMF was an incredible experience and I enjoyed being in charge of a project within a larger physics context. I got to experience both self-led work and working with a group of people",
+      para5: "Working at TRIUMF was a great experience and I enjoyed being in charge of a project within a larger physics context. I got to experience both self-led work and collaboration with a team.",
       para6: "At the end of my term, I participated in TRIUMF's co-op poster session. I created a poster (shown below) to summarize the work I did. I was honoured to be awarded 2nd place out of all co-ops!",
       para7: "Below is the full report I wrote about my co-op term. It provides more details about my time at TRIUMF.",
       bullets: [
