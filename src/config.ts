@@ -82,7 +82,7 @@ export const siteConfig = {
       company: "UBC Open Robotics Design Team",
       position: "Software Engineer, Navigation Subteam",
       dateRange: "Sept 2023 - May 2025",
-      para1: "UBC Open Robotics is a large student design team working on several robotics projects. I ",
+      para1: "UBC Open Robotics is a large student design team working on several robotics projects. I was part of the Software subteam working on the RoboCup@Home project. ",
       para2: "simul",
       img1_1: "/ros2.jpg",
       img1_2: "/ros3.png",
