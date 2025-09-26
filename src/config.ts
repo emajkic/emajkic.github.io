@@ -86,7 +86,7 @@ export const siteConfig = {
       para2: "simul",
       img1_1: "/ros2.jpg",
       img1_2: "/ros3.png",
-      img1_3: "/ros1.jpg"
+      img1_3: "/ros1.jpg",
       para3: "yr 1 chassis",
       img2_1: "/chass1.jpg",
       img2_2: "/chass2.jpg",
