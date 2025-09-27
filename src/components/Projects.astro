@@ -18,15 +18,14 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
           />
         </div>
 
+        <!-- Add: a href={`/projects/${project.slug}/`} after 'group relative' go get to project pages when want to add writeup -->
         <!-- Right column (project cards) -->
         <div class="lg:col-span-8">
           <div class="space-y-8">
             {siteConfig.projects.map((project, index) => (
               <div class="group relative">
-                <a
-                  href={`/projects/${project.slug}/`}
+                <
                   class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
-                  onClick={(e) => e.preventDefault() <!-- REMOVE THIS LINE IF WANT TO SEE HYPERLINKS -->
                 >
                   <div class="space-y-4">
                     <div>
