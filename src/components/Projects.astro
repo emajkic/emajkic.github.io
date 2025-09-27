@@ -23,15 +23,16 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
         <div class="lg:col-span-8">
           <div class="space-y-8">
             {siteConfig.projects.map((project, index) => (
-              <div class="group relative">
-                <
+              <div class="group relative" key={project.slug}>
+                {/* Non-clickable project card */}
+                <div
                   class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
                 >
                   <div class="space-y-4">
                     <div>
                       <span
                         class="text-sm font-mono"
-                        style={{ color: siteConfig.accentColor }}
+                        style={`color: ${siteConfig.accentColor}`}
                       >
                         0{index + 1}
                       </span>
@@ -44,25 +45,23 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       {project.description}
                     </p>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-  <img
-    src={project.img1}
-    alt="Project photo"
-    class="w-full aspect-square object-cover rounded-md shadow-lg"
-  />
-  <img
-    src={project.img2}
-    alt="Project photo"
-    class="w-full aspect-square object-cover rounded-md shadow-lg"
-  />
-  <img
-    src={project.img3}
-    alt="Project photo"
-    class="w-full aspect-square object-cover rounded-md shadow-lg"
-  />
-</div>
-
-
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      <img
+                        src={project.img1}
+                        alt="Project photo"
+                        class="w-full aspect-square object-cover rounded-md shadow-lg"
+                      />
+                      <img
+                        src={project.img2}
+                        alt="Project photo"
+                        class="w-full aspect-square object-cover rounded-md shadow-lg"
+                      />
+                      <img
+                        src={project.img3}
+                        alt="Project photo"
+                        class="w-full aspect-square object-cover rounded-md shadow-lg"
+                      />
+                    </div>
 
                     {project.skills && project.skills.length > 0 && (
                       <div class="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
@@ -74,7 +73,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       </div>
                     )}
                   </div>
-                </a>
+                </div>
               </div>
             ))}
           </div>
