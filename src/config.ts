@@ -64,7 +64,7 @@ export const siteConfig = {
       img2_1: "/vac1.jpg",
       img2_2: "/vac2.jpg",
       img2_3: "/vac3.jpg",
-      para4: "After ensuring vacuum system could reliably reach low pressures over extended periods of time, I began testing little PUMA inside of the vacuum. I collected data under various electric potential configurations inside the assembly. Later, we pumped gaseous argon into the vacuum system and continued tests in the new medium.",
+      para4: "After ensuring vacuum system could reliably reach low pressures over extended periods of time, I began testing PUMA's calibration device inside of the vacuum system. I collected data under various electric potential configurations inside the assembly. Later, we pumped gaseous argon into the vacuum system and continued tests in the new medium.",
       img3_1: "/test1.jpg",
       img3_2: "/test2.png",
       img3_3: "/test3.jpg",
