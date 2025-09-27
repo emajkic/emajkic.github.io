@@ -82,7 +82,7 @@ export const siteConfig = {
       company: "UBC Open Robotics Design Team",
       position: "Software Engineer, Navigation Subteam",
       dateRange: "Sept 2023 - May 2025",
-      para1: "UBC Open Robotics is a large student design team working on several robotics projects. I was part of the Software subteam working on the RoboCup@Home project. RoboCup@Home is a highly relevant international competition where teams develop autonomous home service robots. Robots' abilities must include human-robot interaction, navigation in dynamic environments, object recognition and manipulation, and more.",
+      para1: "UBC Open Robotics is a large student design team working on several robotics projects. I was part of the Software subteam working on the RoboCup@Home project. RoboCup@Home is a highly relevant international competition where teams develop autonomous home service robots to help those with domestic assistance needs. Robots' abilities must include human-robot interaction, navigation in dynamic environments, object recognition and manipulation, and more.",
       para2: "While working on the naigvation side of the software for our robot, I developed ROS (Robot Operating System) Python scripts to allow the robot to navigate new, dynamic environments. This meant integrating various sensors in software and developing communication for various subsystems. I did all ROS work on Linux (Ubuntu 20.04). I also performed research and analysis of LIDAR sensors and SLAM (Simultaneous Localization and Mapping) frameworks to be used for the robot.",
       img1_1: "/ros2.jpg",
       img1_2: "/ros3.png",
