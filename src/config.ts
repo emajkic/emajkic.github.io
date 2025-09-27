@@ -60,7 +60,7 @@ export const siteConfig = {
       img1_1: "/sim1.png",
       img1_2: "/sim2.png",
       img1_3: "/sim3.jpg",
-      para3: "Further, I designed and built a vacuum system to perform initial tests of the calibration device for PUMA. This involved the mechanical design and assembly of components, integration of little PUMA into the system, and troubleshooting iterations to reach our desired pressure of 10e-6 Bar. I also designed an electrical box for easy interfacing with the pressure gauge I chose for the system.",
+      para3: "Further, I designed and built a vacuum system to perform initial tests of the calibration device for PUMA. This involved the mechanical design and assembly of components, integration of the calibration device for PUMA into the system, and troubleshooting iterations to reach our desired pressure of 10e-6 Bar. I also designed an electrical box for easy interfacing with the pressure gauge I chose for the system.",
       img2_1: "/vac1.jpg",
       img2_2: "/vac2.jpg",
       img2_3: "/vac3.jpg",
