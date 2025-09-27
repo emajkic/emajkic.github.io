@@ -72,7 +72,7 @@ export const siteConfig = {
       para6: "At the end of my term, I participated in TRIUMF's co-op poster session. I created a poster (shown below) to summarize the work I did. I was honoured to be awarded 2nd place out of all co-ops!",
       para7: "Below is the full report I wrote about my co-op term. It provides more details about my time at TRIUMF.",
       bullets: [
-        "Worked on Purity Monitor Assmebly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
+        "Worked on Purity Monitor Assembly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
         "Designed and assembled a vacuum system for PUMA testing",
       ],
