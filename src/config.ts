@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Ella Majkic",
   title: "UBC Engineering Physics Student",
   description: "Portfolio website of Ella Majkic",
-  accentColor: "#4B0082",
+  accentColor: "#800080",
   social: {
     email: "ellamaj8@gmail.com",
     linkedin: "https://www.linkedin.com/in/ella-majkic-951527289/",
@@ -30,7 +30,7 @@ export const siteConfig = {
       slug: "machine-learning-project",
       name: "ROS Machine Learning Project",
       description:
-        "(In Progress) Controlling robot in simulated environment for ENPH 353 project/competition course using recet machine learning and computer vision techniques.",
+        "(In Progress) Controlling robot in simulated environment for ENPH 353 project/competition course using recent machine learning and computer vision techniques.",
       skills: ["OpenCV", "ROS", "Python", "Machine Learning", "Linux Terminal"],
     },
     {
