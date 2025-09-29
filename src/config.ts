@@ -30,7 +30,7 @@ export const siteConfig = {
       slug: "machine-learning-project",
       name: "ROS Machine Learning Project",
       description:
-        "[In Progress] Developing ",
+        "(In Progress) Controlling robot in simulated environment for ENPH 353 project/competition course using recet machine learning and computer vision techniques.",
       skills: ["OpenCV", "ROS", "Python", "Machine Learning", "Linux Terminal"],
     },
     {
