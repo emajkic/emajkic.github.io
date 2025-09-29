@@ -24,6 +24,16 @@ export const siteConfig = {
       skills: ["Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
     },
     {
+      img1: "/ml1.jpg",
+      img2: "/ml2.png",
+      img3: "/ml3.jpg",
+      slug: "machine-learning-project",
+      name: "ROS Machine Learning Project",
+      description:
+        "[In Progress] Developing ",
+      skills: ["OpenCV", "ROS", "Python", "Machine Learning", "Linux Terminal"],
+    },
+    {
       img1: "/motor1.jpg",
       img2: "/motor3.jpg",
       img3: "/motor2.jpg",
