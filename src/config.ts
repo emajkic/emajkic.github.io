@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Ella Majkic",
   title: "UBC Engineering Physics Student",
   description: "Portfolio website of Ella Majkic",
-  accentColor: "#4b0082",
+  accentColor: "#2E7D32",
   social: {
     email: "ellamaj8@gmail.com",
     linkedin: "https://www.linkedin.com/in/ella-majkic-951527289/",
