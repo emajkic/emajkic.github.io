@@ -19,6 +19,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
         </div>
 
         <!-- Add: a href={`/projects/${project.slug}/`} after 'group relative' go get to project pages when want to add writeup -->
+        <!-- hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1 **add this into dic class = for hover -->
         <!-- Right column (project cards) -->
         <div class="lg:col-span-8">
           <div class="space-y-8">
@@ -26,7 +27,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
               <div class="group relative" key={project.slug}>
                 {/* Non-clickable project card */}
                 <div
-                  class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
+                  class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300"
                 >
                   <div class="space-y-4">
                     <div>
