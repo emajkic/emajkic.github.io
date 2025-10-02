@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/emajkic",
   },
   aboutMe1: "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. My interests include applied mathematics, software development, machine learning, and physics.",
-  aboutMe2: "Engineering Physics is a degree which combines ",
+  aboutMe2: "Engineering Physics is a degree which combines the disciplines of electrical engineering, software engineering, mechanical engineering, and pure math and physics. It offers a broad range of hands-on engineering experiences while also providing a strong foundation in advanced physics and mathematics for understanding applied concepts.",
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
@@ -62,7 +62,7 @@ export const siteConfig = {
       company: "TRIUMF Particle Accelerator",
       position: "Student Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 2025",
-      description: "Worked with Purity Monitor Assembly (PUMA) instrument for high-precision rare pion decay experiment group, PIONEER. Developed physics simulations with C++ and Python; designed vacuum system for PUMA testing. [Click for more]",
+      description: "Worked with Purity Monitor Assembly (PUMA) instrument for high-precision rare pion decay experiment, PIONEER. Developed physics simulations with C++ and Python; designed vacuum system for PUMA testing. [Click for more]",
       pdf1: "/final_poster.pdf",
       pdf2: "/final_report.pdf",
       para1: "During my time at TRIUMF, I worked with the PIONEER group on a rare pion decay experiment. The PIONEER experiment will be conducted in a large liquid xenon (LXe) calorimeter, and continuous monitoring of the LXe's purity is required during the experiment. To achieve this, I was involved in the development of a Purity Monitor Assembly (PUMA) and its calibration device to be used in high-precision experiments with LXe calorimeters.",
