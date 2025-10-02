@@ -63,7 +63,7 @@ export const siteConfig = {
       company: "TRIUMF Particle Accelerator",
       position: "Student Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 2025",
-      description: "Worked with Purity Monitor Assembly (PUMA) instrument for rare pion decay experiment group, PIONEER. Developed physics simulations with C++ and Python; designed vacuum system for PUMA testing. [Click for more]",
+      description: "Worked with Purity Monitor Assembly (PUMA) instrument for high-precision rare pion decay experiment group, PIONEER. Developed physics simulations with C++ and Python; designed vacuum system for PUMA testing. [Click for more]",
       pdf1: "/final_poster.pdf",
       pdf2: "/final_report.pdf",
       para1: "During my time at TRIUMF, I worked with the PIONEER group on a rare pion decay experiment. The PIONEER experiment will be conducted in a large liquid xenon (LXe) calorimeter, and continuous monitoring of the LXe's purity is required during the experiment. To achieve this, I was involved in the development of a Purity Monitor Assembly (PUMA) and its calibration device to be used in high-precision experiments with LXe calorimeters.",
