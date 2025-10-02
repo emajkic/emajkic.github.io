@@ -1,6 +1,8 @@
-import { siteConfig } from "../config";
+---
+import { siteConfig } from "../config"; // ✅ Make sure this path is correct
 
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+---
 
 {hasExperience && (
   <section id="experience" class="p-8 sm:p-12 md:p-16 lg:p-24">
@@ -35,6 +37,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                         {exp.title}
                       </h3>
 
+                      {/* Company (accent color) */}
                       <p
                         class="text-base sm:text-xl font-bold mt-1"
                         style={`color: ${siteConfig.accentColor}`}
