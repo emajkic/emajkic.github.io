@@ -134,29 +134,22 @@ import { siteConfig } from "../config";
 
   <!-- Main content -->
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex flex-col md:flex-row items-start justify-center gap-12">
-    <!-- Text -->
-    <div class="text-left md:text-left flex-1">
-      <h1
-        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
+<div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex flex-col md:flex-row items-start justify-center gap-12">
+  <!-- Text -->
+  <div class="relative z-10 text-left md:text-left flex-1">
+    <h1 class="mt-6 ...">{siteConfig.name}</h1>
+    <p class="mt-4 ...">UBC Engineering Physics</p>
+    <p class="mt-4 sm:mt-6 md:mt-8 animate-fade-in animation-delay-400">
+      <a 
+        href="/Ella_Majkic_Resume_2025.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-block bg-black text-white text-sm sm:text-base md:text-lg font-medium px-4 py-2 rounded-2xl hover:bg-gray-800 transition-colors"
       >
-        {siteConfig.name}
-      </h1>
-      <p
-        class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-xl md:text-2xl font-medium text-gray-600 animate-fade-in animation-delay-400"
-      >
-        UBC Engineering Physics
-      </p>
-      <p class="mt-4 sm:mt-6 md:mt-8 animate-fade-in animation-delay-400">
-  <a 
-    href="/Resume.pdf" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    class="inline-block bg-black text-white text-sm sm:text-base md:text-lg font-medium px-4 py-2 rounded-2xl hover:bg-gray-800 transition-colors"
-  >
-    Resume
-  </a>
-</p>
-    </div>
+        Resume
+      </a>
+    </p>
+  </div>
 
     <!-- Photo -->
     <div class="flex-shrink-0 animate-fade-in animation-delay-400">
