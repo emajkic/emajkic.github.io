@@ -133,55 +133,65 @@ import { siteConfig } from "../config";
   </svg>
 
   <!-- Main content -->
-  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex flex-col md:flex-row items-start justify-center gap-12">
 <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex flex-col md:flex-row items-start justify-center gap-12">
   <!-- Text -->
-  <div class="relative z-10 text-left md:text-left flex-1">
-    <h1 class="mt-6 ...">{siteConfig.name}</h1>
-    <p class="mt-4 ...">UBC Engineering Physics</p>
-    <p class="mt-4 sm:mt-6 md:mt-8 animate-fade-in animation-delay-400">
-      <a 
-        href="/Ella_Majkic_Resume_2025.pdf" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        class="inline-block bg-black text-white text-sm sm:text-base md:text-lg font-medium px-4 py-2 rounded-2xl hover:bg-gray-800 transition-colors"
-      >
-        Resume
-      </a>
+  <div class="text-left md:text-left flex-1">
+    
+    <h1
+      class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
+    >
+      {siteConfig.name}
+    </h1>
+    <p
+      class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-xl md:text-2xl font-medium text-gray-600 animate-fade-in animation-delay-400"
+    >
+      UBC Engineering Physics
     </p>
+<p class="mt-4 sm:mt-6 md:mt-8 animate-fade-in animation-delay-400">
+  <a 
+    href="/Resume.pdf" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="inline-block bg-black text-white text-sm sm:text-base md:text-lg font-medium px-4 py-2 rounded-2xl hover:bg-gray-800 transition-colors"
+  >
+    Resume
+  </a>
+</p>
+
   </div>
 
-    <!-- Photo -->
-    <div class="flex-shrink-0 animate-fade-in animation-delay-400">
-      <img
-        src="/cover_img.jpg"
-        alt="Profile photo"
-        class="w-80 h-80 md:w-96 md:h-96 rounded-md object-cover shadow-lg"
-      />
-    </div>
+<!-- Photo -->
+  <div class="flex-shrink-0 animate-fade-in animation-delay-400">
+    <img
+      src="/cover_img.jpg"
+      alt="Profile photo"
+      class="w-80 h-80 md:w-96 md:h-96 rounded-md object-cover shadow-lg"
+    />
+  </div>
+
   </div>
 
   <!-- Social links -->
   <div
-    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-6 sm:gap-x-8 md:gap-x-10 text-gray-700 animate-fade-in animation-delay-600"
+    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
   >
     {siteConfig.social?.email && (
       <a
         href={`mailto:${siteConfig.social.email}`}
         aria-label="Email"
-        class="p-3 sm:p-4 rounded-full bg-gray-100 hover:bg-[var(--accent-color)] hover:text-white transition-all duration-300"
+        class="transition-colors duration-300 hover:text-[var(--accent-color)]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2.2"
+          stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-8 w-8 sm:h-10 sm:w-10"
+          class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path
@@ -197,28 +207,30 @@ import { siteConfig } from "../config";
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
-        class="p-3 sm:p-4 rounded-full bg-gray-100 hover:bg-[var(--accent-color)] hover:text-white transition-all duration-300"
+        class="transition-colors duration-300 hover:text-[var(--accent-color)]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2.2"
+          stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-8 w-8 sm:h-10 sm:w-10"
+          class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
         >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M8 11v5" />
-          <path d="M8 8v.01" />
-          <path d="M12 16v-5" />
-          <path d="M16 16v-3a2 2 0 1 0 -4 0" />
-          <path
-            d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
-          />
+          <>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 11v5" />
+            <path d="M8 8v.01" />
+            <path d="M12 16v-5" />
+            <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+            <path
+              d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+            />
+          </>
         </svg>
       </a>
     )}
@@ -228,23 +240,25 @@ import { siteConfig } from "../config";
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Twitter"
-        class="p-3 sm:p-4 rounded-full bg-gray-100 hover:bg-[var(--accent-color)] hover:text-white transition-all duration-300"
+        class="transition-colors duration-300 hover:text-[var(--accent-color)]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2.2"
+          stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-8 w-8 sm:h-10 sm:w-10"
+          class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
         >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-          <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+          <>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+          </>
         </svg>
       </a>
     )}
@@ -254,31 +268,26 @@ import { siteConfig } from "../config";
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
-        class="p-3 sm:p-4 rounded-full bg-gray-100 hover:bg-[var(--accent-color)] hover:text-white transition-all duration-300"
+        class="transition-colors duration-300 hover:text-[var(--accent-color)]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2.2"
+          stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="h-8 w-8 sm:h-10 sm:w-10"
+          class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
         >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6
-            a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2
-            s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0
-            c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3
-            a4.2 4.2 0 0 0 -.1 3.2
-            a4.6 4.6 0 0 0 -1.3 3.2
-            c0 4.6 2.7 5.7 5.5 6
-            -.6 .6 -.6 1.2 -.5 2v3.5"
-          />
+          <>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </>
         </svg>
       </a>
     )}
