@@ -29,6 +29,12 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                   <div class="space-y-4">
                     {/* Index + Title */}
                     <div>
+                      <span
+                        class="text-sm font-mono"
+                        style={`color: ${siteConfig.accentColor}`}
+                      >
+                        0{index + 1}
+                      </span>
                       <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
                         {exp.title}
                       </h3>
@@ -50,15 +56,30 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                     {/* Images (placeholders for now) */}
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                       <img
-                        src={exp.img1 || "https://via.placeholder.com/300"}
+                        src={exp.img1_1}
                         alt="Experience photo"
                         class="w-full aspect-square object-cover rounded-md shadow-lg"
                       />
                       <img
-                        src={exp.img2 || "https://via.placeholder.com/300"}
+                        src={exp.img2_1}
                         alt="Experience photo"
                         class="w-full aspect-square object-cover rounded-md shadow-lg"
                       />
                       <img
-                        src={exp.img3 || "https://via.placeholder.com/300"}
+                        src={exp.img3_1}
                         alt="Experience photo"
+                        class="w-full aspect-square object-cover rounded-md shadow-lg"
+                      />
+                    </div>
+
+
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
