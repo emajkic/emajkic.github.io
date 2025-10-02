@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/emajkic",
   },
   aboutMe1: "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. My interests include applied mathematics, software development, machine learning, and physics.",
-  aboutMe2: "Engineering Physics is a degree which combines the disciplines of electrical engineering, software engineering, mechanical engineering, and pure math and physics. It offers a broad range of hands-on engineering experience while also providing a strong foundation in advanced physics and math for understanding applied concepts.",
+  aboutMe2: "Engineering Physics is a degree which combines the disciplines of electrical engineering, software engineering, mechanical engineering, and pure math and physics. It offers a broad range of hands-on engineering experiences while also providing a strong foundation in advanced physics and math.",
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
@@ -29,7 +29,7 @@ export const siteConfig = {
       slug: "machine-learning-project",
       name: "ROS Machine Learning Project",
       description:
-        "(In Progress) Controlling robot in simulated environment for ENPH 353 project/competition course using recent machine learning and computer vision techniques.",
+        "(In Progress) Programming robot in simulated Gazebo environment for ENPH 353 project/competition course using recent machine learning and computer vision techniques.",
       skills: ["OpenCV", "ROS", "Python", "Machine Learning", "Linux Terminal"],
     },
     {
