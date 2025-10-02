@@ -44,12 +44,18 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                       </p>
                     </div>
 
-                    {/* Description (optional) */}
-                    {exp.description && (
-                      <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
-                        {exp.description}
-                      </p>
-                    )}
+  {exp.description && (
+  <div class="space-y-2">
+    <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+      {exp.description}
+    </p>
+
+    {/* "Click for more" fake button */}
+    <span class="inline-block bg-black text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full">
+      Click for more
+    </span>
+  </div>
+)}
 
                     {/* Images */}
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
