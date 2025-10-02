@@ -118,7 +118,10 @@ export const siteConfig = {
         "2023-2025: Dean's Scholar, Dean's List",
         "2024: Trek Excellence Scholarship",
       ],
-      courses: "Relevant courses I have completed include Data Structures and Algorithms, Linear Circuits, ",
+      courses: [
+        "2023-2025: Dean's Scholar, Dean's List",
+        "2024: Trek Excellence Scholarship",
+      ],
     },
   ],
 };
