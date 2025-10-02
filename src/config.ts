@@ -117,8 +117,8 @@ export const siteConfig = {
       achievements: [
         "2023-2025: Dean's Scholar, Dean's List",
         "2024: Trek Excellence Scholarship",
-        "2023-2025: UBC Open Robotics Design Team",
       ],
+      courses: "Relevant courses I have completed include Data Structures and Algorithms, Linear Circuits, ",
     },
   ],
 };
