@@ -124,6 +124,7 @@ export const siteConfig = {
         "Signals and Systems (ELEC 221)",
         "Machine Learning Project (ENPH 353)",
         "Partial Differential Equations (MATH 257)",
+        "Linear Circuits (ELEC 204)",
       ],
     },
   ],
