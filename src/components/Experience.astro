@@ -1,8 +1,6 @@
----
 import { siteConfig } from "../config";
 
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
----
 
 {hasExperience && (
   <section id="experience" class="p-8 sm:p-12 md:p-16 lg:p-24">
@@ -22,15 +20,21 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
         {/* Right column (experience cards) */}
         <div class="lg:col-span-8">
           <div class="space-y-8">
-            {siteConfig.experience.map((exp, index) => (
-              <a href={`/experiences/${exp.slug}`} key={exp.slug} class="group relative block">
+            {siteConfig.experience.map((exp) => (
+              <a
+                href={`/experiences/${exp.slug}`}
+                key={exp.slug}
+                class="group relative block"
+              >
                 {/* Experience Card */}
                 <div class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
-                  <div class="space-y-4">-
+                  <div class="space-y-4">
                     <div>
-                      <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
+                      {/* Title (explicitly black) */}
+                      <h3 class="text-xl sm:text-2xl font-bold text-black mt-1">
                         {exp.title}
                       </h3>
+
                       <p
                         class="text-base sm:text-xl font-bold mt-1"
                         style={`color: ${siteConfig.accentColor}`}
@@ -39,14 +43,14 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                       </p>
                     </div>
 
-                    {/* Description (optional if you add one later) */}
+                    {/* Description (optional) */}
                     {exp.description && (
                       <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
                         {exp.description}
                       </p>
                     )}
 
-                    {/* Images (placeholders for now) */}
+                    {/* Images */}
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                       <img
                         src={exp.img1_1}
@@ -64,8 +68,6 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                         class="w-full aspect-square object-cover rounded-md shadow-lg"
                       />
                     </div>
-
-
                   </div>
                 </div>
               </a>
