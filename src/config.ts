@@ -119,8 +119,11 @@ export const siteConfig = {
         "2024: Trek Excellence Scholarship",
       ],
       courses: [
-        "2023-2025: Dean's Scholar, Dean's List",
-        "2024: Trek Excellence Scholarship",
+        "Data Structures and Algorithms/Software Construction (CPEN 211)",
+        "Applied Linear Algrebra (MATH 307)",
+        "Signals and Systems (ELEC 221)",
+        "Machine Learning Project (ENPH 353)",
+        "Partial Differential Equations (MATH 257)",
       ],
     },
   ],
