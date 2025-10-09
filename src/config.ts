@@ -114,7 +114,7 @@ export const siteConfig = {
       dateRange: "2023 - 2028",
       achievements: [
         "2023-2025: Dean's Scholar, Dean's List",
-        "2024: Trek Excellence Scholarship",
+        "2024: Trek Excellence Scholarship - Offered to top 5% of students in their undergraduate year",
       ],
       courses: [
         "Data Structures and Algorithms/Software Construction (CPEN 211)",
