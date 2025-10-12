@@ -118,7 +118,7 @@ export const siteConfig = {
       ],
       courses: [
         "Machine Learning Project (ENPH 353)",
-        "Data Structures and Algorithms(CPEN 211)",
+        "Data Structures and Algorithms (CPEN 211)",
         "Applied Linear Algrebra (MATH 307)",
         "Signals and Systems (ELEC 221)",
         "Partial Differential Equations (MATH 257)",
