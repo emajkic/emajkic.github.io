@@ -63,6 +63,21 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                         class="w-full aspect-square object-cover rounded-md shadow-lg"
                       />
                     </div>
+                  {project.link && project.link_name && (
+                  <div class="pt-4">
+                    <p class="text-base sm:text-lg text-gray-700">
+                    <strong>{project.link_name}:</strong>{" "}
+                      <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-blue-600 hover:underline"
+                      >
+                          {project.link}
+                      </a>
+                    </p>
+                  </div>
+                  )}
 
                     {project.skills && project.skills.length > 0 && (
                       <div class="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
