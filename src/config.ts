@@ -21,6 +21,7 @@ export const siteConfig = {
       description:
         "Designed, prototyped, and built an autonomous robot to participate in Engineering Physics 253 course competition.",
       skills: ["Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
+      link_name: "Github Repo",
       link: "https://github.com/emajkic/ENPH_253_Robot.git",
     },
     {
