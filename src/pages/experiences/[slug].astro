@@ -165,14 +165,23 @@ const { experience } = Astro.props;
       </div>
     )}
 {experience.link_video && (
-      <div class="mt-8">
-        <p class="mb-4 text-gray-700">
-          I was invited by Rick, the manager of the TRIUMF Detector Development Lab, to film a fun short video about my work. Check it out!
-        </p>
-        <div class="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden shadow-xl">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ad_hZ0_KblQ?si=H1WQ4nRN7jRd-yXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-    )}
+  <div className="mt-8">
+    <p className="mb-4 text-gray-700">
+      I was invited by Rick, the manager of the TRIUMF Detector Development Lab, to film a fun short video about my work. Check it out!
+    </p>
+    <div className="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden shadow-xl">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/ad_hZ0_KblQ?si=H1WQ4nRN7jRd-yXA"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+)}
+
   </section>
 </Layout>
