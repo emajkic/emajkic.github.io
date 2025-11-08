@@ -164,5 +164,23 @@ const { experience } = Astro.props;
         </div>
       </div>
     )}
+{experience.link_video && (
+      <div class="mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Project Video</h2>
+        <p class="mb-4 text-gray-700">
+          Check out a brief video summary or demonstration related to this experience.
+        </p>
+        <div class="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden shadow-xl">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            src={experience.link_video}
+            title="Project Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    )}
   </section>
 </Layout>
