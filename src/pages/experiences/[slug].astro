@@ -164,17 +164,25 @@ const { experience } = Astro.props;
         </div>
       </div>
     )}
-<div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl">
-  <iframe
-    className="absolute top-0 left-0 w-full h-full"
-    src="https://www.youtube.com/embed/ad_hZ0_KblQ?si=H1WQ4nRN7jRd-yXA"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  ></iframe>
-</div>
+
+{experience.link_video && (
+  <div className="mt-8">
+    <p className="mb-4 text-gray-700">
+      I was invited by Rick, the manager of the TRIUMF Detector Development Lab, to film a fun short video about my work. Check it out!
+    </p>
+    <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src={experience.link_video}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+)}
 
   </section>
 </Layout>
