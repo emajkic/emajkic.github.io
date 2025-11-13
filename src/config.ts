@@ -27,7 +27,7 @@ export const siteConfig = {
     {
       img1: "/ml1.jpg",
       img2: "/ml2.png",
-      img3: "/ml3.jpg",
+      img3: "/ml3.png",
       slug: "machine-learning-project",
       name: "ROS Machine Learning Project",
       description:
