@@ -4,7 +4,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 ---
 
 {hasProjects && (
-  <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24 w-full">
     
     {/* Title */}
     <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
@@ -16,19 +16,19 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
       style={`background-color: ${siteConfig.accentColor}`}
     />
 
-    {/* Project Grid - full width */}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* FULL-WIDTH GRID — FIXED */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
 
       {siteConfig.projects.map((project, index) => (
         
         <a
           key={project.slug}
           href={`/projects/${project.slug}/`}
-          class="group block relative transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 rounded-2xl"
+          class="group block w-full relative transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 rounded-2xl"
         >
           
           {/* Project Card */}
-          <div class="p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200">
+          <div class="w-full p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200">
             <div class="space-y-4">
               
               <div>
@@ -65,7 +65,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                 )}
               </div>
 
-              {/* Optional external link */}
+              {/* Optional link */}
               {project.link && project.link_name && (
                 <div class="pt-4">
                   <p class="text-base sm:text-lg text-gray-700">
