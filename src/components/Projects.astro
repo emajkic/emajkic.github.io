@@ -4,7 +4,8 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 ---
 
 {hasProjects && (
-  <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  // make this section resistant to outer max-widths
+  <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24 w-full max-w-none">
     
     {/* Title */}
     <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
@@ -16,18 +17,17 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
       style={`background-color: ${siteConfig.accentColor}`}
     />
 
-    {/* Project Grid */}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full min-w-0">
+    {/* Grid: uses minmax(0,1fr) behaviour so two columns will fit */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-none min-w-0">
       {siteConfig.projects.map((project, index) => (
         
-        <a 
+        <a
           href={`/projects/${project.slug}/`}
-          class="group block w-full min-w-0 relative"
           key={project.slug}
+          class="group block w-full min-w-0 box-border" 
         >
-          
-          {/* Project Card */}
-          <div class="w-full min-w-0 p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
+          {/* Card: box-border keeps padding inside width, min-w-0 allows shrinking */}
+          <div class="w-full min-w-0 box-border p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1 overflow-hidden">
             <div class="space-y-4 min-w-0">
               
               <div>
@@ -46,25 +46,25 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                 {project.description}
               </p>
 
-              {/* Only first two images */}
+              {/* Image grid — images constrained to a fixed height to avoid forcing width */}
               <div class="grid grid-cols-2 gap-4 min-w-0">
                 {project.img1 && (
                   <img
                     src={project.img1}
                     alt="Project photo 1"
-                    class="w-full aspect-square object-cover rounded-md shadow-lg"
+                    class="w-full h-40 sm:h-48 md:h-56 object-cover rounded-md shadow-lg block"
                   />
                 )}
                 {project.img2 && (
                   <img
                     src={project.img2}
                     alt="Project photo 2"
-                    class="w-full aspect-square object-cover rounded-md shadow-lg"
+                    class="w-full h-40 sm:h-48 md:h-56 object-cover rounded-md shadow-lg block"
                   />
                 )}
               </div>
 
-              {/* Optional link */}
+              {/* Optional external link */}
               {project.link && project.link_name && (
                 <div class="pt-4">
                   <p class="text-base sm:text-lg text-gray-700">
@@ -73,7 +73,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-blue-600 hover:underline"
+                      class="text-blue-600 hover:underline break-all"
                     >
                       {project.link}
                     </a>
@@ -94,7 +94,6 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
             </div>
           </div>
-
         </a>
 
       ))}
