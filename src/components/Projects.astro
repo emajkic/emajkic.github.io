@@ -18,12 +18,6 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
     {/* 2-column layout */}
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
       {siteConfig.projects.map((project, index) => (
-        
-        <a 
-          href={`/projects/${project.slug}/`}
-          key={project.slug}
-          class="group block w-full"
-        >
 
           <div class="p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
             
