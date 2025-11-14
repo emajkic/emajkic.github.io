@@ -1,99 +1,45 @@
 ---
-import { siteConfig } from "../config";
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+import Layout from '../../layouts/Layout.astro';
+import { siteConfig } from '../../config';
+import "../../styles/global.css";
+
+export async function getStaticPaths() {
+  return siteConfig.projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
 ---
+<Layout>
+  <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
+    <a href="../../index" class="text-sm text-gray-500 hover:underline">
+      ← Back to Home
+    </a>
 
-{hasProjects && (
-  <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
-    
-    {/* Title */}
-    <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
-      Projects
-    </h2>
+    <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
+      {project.name}
+    </h1>
 
-    <div
-      class="w-[75px] h-[5px] mt-2 mb-10 rounded-full"
-      style={`background-color: ${siteConfig.accentColor}`}
-    />
-<!-- Add: a href={/projects/${project.slug}/} after 'group relative' go get to project pages when want to add writeup --> 
-<!-- hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1 **add this into dic class = for hover -->
-    {/* Project Grid - full width */}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {siteConfig.projects.map((project, index) => (
-        <div class="group relative" key={project.slug}>
-          
-          {/* Project Card */}
-          <div class="block relative p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300">
-            <div class="space-y-4">
-              
-              <div>
-                <span
-                  class="text-sm font-mono"
-                  style={`color: ${siteConfig.accentColor}`}
-                >
-                  0{index + 1}
-                </span>
-                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
-                  {project.name}
-                </h3>
-              </div>
+    <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+      {project.description}
+    </p>
 
-              <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
-                {project.description}
-              </p>
+    {project.skills?.length > 0 && (
+      <div class="flex flex-wrap gap-2 mt-6">
+        {project.skills.map((skill) => (
+          <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">
+            {skill}
+          </span>
+        ))}
+      </div>
+    )}
 
-              {/* Only first two images */}
-              <div class="grid grid-cols-2 gap-4">
-                {project.img1 && (
-                  <img
-                    src={project.img1}
-                    alt="Project photo 1"
-                    class="w-full aspect-square object-cover rounded-md shadow-lg"
-                  />
-                )}
-                {project.img2 && (
-                  <img
-                    src={project.img2}
-                    alt="Project photo 2"
-                    class="w-full aspect-square object-cover rounded-md shadow-lg"
-                  />
-                )}
-              </div>
-
-              {/* Optional link */}
-              {project.link && project.link_name && (
-                <div class="pt-4">
-                  <p class="text-base sm:text-lg text-gray-700">
-                    <strong>{project.link_name}:</strong>{" "}
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-blue-600 hover:underline"
-                    >
-                      {project.link}
-                    </a>
-                  </p>
-                </div>
-              )}
-
-              {/* Skills */}
-              {project.skills?.length > 0 && (
-                <div class="flex flex-wrap gap-2 pt-2">
-                  {project.skills.map((skill) => (
-                    <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-xs sm:text-sm font-medium group-hover:bg-gray-800">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              )}
-
-            </div>
-          </div>
-
-        </div>
-      ))}
+    <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
+      <p class="text-gray-700 leading-relaxed">
+        Coming soon: full write-up about {project.name}.
+      </p>
     </div>
-
   </section>
-)}
+</Layout>
