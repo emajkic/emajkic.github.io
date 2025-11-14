@@ -15,15 +15,20 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
       class="w-[75px] h-[5px] mt-2 mb-10 rounded-full"
       style={`background-color: ${siteConfig.accentColor}`}
     />
-<!-- Add: a href={/projects/${project.slug}/} after 'group relative' go get to project pages when want to add writeup -->
-<!-- hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1 **add this into dic class = for hover -->
+
     {/* Project Grid - full width */}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
       {siteConfig.projects.map((project, index) => (
-        <div class="group relative" key={project.slug} a href={/projects/${project.slug}/}>
+        
+        <a
+          key={project.slug}
+          href={`/projects/${project.slug}/`}
+          class="group block relative transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 rounded-2xl"
+        >
           
           {/* Project Card */}
-          <div class="block relative p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300">
+          <div class="p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200">
             <div class="space-y-4">
               
               <div>
@@ -60,7 +65,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                 )}
               </div>
 
-              {/* Optional link */}
+              {/* Optional external link */}
               {project.link && project.link_name && (
                 <div class="pt-4">
                   <p class="text-base sm:text-lg text-gray-700">
@@ -81,7 +86,9 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
               {project.skills?.length > 0 && (
                 <div class="flex flex-wrap gap-2 pt-2">
                   {project.skills.map((skill) => (
-                    <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-xs sm:text-sm font-medium group-hover:bg-gray-800">
+                    <span
+                      class="px-3 py-1 bg-gray-900 text-white rounded-lg text-xs sm:text-sm font-medium group-hover:bg-gray-800"
+                    >
                       {skill}
                     </span>
                   ))}
@@ -91,8 +98,10 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
             </div>
           </div>
 
-        </div>
+        </a>
+
       ))}
+
     </div>
 
   </section>
