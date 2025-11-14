@@ -15,11 +15,12 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
       class="w-[75px] h-[5px] mt-2 mb-10 rounded-full"
       style={`background-color: ${siteConfig.accentColor}`}
     />
-
+<!-- Add: a href={/projects/${project.slug}/} after 'group relative' go get to project pages when want to add writeup -->
+<!-- hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1 **add this into dic class = for hover -->
     {/* Project Grid - full width */}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
       {siteConfig.projects.map((project, index) => (
-        <div class="group relative" key={project.slug}>
+        <div class="group relative" key={project.slug} a href={/projects/${project.slug}/}>
           
           {/* Project Card */}
           <div class="block relative p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300">
