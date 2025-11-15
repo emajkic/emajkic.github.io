@@ -13,16 +13,15 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
     <div
       class="w-[75px] h-[5px] mt-2 mb-10 rounded-full"
-      style={background-color: ${siteConfig.accentColor}}
+      style={{backgroundColor: siteConfig.accentColor}}
     />
 
     {/* Project Grid - full width */}
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {siteConfig.projects.map((project, index) => (
-        // The clickable wrapper now replaces the outer div
         <a 
           href={`/projects/${project.slug}/`} 
-          class="block group relative" // Add block and group class to maintain layout and enable hover
+          class="block group relative"
           key={project.slug}
         >
           
@@ -33,7 +32,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
               <div>
                 <span
                   class="text-sm font-mono"
-                  style={color: ${siteConfig.accentColor}}
+                  style={{color: siteConfig.accentColor}}
                 >
                   0{index + 1}
                 </span>
@@ -64,11 +63,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                 )}
               </div>
 
-              {/* Optional link - NOTE: Nesting interactive elements is generally bad practice. 
-                If you keep this, ensure you are not relying on the parent <a> to be the only click target. 
-                A common fix is to use event delegation to prevent the parent link from firing when clicking this internal link. 
-                For this example, I'll assume you want to keep the internal link and it should override the card's link.
-              */}
+              {/* Optional link */}
               {project.link && project.link_name && (
                 <div class="pt-4">
                   <p class="text-base sm:text-lg text-gray-700">
@@ -78,7 +73,6 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-blue-600 hover:underline"
-                      // Stop propagation so clicking the nested <a> doesn't trigger the card's <a>
                       onclick="event.stopPropagation();" 
                     >
                       {project.link}
