@@ -21,7 +21,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
       {siteConfig.projects.map((project, index) => (
         <a 
           href={`/projects/${project.slug}/`} 
-          class="col-span-1 block group relative w-full" 
+          class="col-span-1 block group relative min-w-0" 
           key={project.slug}
         >
           
