@@ -1,73 +1,85 @@
+---
 import { siteConfig } from "../config";
-
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+---
 
 {hasProjects && (
-  <section id="projects" className="p-8 sm:p-12 md:p-16 lg:p-24">
+  <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
     
     {/* Title */}
-    <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
       Projects
     </h2>
 
     <div
-      className="w-[75px] h-[5px] mt-2 mb-10 rounded-full"
-      style={{ backgroundColor: siteConfig.accentColor }}
+      class="w-[75px] h-[5px] mt-2 mb-10 rounded-full"
+      style={background-color: ${siteConfig.accentColor}}
     />
 
-    {/* Project Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Project Grid - full width */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {siteConfig.projects.map((project, index) => (
-        <a
-          href={`/projects/${project.slug}/`}
+        // The clickable wrapper now replaces the outer div
+        <a 
+          href={`/projects/${project.slug}/`} 
+          class="block group relative" // Add block and group class to maintain layout and enable hover
           key={project.slug}
-          className="group block transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg rounded-2xl"
         >
-          <div className="p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200">
-            <div className="space-y-4">
+          
+          {/* Project Card */}
+          <div class="p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300 **hover:translate-y-[-4px] hover:shadow-xl**">
+            <div class="space-y-4">
               
               <div>
                 <span
-                  className="text-sm font-mono"
-                  style={{ color: siteConfig.accentColor }}
+                  class="text-sm font-mono"
+                  style={color: ${siteConfig.accentColor}}
                 >
                   0{index + 1}
                 </span>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
                   {project.name}
                 </h3>
               </div>
 
-              <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
                 {project.description}
               </p>
 
-              <div className="grid grid-cols-2 gap-4">
+              {/* Only first two images */}
+              <div class="grid grid-cols-2 gap-4">
                 {project.img1 && (
                   <img
                     src={project.img1}
                     alt="Project photo 1"
-                    className="w-full aspect-square object-cover rounded-md shadow-lg"
+                    class="w-full aspect-square object-cover rounded-md shadow-lg"
                   />
                 )}
                 {project.img2 && (
                   <img
                     src={project.img2}
                     alt="Project photo 2"
-                    className="w-full aspect-square object-cover rounded-md shadow-lg"
+                    class="w-full aspect-square object-cover rounded-md shadow-lg"
                   />
                 )}
               </div>
 
+              {/* Optional link - NOTE: Nesting interactive elements is generally bad practice. 
+                If you keep this, ensure you are not relying on the parent <a> to be the only click target. 
+                A common fix is to use event delegation to prevent the parent link from firing when clicking this internal link. 
+                For this example, I'll assume you want to keep the internal link and it should override the card's link.
+              */}
               {project.link && project.link_name && (
-                <div className="pt-4">
-                  <p className="text-base sm:text-lg text-gray-700">
+                <div class="pt-4">
+                  <p class="text-base sm:text-lg text-gray-700">
                     <strong>{project.link_name}:</strong>{" "}
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
+                      class="text-blue-600 hover:underline"
+                      // Stop propagation so clicking the nested <a> doesn't trigger the card's <a>
+                      onclick="event.stopPropagation();" 
                     >
                       {project.link}
                     </a>
@@ -75,10 +87,11 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                 </div>
               )}
 
+              {/* Skills */}
               {project.skills?.length > 0 && (
-                <div className="flex flex-wrap gap-2 pt-2">
+                <div class="flex flex-wrap gap-2 pt-2">
                   {project.skills.map((skill) => (
-                    <span className="px-3 py-1 bg-gray-900 text-white rounded-lg text-xs sm:text-sm font-medium group-hover:bg-gray-800">
+                    <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-xs sm:text-sm font-medium group-hover:bg-gray-800">
                       {skill}
                     </span>
                   ))}
@@ -87,6 +100,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
             </div>
           </div>
+
         </a>
       ))}
     </div>
