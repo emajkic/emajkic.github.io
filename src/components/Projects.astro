@@ -5,7 +5,8 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
 {hasProjects && (
   <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
-
+    
+    {/* Title */}
     <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
       Projects
     </h2>
@@ -15,12 +16,13 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
       style={`background-color: ${siteConfig.accentColor}`}
     />
 
-    {/* 2-column layout */}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+    {/* Project Grid - full width */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {siteConfig.projects.map((project, index) => (
-
-          <div class="p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
-            
+        <div class="group relative" key={project.slug}>
+          
+          {/* Project Card */}
+          <div class="block relative p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300">
             <div class="space-y-4">
               
               <div>
@@ -66,7 +68,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-blue-600 hover:underline break-all"
+                      class="text-blue-600 hover:underline"
                     >
                       {project.link}
                     </a>
@@ -88,9 +90,9 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
             </div>
           </div>
 
-        </a>
-
+        </div>
       ))}
     </div>
+
   </section>
 )}
