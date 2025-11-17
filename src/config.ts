@@ -121,7 +121,7 @@ export const siteConfig = {
       ],
       courses: [
         "Machine Learning Project (ENPH 353)",
-        "Digital Systems and Microcomputers (CPEN 312)"
+        "Digital Systems and Microcomputers (CPEN 312)",
         "Applied Probability and Stochastic Processes (MATH 318)",
         "Data Structures and Algorithms (CPEN 211)",
         "Applied Linear Algrebra (MATH 307)",
