@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   aboutMe1: "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. My interests include applied mathematics, software development, machine learning, and physics.",
   aboutMe2: "Engineering Physics is a degree which combines the disciplines of electrical engineering, software engineering, mechanical engineering, and pure math and physics. It offers a broad range of hands-on engineering experiences while also providing a strong foundation in advanced physics and math.",
-  skills: ["Machine Learning", "Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
+  skills: ["Machine Learning", "Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB", "Simulations", "Tensorflow", "Data Analysis"],
   projects: [
     {
       slug: "robot-summer",
