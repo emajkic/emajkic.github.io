@@ -34,7 +34,7 @@ export const siteConfig = {
       name: "ROS Machine Learning Project",
       description:
         "(In Progress) Programming robot in simulated Gazebo environment for ENPH 353 project/competition course using recent machine learning and computer vision techniques.",
-      skills: ["OpenCV", "ROS", "Python", "Machine Learning", "Linux Terminal"],
+      skills: ["Machine Learning", "CNN design", "YOLOv8", "OpenCV", "Imitation Learning", "ROS", "Python", "Linux"],
       link: "https://github.com/avi-guha/ENPH-353-COMPETITION",
     },
     {
