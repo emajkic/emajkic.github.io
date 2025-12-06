@@ -23,7 +23,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
           
           <a href={`/projects/${project.slug}`} class="block">
             {/* Project Card */}
-            <div class="block relative p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300">
+            <div class="block relative p-6 md:p-8 bg-gray-50 rounded-2xl border border-gray-200 transition-all duration-300 group-hover:scale-[1.02] group-hover:-translate-y-1">
               <div class="space-y-4">
                 
                 <div>
@@ -40,6 +40,11 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
                 <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
                   {project.description}
+                </p>
+
+                {/* New line: Click me */}
+                <p class="text-sm sm:text-base font-medium text-gray-700">
+                  Click me →
                 </p>
 
                 {/* Only first two images */}
