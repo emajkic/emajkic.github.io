@@ -119,7 +119,7 @@ export const siteConfig = {
       degree: "Bachelor of Applied Science in Engineering Physics",
       dateRange: "2023 - 2028",
       achievements: [
-        "2025: ; Eric P. Newell Award in Engineering",
+        "2025: Eric P. Newell Award in Engineering",
         "2023-2025: Dean's Scholar, Dean's List",
         "2024: Trek Excellence Scholarship - Offered to top 5% of students in their undergraduate year",
       ],
