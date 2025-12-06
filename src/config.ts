@@ -13,6 +13,7 @@ export const siteConfig = {
   skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
+      slug: "robot-summer",
       img1: "/robot1.png",
       img2: "/robot2.jpg",
       img3: "/robot3.jpg",
@@ -25,6 +26,7 @@ export const siteConfig = {
       link: "https://github.com/emajkic/ENPH_253_Robot.git",
     },
     {
+      slug: "machine-learning-project",
       img1: "/ml1.jpg",
       img2: "/ml3.png",
       img3: "/ml2.png",
@@ -33,6 +35,7 @@ export const siteConfig = {
       description:
         "(In Progress) Programming robot in simulated Gazebo environment for ENPH 353 project/competition course using recent machine learning and computer vision techniques.",
       skills: ["OpenCV", "ROS", "Python", "Machine Learning", "Linux Terminal"],
+      link: "https://github.com/avi-guha/ENPH-353-COMPETITION",
     },
     {
       img1: "/motor1.jpg",
