@@ -17,7 +17,6 @@ export const siteConfig = {
       img1: "/robot1.png",
       img2: "/robot2.jpg",
       img3: "/robot3.jpg",
-      slug: "robot-project",
       name: "Autonomous Competition Robot",
       description:
         "Designed, prototyped, and built an autonomous robot to participate in Engineering Physics 253 course competition.",
@@ -30,7 +29,6 @@ export const siteConfig = {
       img1: "/ml1.jpg",
       img2: "/ml3.png",
       img3: "/ml2.png",
-      slug: "machine-learning-project",
       name: "ROS Machine Learning Project",
       description:
         "Acheived perfect score and second place in ENPH 353 project/competition. Applied recent machine learning and computer vision techniques to develop and train various neural networks from scratch to allow a robot to autonomously drive through and solve a puzzle in ROS Gazebo simulation.",
