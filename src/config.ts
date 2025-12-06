@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   aboutMe1: "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. My interests include applied mathematics, software development, machine learning, and physics.",
   aboutMe2: "Engineering Physics is a degree which combines the disciplines of electrical engineering, software engineering, mechanical engineering, and pure math and physics. It offers a broad range of hands-on engineering experiences while also providing a strong foundation in advanced physics and math.",
-  skills: ["Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
+  skills: ["Machine Learning", "Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB"],
   projects: [
     {
       slug: "robot-summer",
@@ -51,10 +51,10 @@ export const siteConfig = {
       img1: "/java1.png",
       img2: "/java2.png",
       img3: "/java3.png",
-      slug: "java-project",
-      name: "Java Tic-Tac-Toe GUI Game",
+      slug: "matlab-project",
+      name: "MATLAB Partial Differential Eq. Visualizer",
       description:
-        "Programmed an interactive tic-tac-toe GUI game using Java.",
+        "Programmed an interactive partial differential equation solution visualizer using MATLAB, incorporating spatial/temporal boundary conditions and source term inputs.",
       skills: ["Java", "Object Oriented Programming", "GUI design"],
     },
     
