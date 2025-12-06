@@ -52,10 +52,10 @@ export const siteConfig = {
       img2: "/java2.png",
       img3: "/java3.png",
       slug: "matlab-project",
-      name: "MATLAB Partial Differential Eq. Visualizer",
+      name: "PDE Solution Visualizer",
       description:
         "Programmed an interactive partial differential equation solution visualizer using MATLAB, incorporating spatial/temporal boundary conditions and source term inputs.",
-      skills: ["Java", "Object Oriented Programming", "GUI design"],
+      skills: ["MATLAB", "Simulation", "Partial Differential Equations", "Finite Difference Methods"],
     },
     
   ],
