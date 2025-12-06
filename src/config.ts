@@ -42,7 +42,7 @@ export const siteConfig = {
       slug: "motor-project",
       name: "PID Motor Controller",
       description:
-        "Built a circuit capable of setting and actively controlling the speed of an electric motor using PI control.",
+        "Built a circuit capable of setting and actively controlling the speed of an electric motor using PI control in hardware.",
       skills: ["Circuitry", "Electrical Design", "Prototyping"],
     },
     {
