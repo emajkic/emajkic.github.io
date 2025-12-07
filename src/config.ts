@@ -31,7 +31,7 @@ export const siteConfig = {
       img3: "/ml2.png",
       name: "ROS Machine Learning Project",
       description:
-        "Applied machine learning, computer vision, and software techniques to develop and train various neural networks from scratch to allow a robot to autonomously drive through and solve a puzzle in ROS Gazebo simulation. Achieved perfect score and second place in ENPH 353 project/competition.",
+        "Applied machine learning, computer vision, and software techniques to develop and train various neural networks from scratch to allow a robot to autonomously drive through and solve a puzzle in ROS Gazebo simulation. Achieved perfect score and second place in ENPH 353 course competition.",
       skills: ["CNN", "YOLOv8", "OpenCV", "Imitation Learning", "ROS", "Python", "Linux"],
       link: "https://github.com/avi-guha/ENPH-353-COMPETITION",
     },
