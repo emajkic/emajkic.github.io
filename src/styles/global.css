@@ -1,6 +1,7 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Latin+Modern+Roman&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/css/cmun-serif.css");
 
 body {
-  font-family: "Latin Modern Roman", serif;
+  font-family: "Computer Modern Serif", "CMU Serif", serif !important;
 }
