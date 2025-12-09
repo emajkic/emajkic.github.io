@@ -53,7 +53,7 @@ export const siteConfig = {
       name: "PDE Solution Visualizer",
       description:
         "Programmed an interactive partial differential equation solution visualizer using MATLAB, incorporating spatial/temporal boundary conditions and source term inputs.",
-      skills: ["MATLAB", "Simulation", "Partial Differential Equations", "Finite Difference Methods"],
+      skills: ["MATLAB", "Simulation", "PDEs", "Finite Difference Methods"],
     },
     
   ],
