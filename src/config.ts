@@ -13,6 +13,17 @@ export const siteConfig = {
   skills: ["Python", "Git", "Java", "Electronics", "C++", "Linux", "Bash Shell", "KiCAD", "ROOT", "ROS", "MATLAB", "Tensorflow", "Data Analysis", "CMake", "GDB"],
   projects: [
     {
+      slug: "machine-learning-project",
+      img1: "/ml3.png",
+      img2: "/ml4.png",
+      img3: "/ml2.png",
+      name: "ROS Machine Learning Project",
+      description:
+        "Applied machine learning, computer vision, and software techniques to develop and train multiple neural networks from scratch to allow a robot to autonomously drive through and solve a puzzle in ROS Gazebo simulation. Achieved perfect score and second place in ENPH 353 course competition.",
+      skills: ["CNN", "YOLOv8", "OpenCV", "Imitation Learning", "ROS", "Python", "Linux"],
+      link: "https://github.com/avi-guha/ENPH-353-COMPETITION",
+    },
+    {
       slug: "robot-summer",
       img1: "/robot1.png",
       img2: "/robot2.jpg",
@@ -23,17 +34,6 @@ export const siteConfig = {
       skills: ["Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
       link_name: "Github Repo",
       link: "https://github.com/emajkic/ENPH_253_Robot.git",
-    },
-    {
-      slug: "machine-learning-project",
-      img1: "/ml3.png",
-      img2: "/ml4.png",
-      img3: "/ml2.png",
-      name: "ROS Machine Learning Project",
-      description:
-        "Applied machine learning, computer vision, and software techniques to develop and train multiple neural networks from scratch to allow a robot to autonomously drive through and solve a puzzle in ROS Gazebo simulation. Achieved perfect score and second place in ENPH 353 course competition.",
-      skills: ["CNN", "YOLOv8", "OpenCV", "Imitation Learning", "ROS", "Python", "Linux"],
-      link: "https://github.com/avi-guha/ENPH-353-COMPETITION",
     },
     {
       img1: "/motor1.jpg",
