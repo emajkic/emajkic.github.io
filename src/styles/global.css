@@ -1,23 +1,35 @@
 @import "tailwindcss";
 
+/* Computer Modern Sans */
 @font-face {
-  font-family: "Computer Modern";
-  src: url("/src/cmunrm.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Computer Modern Sans";
+  src: url("/fonts/cmunsr.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Computer Modern";
-  src: url("/src/cmunbx.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "Computer Modern Sans";
+  src: url("/fonts/cmunsb.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Computer Modern";
-  src: url("/src/cmunit.ttf") format("truetype");
+  font-family: "Computer Modern Sans";
+  src: url("/fonts/cmunsi.ttf") format("truetype");
+  font-weight: 400;
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Computer Modern Sans";
+  src: url("/fonts/cmunsbi.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Apply globally */
 body {
-  font-family: "Computer Modern", serif !important;
+  font-family: "Computer Modern Sans", ui-sans-serif, system-ui, sans-serif;
 }
