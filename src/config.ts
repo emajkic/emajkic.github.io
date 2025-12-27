@@ -8,10 +8,21 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/ella-majkic-951527289/",
     github: "https://github.com/emajkic",
   },
-  aboutMe1: "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. My interests include applied mathematics, software development, machine learning, and physics.",
-  aboutMe2: "Engineering Physics is a degree which combines the disciplines of electrical engineering, software engineering, mechanical engineering, and pure math and physics. It offers a broad range of hands-on engineering experiences while also providing a strong foundation in advanced physics and math.",
-  skills: ["Machine Learning", "Git", "Python", "Java", "C++", "Linux", "KiCAD", "ROOT", "ROS", "MATLAB", "Simulations", "Tensorflow", "Data Analysis"],
+  aboutMe1: "Hi! My name is Ella Majkic. I am a 3rd year Engineering Physics Student at the University of British Columbia pursuing a minor in Honours Mathematics. My interests include applied mathematics, software development, machine learning, and physics. I enjoy reading, writing, and learning new things.",
+  aboutMe2: "Engineering Physics is a degree which combines the disciplines of electrical engineering, software engineering, mechanical engineering, and pure math and physics. It offers a broad range of hands-on engineering experiences and projects while also providing a strong foundation in advanced physics and math.",
+  skills: ["Python", "Git", "Java", "Electronics", "C++", "Linux", "Bash Shell", "KiCAD", "ROOT", "ROS", "MATLAB", "Tensorflow", "Data Analysis", "CMake", "GDB"],
   projects: [
+    {
+      slug: "machine-learning-project",
+      img1: "/ml3.png",
+      img2: "/ml4.png",
+      img3: "/ml2.png",
+      name: "ROS Machine Learning Project",
+      description:
+        "Applied machine learning, computer vision, and software techniques to develop and train multiple neural networks from scratch to allow a robot to autonomously drive through and solve a puzzle in ROS Gazebo simulation. Achieved perfect score and second place in ENPH 353 course competition.",
+      skills: ["CNN", "YOLOv8", "OpenCV", "Imitation Learning", "ROS", "Python", "Linux"],
+      link: "https://github.com/avi-guha/ENPH-353-COMPETITION",
+    },
     {
       slug: "robot-summer",
       img1: "/robot1.png",
@@ -25,24 +36,13 @@ export const siteConfig = {
       link: "https://github.com/emajkic/ENPH_253_Robot.git",
     },
     {
-      slug: "machine-learning-project",
-      img1: "/ml1.jpg",
-      img2: "/ml3.png",
-      img3: "/ml2.png",
-      name: "ROS Machine Learning Project",
-      description:
-        "Acheived perfect score and second place in ENPH 353 project/competition. Applied recent machine learning and computer vision techniques to develop and train various neural networks from scratch to allow a robot to autonomously drive through and solve a puzzle in ROS Gazebo simulation.",
-      skills: ["CNN design", "YOLOv8", "OpenCV", "Imitation Learning", "ROS", "Python", "Linux"],
-      link: "https://github.com/avi-guha/ENPH-353-COMPETITION",
-    },
-    {
       img1: "/motor1.jpg",
       img2: "/motor3.jpg",
       img3: "/motor2.jpg",
       slug: "motor-project",
       name: "PID Motor Controller",
       description:
-        "Built a circuit capable of setting and actively controlling the speed of an electric motor using PI control.",
+        "Built a circuit capable of setting and actively controlling the speed of an electric motor using PI control in hardware.",
       skills: ["Circuitry", "Electrical Design", "Prototyping"],
     },
     {
@@ -53,7 +53,7 @@ export const siteConfig = {
       name: "PDE Solution Visualizer",
       description:
         "Programmed an interactive partial differential equation solution visualizer using MATLAB, incorporating spatial/temporal boundary conditions and source term inputs.",
-      skills: ["MATLAB", "Simulation", "Partial Differential Equations", "Finite Difference Methods"],
+      skills: ["MATLAB", "Simulation", "PDEs", "Finite Difference Methods"],
     },
     
   ],
@@ -100,7 +100,7 @@ export const siteConfig = {
       img1_1: "/ros2.jpg",
       img1_2: "/ros3.png",
       img1_3: "/ros1.jpg",
-      para3: "Further, during my first few months after joining Open Robotics, I performed mechanical onboarding for the team. This included designing a chassis for a simple robot using OnShape CAD and 3D printing various mechanical components. During this time, During this time, I gained hands-on experience with mechanical design and robotics practices used in industry.",
+      para3: "Further, during my first few months after joining Open Robotics, I performed mechanical onboarding for the team. This included designing a chassis for a simple robot using OnShape CAD and 3D printing various mechanical components. During this time, I gained hands-on experience with mechanical design and robotics practices used in industry.",
       img2_1: "/chass1.jpg",
       img2_2: "/chass2.jpg",
       img2_3: "/chass3.jpg",

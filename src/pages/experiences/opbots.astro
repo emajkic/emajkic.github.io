@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+---
+
+<Layout>
+  <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
+    <a href="/#experience" class="text-sm text-gray-500 hover:underline">
+      ← Back to Home
+    </a>
+
+    <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
+      UBC Open Robotics Design Team
+    </h1>
+
+    <p class="mt-2 text-lg text-gray-600">
+      Software Engineer, Navigation Subteam | Sept 2023 - May 2025
+    </p>
+
+    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        UBC Open Robotics is a student design team working on several advanced robotics
+        projects, including RoboCup@Home.
+      </p>
+      <p>
+        I developed ROS Python scripts to enable autonomous navigation in dynamic
+        environments, integrating sensors and SLAM frameworks.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+      <img src="/ros2.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+      <img src="/ros3.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+      <img src="/ros1.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+    </div>
+
+    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        During onboarding, I also designed a robot chassis using OnShape CAD and 3D
+        printing, gaining hands-on mechanical experience.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+      <img src="/chass1.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+      <img src="/chass2.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+      <img src="/chass3.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+    </div>
+  </section>
+</Layout>
