@@ -2,26 +2,25 @@
 // src/layouts/Layout.astro
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const { title = "Ella Majkic" } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><slot name="title" /></title>
+    <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body class="bg-white text-gray-900 antialiased">
-    <!-- Header -->
     <Header />
 
-    <!-- Page Content -->
     <main class="min-h-screen">
-      <slot /> <!-- All page content will go here -->
+      <slot />
     </main>
 
-    <!-- Footer -->
     <Footer />
   </body>
 </html>
