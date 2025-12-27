@@ -1,14 +1,20 @@
 ---
-import { siteConfig } from "../config"; 
+import { siteConfig } from "../config";
 
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+
+// map slugs → real pages
+const experiencePageMap = {
+  "triumf-experience": "/experiences/triumf",
+  "opbots-experience": "/experiences/opbots",
+};
 ---
 
 {hasExperience && (
   <section id="experience" class="p-8 sm:p-12 md:p-16 lg:p-24">
     <div>
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-        {/* Left column (title + accent bar) */}
+        {/* Left column */}
         <div class="lg:col-span-4">
           <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
             Experience
@@ -19,61 +25,63 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
           />
         </div>
 
-        {/* Right column (experience cards) */}
+        {/* Right column */}
         <div class="lg:col-span-8">
           <div class="space-y-8">
             {siteConfig.experience.map((exp) => (
               <a
-                href={`/experiences/${exp.slug}`}
+                href={experiencePageMap[exp.slug]}
                 key={exp.slug}
                 class="group relative block"
               >
-                {/* Experience Card */}
-                <div class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
+                <div class="relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
                   <div class="space-y-4">
+                    {/* Title */}
                     <div>
-                      {/* Title (explicitly black) */}
                       <h3 class="text-xl sm:text-xl font-bold text-black mt-1">
                         {exp.company}
                       </h3>
-
-                      <p
-                        class="text-base sm:text-xl mt-1"
-                      >
+                      <p class="text-base sm:text-xl mt-1">
                         {exp.position}
                       </p>
                     </div>
 
-  {exp.description && (
-  <div class="space-y-2">
-    <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
-      {exp.description}
-    </p>
+                    {/* Description */}
+                    {exp.description && (
+                      <div class="space-y-2">
+                        <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                          {exp.description}
+                        </p>
 
-    {/* "Click for more" fake button */}
-    <span class="inline-block bg-black text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full">
-      Click for more
-    </span>
-  </div>
-)}
+                        <span class="inline-block bg-black text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full">
+                          Click for more
+                        </span>
+                      </div>
+                    )}
 
                     {/* Images */}
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                      <img
-                        src={exp.img1_1}
-                        alt="Experience photo"
-                        class="w-full aspect-square object-cover rounded-md shadow-lg"
-                      />
-                      <img
-                        src={exp.img1_2}
-                        alt="Experience photo"
-                        class="w-full aspect-square object-cover rounded-md shadow-lg"
-                      />
-                      <img
-                        src={exp.img2_3}
-                        alt="Experience photo"
-                        class="w-full aspect-square object-cover rounded-md shadow-lg"
-                      />
+                      {exp.img1_1 && (
+                        <img
+                          src={exp.img1_1}
+                          alt="Experience photo"
+                          class="w-full aspect-square object-cover rounded-md shadow-lg"
+                        />
+                      )}
+                      {exp.img1_2 && (
+                        <img
+                          src={exp.img1_2}
+                          alt="Experience photo"
+                          class="w-full aspect-square object-cover rounded-md shadow-lg"
+                        />
+                      )}
+                      {exp.img1_3 && (
+                        <img
+                          src={exp.img1_3}
+                          alt="Experience photo"
+                          class="w-full aspect-square object-cover rounded-md shadow-lg"
+                        />
+                      )}
                     </div>
                   </div>
                 </div>
