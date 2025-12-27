@@ -28,7 +28,7 @@ export const siteConfig = {
       img1: "/robot1.png",
       img2: "/robot2.jpg",
       img3: "/robot3.jpg",
-      name: "Autonomous Competition Robot",
+      name: "Autonomous Robot Competition",
       description:
         "Designed, prototyped, and built an autonomous robot to participate in Engineering Physics 253 course competition.",
       skills: ["Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
