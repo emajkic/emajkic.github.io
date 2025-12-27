@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Computer Modern";
+  src: url("/src/cmunrm.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url("/src/cmunbx.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url("/src/cmunit.ttf") format("truetype");
+  font-style: italic;
+}
+
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Computer Modern", serif !important;
 }

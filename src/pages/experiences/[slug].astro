@@ -1,188 +1,25 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { siteConfig } from '../../config';
-import "../../styles/global.css";
+import { siteConfig } from "../../config";
 
 export async function getStaticPaths() {
-  // Make sure this matches the array in config.ts
   return siteConfig.experience.map((exp) => ({
     params: { slug: exp.slug },
-    props: { experience: exp },
   }));
 }
 
-const { experience } = Astro.props;
+const { slug } = Astro.params;
+
+// map slugs to actual pages
+const pageMap: Record<string, string> = {
+  "triumf-experience": "/experiences/triumf",
+  "opbots-experience": "/experiences/opbots",
+};
+
+const target = pageMap[slug];
+
+if (!target) {
+  throw new Error(`Unknown experience slug: ${slug}`);
+}
+
+Astro.redirect(target);
 ---
-<Layout>
-  <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
-    <a href="/#experience" class="text-sm text-gray-500 hover:underline">
-      ← Back to Home
-    </a>
-
-    <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
-      {experience.company}
-    </h1>
-
-    <p class="mt-2 text-lg text-gray-600">
-      {experience.position} | {experience.dateRange}
-    </p>
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>{experience.para1}</p>
-    </div>
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>{experience.para2}</p>
-    </div>
-
-    <br />
-
-    {(experience.img1_1 || experience.img1_2 || experience.img1_3) && (
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img
-          src={experience.img1_1}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-        <img
-          src={experience.img1_2}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-        <img
-          src={experience.img1_3}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-      </div>
-    )}
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>{experience.para3}</p>
-    </div>
-
-    <br />
-
-    {(experience.img2_1 || experience.img2_2 || experience.img2_3) && (
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img
-          src={experience.img2_1}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-        <img
-          src={experience.img2_2}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-        <img
-          src={experience.img2_3}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-      </div>
-    )}
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>{experience.para4}</p>
-    </div>
-
-    <br />
-
-    {(experience.img3_1 || experience.img3_2 || experience.img3_3) && (
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img
-          src={experience.img3_1}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-        <img
-          src={experience.img3_2}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-        <img
-          src={experience.img3_3}
-          alt="Project photo"
-          class="w-full aspect-square object-cover rounded-md shadow-lg"
-        />
-      </div>
-    )}
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>{experience.para5}</p>
-    </div>
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>{experience.para6}</p>
-    </div>
-
-    {experience.pdf1 && (
-      <div class="mt-8">
-        <h2 class="text-2xl font-semibold mb-4">
-          Poster for TRIUMF undergrad poster session
-        </h2>
-        <iframe 
-          src={experience.pdf1} 
-          class="w-full h-[600px] border rounded-lg"
-        ></iframe>
-
-        {/* Download link for PDF1 */}
-        <div class="mt-2">
-          <a
-            href={experience.pdf1}
-            download
-            class="text-sm text-blue-600 underline hover:text-blue-800"
-          >
-            Click here to download
-          </a>
-        </div>
-      </div>
-    )}
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>{experience.para7}</p>
-    </div>
-
-    {experience.pdf2 && (
-      <div class="mt-8">
-        <h2 class="text-2xl font-semibold mb-4">Co-op Term Final Report</h2>
-        <iframe 
-          src={experience.pdf2} 
-          class="w-full h-[600px] border rounded-lg"
-        ></iframe>
-
-        {/* Download link for PDF2 */}
-        <div class="mt-2">
-          <a
-            href={experience.pdf2}
-            download
-            class="text-sm text-blue-600 underline hover:text-blue-800"
-          >
-            Click here to download
-          </a>
-        </div>
-      </div>
-    )}
-
-{experience.link_video && (
-  <div className="mt-8">
-    <p className="mb-4 text-gray-700">
-      I was invited by Rick, the manager of the TRIUMF Detector Development Lab, to film a fun short video about my work. Check it out!
-    </p>
-    <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl">
-      <iframe
-        className="absolute top-0 left-0 w-full h-full"
-        src="https://www.youtube.com/embed/ad_hZ0_KblQ?si=H1WQ4nRN7jRd-yXA"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
-    </div>
-  </div>
-)}
-
-  </section>
-</Layout>
