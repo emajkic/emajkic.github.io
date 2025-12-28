@@ -113,8 +113,8 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "University of British Columbia",
-      degree: "Bachelor of Applied Science in Engineering Physics",
+      school: "Major in Engineering Physics, Minor in Honours Math - University of British Columbia",
+      degree: "Bachelor of Applied Science",
       dateRange: "2023 - 2028",
       achievements: [
         "2025: Eric P. Newell Award in Engineering",
