@@ -31,7 +31,7 @@ export const siteConfig = {
       img3: "/robot3.jpg",
       name: "Autonomous Competition Robot",
       description:
-        "Designed, prototyped, and built an autonomous robot to participate in Engineering Physics 253 course competition.",
+        "Designed, prototyped, and built an autonomous robot to participate in ENPH 253 course competition, integrating electrical, mechanical, and software modules.",
       skills: ["Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
       link_name: "Github Repo",
       link: "https://github.com/emajkic/ENPH_253_Robot",
