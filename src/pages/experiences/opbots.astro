@@ -1,83 +1,89 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import { siteConfig } from "../config";
+
+const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+
+const toRoute = (slug) => {
+  if (slug === "triumf-experience") return "triumf";
+  if (slug === "opbots-experience") return "opbots";
+  return slug; // fallback
+};
 ---
 
-<Layout title="UBC Open Robotics – Experience">
-  <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
-    <a href="/#experience" class="text-sm text-gray-500 hover:underline">
-      ← Back to Home
-    </a>
+{hasExperience && (
+  <section id="experience" class="p-8 sm:p-12 md:p-16 lg:p-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+          Experience
+        </h2>
+        <div
+          class="w-[75px] h-[5px] mt-2 rounded-full"
+          style={`background-color: ${siteConfig.accentColor}`}
+        />
+      </div>
 
-    <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
-      UBC Open Robotics Design Team
-    </h1>
+      <div class="lg:col-span-8">
+        <div class="space-y-8">
+          {siteConfig.experience.map((exp) => (
+            <a
+              href={`/experiences/${toRoute(exp.slug)}`}
+              class="group relative block"
+            >
+              <div class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
+                <div class="space-y-4">
+                  <div>
+                    <h3 class="text-xl sm:text-xl font-bold text-black mt-1">
+                      {exp.company}
+                    </h3>
+                    <p class="text-base sm:text-xl mt-1">
+                      {exp.position}
+                    </p>
+                  </div>
 
-    <p class="mt-2 text-lg text-gray-600">
-      Software Engineer, Navigation Subteam | Sept 2023 – May 2025
-    </p>
+                  {exp.description && (
+                    <div class="space-y-2">
+                      <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                        {exp.description}
+                      </p>
+                      <span class="inline-block bg-black text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full">
+                        Click for more
+                      </span>
+                    </div>
+                  )}
 
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>
-        UBC Open Robotics is a student design team working on several advanced robotics
-        projects. I was part of the Software Subteam working on the RoboCup@Home project.
-        RoboCup@Home is an international competition where teams develop autonomous home
-        service robots to help those with domestic assistance needs. Robots must be
-        capable of human-robot interaction, navigation in dynamic environments, object
-        recognition and manipulation, and more.
-      </p>
-    </div>
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>
-        While working on the navigation side of the software for our robot, I developed
-        ROS (Robot Operating System) Python scripts to allow the robot to navigate new,
-        dynamic environments. This meant integrating various sensors with software and
-        developing communication protocols for the robot's subsystems. All ROS
-        development was done on Linux (Ubuntu 20.04). I also performed research and
-        analysis of LIDAR sensors and SLAM (Simultaneous Localization and Mapping)
-        frameworks for use in the robot.
-      </p>
-    </div>
-
-    <br />
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <img src="/ros2.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-      <img src="/ros3.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-      <img src="/ros1.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-    </div>
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>
-        Further, during my first few months after joining Open Robotics, I performed
-        mechanical onboarding for the team. This included designing a chassis for a
-        simple robot using OnShape CAD and 3D printing various mechanical components.
-        During this time, I gained hands-on experience with mechanical design and
-        robotics practices used in industry.
-      </p>
-    </div>
-
-    <br />
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <img src="/chass1.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-      <img src="/chass2.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-      <img src="/chass3.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-    </div>
-
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <ul class="list-disc pl-5 space-y-2">
-        <li>
-          Developed Python scripts to program autonomous navigation of service robot for
-          international RoboCup@Home competition
-        </li>
-        <li>
-          Worked with ROS (Robot Operating System) in Linux Ubuntu 20.04 distribution
-        </li>
-        <li>
-          Collaborated with large student team to achieve project goals
-        </li>
-      </ul>
+                  {/* show up to 3 images ONLY if they exist */}
+                  {(exp.img1_1 || exp.img1_2 || exp.img1_3) && (
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {exp.img1_1 && (
+                        <img
+                          src={exp.img1_1}
+                          alt={`${exp.company} photo 1`}
+                          class="w-full aspect-square object-cover rounded-md shadow-lg"
+                        />
+                      )}
+                      {exp.img1_2 && (
+                        <img
+                          src={exp.img1_2}
+                          alt={`${exp.company} photo 2`}
+                          class="w-full aspect-square object-cover rounded-md shadow-lg"
+                        />
+                      )}
+                      {exp.img1_3 && (
+                        <img
+                          src={exp.img1_3}
+                          alt={`${exp.company} photo 3`}
+                          class="w-full aspect-square object-cover rounded-md shadow-lg"
+                        />
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
-</Layout>
+)}
