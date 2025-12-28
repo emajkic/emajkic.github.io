@@ -99,7 +99,7 @@ export const siteConfig = {
       para2: "While working on the navigation side of the software for our robot, I developed ROS (Robot Operating System) Python scripts to allow the robot to navigate new, dynamic environments. This meant integrating various sensors with software and developing communication protocols for the robot's subsystems. All ROS development was done on Linux (Ubuntu 20.04). I also performed research and analysis of LIDAR sensors and SLAM (Simultaneous Localization and Mapping) frameworks for use in the robot.",
       img1_1: "/ros2.jpg",
       img1_2: "/ros3.png",
-      img1_3: "/ros1.jpg",
+      img1_3: "/ros1.png",
       para3: "Further, during my first few months after joining Open Robotics, I performed mechanical onboarding for the team. This included designing a chassis for a simple robot using OnShape CAD and 3D printing various mechanical components. During this time, I gained hands-on experience with mechanical design and robotics practices used in industry.",
       img2_1: "/chass1.jpg",
       img2_2: "/chass2.jpg",
