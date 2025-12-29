@@ -32,30 +32,33 @@ import "../../styles/global.css";
       </p>
 
       <p>
-        During my time at TRIUMF, I worked with the PIONEER group, a rare pion decay experiment,
-        as an engineering/research student co-op. High-precision experiments like PIONEER plan
-        on using liquid xenon (LXe) calorimeters to measure the energies of incoming particles.
+        During my time at TRIUMF, I worked with the PIONEER group (a rare pion decay experiment) as an engineering/research student co-op. High-precision experiments like PIONEER plan on using liquid xenon (LXe) calorimeters (Fig. 1, 2) to measure energies of incoming particles. 
       </p>
 
       <p>
-        Impurities in the LXe affect measurement precision through electron attachment and the
-        absorption of scintillation light. To address this, a Purity Monitor Assembly (PUMA) was
-        built to accurately measure impurity levels inside these calorimeters. I was involved in
-        the testing and simulation of PUMA, and I led the development of a calibration device for it.
+        Impurities in the LXe will affect the precision of energy measurements through electron attachment and absorption of light emitted by scintillation. A purity monitor assembly (PUMA) was built to accurately measure the level of impurity inside of these calorimeters. I was involved in the testing and simulations of PUMA, and I lead the development of a calibration device for PUMA.
       </p>
     </div>
 
     <!-- Fig 1–2 -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
       <figure>
-        <div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div>
+          <img
+            src="/zfig1.png"
+            alt="Calorimeter diagram"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
         <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Fig. 1: Calorimeter diagram
+          Fig. 1: Calorimeter use diagram
         </figcaption>
       </figure>
 
       <figure>
-        <div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div>
+          <img
+            src="/zfig2.png"
+            alt="Calorimeter diagram"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
         <figcaption class="mt-1 text-sm text-gray-500 text-center">
           Fig. 2: 3D calorimeter model
         </figcaption>
@@ -70,22 +73,46 @@ import "../../styles/global.css";
     <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
       <p>
         PUMA operates with the goal of measuring the purity of the medium it is immersed in.
-        A xenon flash lamp emits electrons from its photocathode, and the resulting signals are
-        measured by PCBs at PUMA’s cathode and anode. These signals can be mathematically related
-        to the purity of the surrounding medium.
+        A xenon flash lamp emits electrons from its photocathode; signals produced by electrons are measured by PCBs at PUMA’s anode and cathode. 
+        These signals can be mathematically related to the purity of the surrounding medium.
       </p>
     </div>
 
     <!-- Fig 3–5 -->
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 3: PUMA model</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 4: PUMA model</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 5: PUMA model</figcaption></figure>
+      <figure>
+          <img
+            src="/zfig3.png"
+            alt="PUMA diagram"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 3: PUMA diagram</figcaption>
+      </figure>
+      <figure>  
+          <img
+            src="/zfig4.png"
+            alt="PUMA assembly"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 4: PUMA assembly</figcaption>
+      </figure>
+      <figure>
+          <img
+            src="/zfig5.png"
+            alt="PUMA CAD design"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 5: PUMA CAD model</figcaption>
+      </figure>
     </div>
 
     <!-- Fig 6 -->
     <figure class="mt-8">
-      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+          <img
+            src="/zfig6.png"
+            alt="PUMA electronics"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
       <figcaption class="mt-1 text-sm text-gray-500 text-center">
         Fig. 6: PUMA electrical diagram
       </figcaption>
