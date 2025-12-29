@@ -14,170 +14,265 @@ import "../../styles/global.css";
     </h1>
 
     <p class="mt-2 text-lg text-gray-600">
-      Research Assistant - PIONEER Experiment | Jan 2025 - May 2025
+      Engineering / Research Co-op – PIONEER Experiment
     </p>
 
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-    <a
-      href="https://github.com/emajkic/PUMA_Tests"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-blue-600 hover:text-blue-800 underline underline-offset-4"
-    >
-      GitHub Repository [Click]
-    </a>
+    <!-- INTRO -->
+    <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
+      <p class="font-medium">
+        GitHub Repo:
+        <a
+          href="https://github.com/emajkic/PUMA_Tests"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 underline underline-offset-4"
+        >
+          https://github.com/emajkic/PUMA_Tests
+        </a>
+      </p>
 
       <p>
-        During my time at TRIUMF, I worked with the PIONEER group on a rare pion decay
-        experiment. The PIONEER experiment will be conducted in a large liquid xenon
-        (LXe) calorimeter, and continuous monitoring of the LXe's purity is required
-        during the experiment.
+        During my time at TRIUMF, I worked with the PIONEER group, a rare pion decay experiment,
+        as an engineering/research student co-op. High-precision experiments like PIONEER plan
+        on using liquid xenon (LXe) calorimeters to measure the energies of incoming particles.
       </p>
-      <p>
-        To achieve this, I was involved in the testing and development of a Purity
-        Monitor Assembly (PUMA) and its calibration device to be used in high-precision
-        experiments with LXe calorimeters.
-      </p>
-    </div>
 
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
       <p>
-        I conducted physics simulations of PUMA to better understand particle behaviour
-        inside the assembly in various media. I used COMSOL Multiphysics to perform
-        electrostatic finite element analysis on the CAD model of PUMA.
-      </p>
-      <p>
-        I also wrote C++ scripts in Linux using Garfield++, a library written by CERN
-        for detailed simulation of particle drift in detectors. Some results are shown
-        below.
+        Impurities in the LXe affect measurement precision through electron attachment and the
+        absorption of scintillation light. To address this, a Purity Monitor Assembly (PUMA) was
+        built to accurately measure impurity levels inside these calorimeters. I was involved in
+        the testing and simulation of PUMA, and I led the development of a calibration device for it.
       </p>
     </div>
 
-    <br />
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- Fig 1–2 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
       <figure>
-        <img src="/sim1.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+        <div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div>
         <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          PUMA E-Field model
+          Fig. 1: Calorimeter diagram
         </figcaption>
       </figure>
 
       <figure>
-        <img src="/sim2.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+        <div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div>
         <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Vacuum setup
-        </figcaption>
-      </figure>
-
-      <figure>
-        <img src="/sim3.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-        <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Garfield++ Python simulation setup
+          Fig. 2: 3D calorimeter model
         </figcaption>
       </figure>
     </div>
 
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+    <!-- BRIEF PUMA EXPLAIN -->
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      PUMA Overview
+    </h2>
+
+    <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
       <p>
-        Further, I designed and built a vacuum system to perform initial tests of the
-        calibration device for PUMA.
+        PUMA operates with the goal of measuring the purity of the medium it is immersed in.
+        A xenon flash lamp emits electrons from its photocathode, and the resulting signals are
+        measured by PCBs at PUMA’s cathode and anode. These signals can be mathematically related
+        to the purity of the surrounding medium.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-      <figure>
-        <img src="/vac1.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-        <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Vacuum assembly
-        </figcaption>
-      </figure>
-
-      <figure>
-        <img src="/vac2.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-        <figcaption class="mt-1 text-sm text-gray-500 text-center">
-           PUMA calibration device integration
-        </figcaption>
-      </figure>
-
-      <figure>
-        <img src="/vac3.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-        <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Vacuum setup
-        </figcaption>
-      </figure>
+    <!-- Fig 3–5 -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 3: PUMA model</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 4: PUMA model</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 5: PUMA model</figcaption></figure>
     </div>
 
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-      <p>
-        After ensuring the vacuum system could reliably reach low pressures over
-        extended periods of time, I began testing PUMA's calibration device inside the
-        vacuum system.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-      <figure>
-        <img src="/test1.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-        <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Instrumentation
-        </figcaption>
-      </figure>
-
-      <figure>
-        <img src="/test2.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-        <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Data analysis
-        </figcaption>
-      </figure>
-
-      <figure>
-        <img src="/test3.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-        <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Experimental setup
-        </figcaption>
-      </figure>
-    </div>
-
-    <!-- ✅ Single-image block example -->
+    <!-- Fig 6 -->
     <figure class="mt-8">
-      <img
-        src="/vac3.jpg"
-        class="w-full aspect-[4/3] rounded-md shadow-lg"
-        alt="Single simulation result"
-      />
-      <figcaption class="mt-2 text-sm text-gray-500 text-center">
-        Vacuum Setup.
+      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+      <figcaption class="mt-1 text-sm text-gray-500 text-center">
+        Fig. 6: PUMA electrical diagram
       </figcaption>
     </figure>
 
-    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+    <!-- SIMULATIONS -->
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      Simulations
+    </h2>
+
+    <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
       <p>
-        Working at TRIUMF was a great experience, and I enjoyed being in charge of a project within a larger cutting-edge physics context. 
-        I had the opportunity to both lead my own work and collaborate with an international group, and I was proud of the significant progress 
-        I delivered to the team over my four-month internship.
+        One of my main tasks was to develop precise physics simulations of particle behaviour in PUMA.
+        These simulations were used to verify assumptions and experimental results, as well as to better
+        understand interactions in PUMA’s drift region.
       </p>
+
       <p>
-        At the end of my term, I participated in TRIUMF's co-op poster session, where I got to present my work to other engineers and physicists. I was honoured to be awarded 2nd place amongst all undergrad and masters students.
+        All simulations were developed on Linux (Ubuntu) and run inside a Singularity container via SSH
+        on TRIUMF’s local computing resources. I used COMSOL Multiphysics (electrostatics module) to
+        generate a field map and mesh for integration with Garfield++.
       </p>
     </div>
 
-    <div class="mt-8">
+    <!-- Fig 7–8 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 7: PUMA potential model</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 8: PUMA electric field model</figcaption></figure>
+    </div>
+
+    <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        Garfield++ is a C++ library developed by CERN for detailed simulation of particle detectors.
+        I used the DriftLineRKF and TrackHeed classes to simulate electron drift in gaseous argon and
+        later in liquid xenon.
+      </p>
+    </div>
+
+    <!-- Fig 9 -->
+    <figure class="mt-8">
+      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+      <figcaption class="mt-1 text-sm text-gray-500 text-center">
+        Fig. 9: COMSOL meshing and export
+      </figcaption>
+    </figure>
+
+    <!-- Fig 10 -->
+    <figure class="mt-8">
+      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+      <figcaption class="mt-1 text-sm text-gray-500 text-center">
+        Fig. 10: COMSOL/Garfield++ integration and simulation setup
+      </figcaption>
+    </figure>
+
+    <!-- LITTLE PUMA -->
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      Little PUMA: Calibration Device
+    </h2>
+
+    <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        I joined the team at the start of the development of PUMA’s calibration device, a project
+        which I led from initial development through testing.
+      </p>
+
+      <p>
+        Two grids are mounted inside PUMA’s drift region. Some electrons are stopped by the grid
+        mesh; grid transparency is defined as the fraction of electrons that pass through. Accurate
+        calibration of this transparency is required for precise PUMA measurements.
+      </p>
+    </div>
+
+    <!-- Fig 11–12 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 11: Calibration device model</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 12: Grid detail</figcaption></figure>
+    </div>
+
+    <!-- Fig 13 -->
+    <figure class="mt-8">
+      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+      <figcaption class="mt-1 text-sm text-gray-500 text-center">
+        Fig. 13: Little PUMA assembly
+      </figcaption>
+    </figure>
+
+    <!-- VACUUM SYSTEM -->
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      Vacuum System
+    </h2>
+
+    <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        I designed and assembled a KF-flanged vacuum system to perform initial tests of Little PUMA.
+        The system housed the device, provided instrument connections, and supported operation in
+        both vacuum and gas environments.
+      </p>
+    </div>
+
+    <!-- Fig 14 -->
+    <figure class="mt-8">
+      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+      <figcaption class="mt-1 text-sm text-gray-500 text-center">
+        Fig. 14: Vacuum system final design
+      </figcaption>
+    </figure>
+
+    <!-- Fig 15–18 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 15</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 16</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 17</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 18</figcaption></figure>
+    </div>
+
+    <!-- ELECTRICAL BOX -->
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      Electrical Box
+    </h2>
+
+    <!-- Fig 19–20 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 19</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 20</figcaption></figure>
+    </div>
+
+    <!-- DATA COLLECTION -->
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      Data Collection
+    </h2>
+
+    <!-- Fig 21–25 -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 21</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 22</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 23</figcaption></figure>
+    </div>
+
+    <figure class="mt-8">
+      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+      <figcaption class="mt-1 text-sm text-gray-500 text-center">
+        Fig. 24: Instrumentation setup
+      </figcaption>
+    </figure>
+
+    <figure class="mt-8">
+      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+      <figcaption class="mt-1 text-sm text-gray-500 text-center">
+        Fig. 25: Selected data analysis results
+      </figcaption>
+    </figure>
+
+    <!-- LOLX -->
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      LolX: Remote Data Collection
+    </h2>
+
+    <!-- Fig 26–27 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 26</figcaption></figure>
+      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 27</figcaption></figure>
+    </div>
+
+    <!-- SUMMARY -->
+    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
+      Summary
+    </h2>
+
+    <p class="mt-4 text-gray-700 leading-relaxed">
+      Working at TRIUMF was a great experience. I had the opportunity to lead an independent
+      calibration project within a larger international physics collaboration, and I was proud
+      of the progress delivered over my four-month internship.
+    </p>
+
+    <!-- POSTER + REPORT (UNCHANGED) -->
+    <div class="mt-12">
       <h2 class="text-2xl font-semibold mb-4">
         Poster for TRIUMF undergrad poster session
       </h2>
       <iframe src="/final_poster.pdf" class="w-full h-[600px] border rounded-lg"></iframe>
-      <a href="/final_poster.pdf" download class="text-sm text-blue-600 underline">
-        Click here to download
-      </a>
     </div>
 
     <div class="mt-8">
-      <h2 class="text-2xl font-semibold mb-4">Co-op Term Final Report</h2>
+      <h2 class="text-2xl font-semibold mb-4">
+        Co-op Term Final Report
+      </h2>
       <iframe src="/final_report.pdf" class="w-full h-[600px] border rounded-lg"></iframe>
-      <a href="/final_report.pdf" download class="text-sm text-blue-600 underline">
-        Click here to download
-      </a>
     </div>
   </section>
 </Layout>
