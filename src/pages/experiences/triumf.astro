@@ -109,7 +109,7 @@ import "../../styles/global.css";
     <!-- Fig 6 -->
     <figure class="mt-8">
       <img
-        src="/zfig6.jpg"
+        src="/zfig6.png"
         alt="PUMA electronics"
         class="w-full h-auto rounded-md shadow-lg"
       />
@@ -126,47 +126,65 @@ import "../../styles/global.css";
 
     <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
       <p>
-        One of my main tasks was to develop precise physics simulations of particle behaviour in PUMA.
-        These simulations were used to verify assumptions and experimental results, as well as to better
-        understand interactions in PUMA’s drift region.
+        One of my main tasks was to develop precise physics simulations of particle behaviour in PUMA. My simulations were developed with the goal of verifying assumptions and experimental results as well as better understanding interactions in PUMA’s drift region. I developed all simulations on Linux (Ubuntu), running them within a Singularity container from SSH into TRIUMF’s local computer. 
       </p>
-
       <p>
-        All simulations were developed on Linux (Ubuntu) and run inside a Singularity container via SSH
-        on TRIUMF’s local computing resources. I used COMSOL Multiphysics (electrostatics module) to
-        generate a field map and mesh for integration with Garfield++.
+        COMSOL Multiphysics is a simulation platform that employs finite element methods to model and solve physics problems. I used the electrostatics module of COMSOL to generate a field map and mesh containing information about the geometry of PUMA for integration with Garfield++. COMSOL study results are shown in Figures 8-9.
       </p>
     </div>
 
     <!-- Fig 7–8 -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 7: PUMA potential model</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 8: PUMA electric field model</figcaption></figure>
+      <figure>
+        <img
+          src="/zfig7.png"
+          alt="PUMA potential"
+          class="w-full h-auto rounded-md shadow-lg"
+        />      
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 7: PUMA potential (voltage) study</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="/zfig8.png"
+          alt="PUMA efield"
+          class="w-full h-auto rounded-md shadow-lg"
+        />        
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 8: PUMA electric field study</figcaption>
+    </figure>
     </div>
 
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
       <p>
-        Garfield++ is a C++ library developed by CERN for detailed simulation of particle detectors.
-        I used the DriftLineRKF and TrackHeed classes to simulate electron drift in gaseous argon and
-        later in liquid xenon.
+        Garfield++ is a C++ library written by CERN for the detailed simulation of particle detectors based on ionisation in gases and semiconductors. I used Garfield++ to produce simulations of electron drift in PUMA using the DriftLineRKF class. DriftLineRKF performs calculation of drift lines based on macroscopic transport coefficients using Runge-Kutta-Fehlberg integration. Further, the TrackHeed class was used to visualize electron drift lines in the drift region when n electrons are emitted from the cathode of PUMA. Simulations were initially conducted in gaseous Argon at atmospheric pressure and room temperature; a second version of the simulation was done in liquid xenon.
       </p>
     </div>
+    
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Fig 9 -->
+      <figure>
+        <img
+          src="/zfig9.png"
+          alt="COMSOL mesh"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 9: COMSOL meshing and export
+        </figcaption>
+      </figure>
+    
+      <!-- Fig 10 -->
+      <figure>
+        <img
+          src="/zfig10.png"
+          alt="COMSOL sim"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 10: COMSOL/Garfield++ integration and simulation setup
+        </figcaption>
+      </figure>
+    </div>
 
-    <!-- Fig 9 -->
-    <figure class="mt-8">
-      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
-      <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 9: COMSOL meshing and export
-      </figcaption>
-    </figure>
-
-    <!-- Fig 10 -->
-    <figure class="mt-8">
-      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
-      <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 10: COMSOL/Garfield++ integration and simulation setup
-      </figcaption>
-    </figure>
 
     <!-- LITTLE PUMA -->
     <h2 class="mt-12 text-2xl font-semibold text-gray-900">
