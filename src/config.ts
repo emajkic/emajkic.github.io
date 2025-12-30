@@ -64,7 +64,7 @@ export const siteConfig = {
       company: "TRIUMF Particle Accelerator",
       position: "Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 2025",
-      description: "Worked with Purity Monitor Assembly (PUMA) calibration instrument for rare pion decay experiment, PIONEER. Modelled precise electron drift simulations using physics software; designed and built vacuum system for first-ever PUMA calibration device testing.",
+      description: "Worked with purity monitor assembly for rare pion decay collaboration, PIONEER. Modelled precise electron drift simulations using physics software; designed and built a vacuum system for first-ever device experimental tests.",
       pdf1: "/final_poster.pdf",
       pdf2: "/final_report.pdf",
       img1_1: "/sim2.png",
