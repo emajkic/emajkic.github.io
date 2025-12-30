@@ -180,7 +180,7 @@ import "../../styles/global.css";
           class="w-full h-auto rounded-md shadow-lg"
         />
         <figcaption class="mt-1 text-sm text-gray-500 text-center">
-          Fig. 10: COMSOL/Garfield++ integration and simulation setup
+          Fig. 10: COMSOL/Garfield++ integration simulation setup
         </figcaption>
       </figure>
     </div>
@@ -193,28 +193,43 @@ import "../../styles/global.css";
 
     <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
       <p>
-        I joined the team at the start of the development of PUMA’s calibration device, a project
-        which I led from initial development through testing.
+        Aside from PUMA simulations, I joined the team right at the start of the development of PUMA’s calibration device. The development and testing of this device from start to end was given as a project to be led by me.
       </p>
 
       <p>
-        Two grids are mounted inside PUMA’s drift region. Some electrons are stopped by the grid
-        mesh; grid transparency is defined as the fraction of electrons that pass through. Accurate
-        calibration of this transparency is required for precise PUMA measurements.
+        Inside of the drift region of PUMA, two grids are mounted (Fig. 12). Some electrons travelling through the drift region will get stopped by this physical mesh; the grid transparency is defined as the number of such electrons that pass successfully through the grid. Due to the precise nature of PUMA’s measurements, PUMA must be calibrated by determining the transparency of the grids mounted inside of it. 
       </p>
     </div>
 
     <!-- Fig 11–12 -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 11: Calibration device model</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 12: Grid detail</figcaption></figure>
+      <figure>
+        <img
+          src="/zfig11.png"
+          alt="PUMA calibration"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 11: PUMA Calibration device detail</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="/zfig12.png"
+          alt="PUMA calibration"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 12: PUMA Calibration device CAD model</figcaption>
+      </figure>
     </div>
 
     <!-- Fig 13 -->
     <figure class="mt-8">
-      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+        <img
+          src="/zfig13.png"
+          alt="Little PUMA"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
       <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 13: Little PUMA assembly
+        Fig. 13: PUMA calibration device
       </figcaption>
     </figure>
 
@@ -225,15 +240,17 @@ import "../../styles/global.css";
 
     <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
       <p>
-        I designed and assembled a KF-flanged vacuum system to perform initial tests of Little PUMA.
-        The system housed the device, provided instrument connections, and supported operation in
-        both vacuum and gas environments.
+        I designed and assembled a KF-flanged vacuum system in order to perform first tests of little PUMA. The purpose of the system was to contain little PUMA, provide connections to the Xenon lamp/power supplies/instruments, and display internal pressure. The system was made to allow for measurement in both vacuum and gas (argon, xenon).
       </p>
     </div>
 
     <!-- Fig 14 -->
     <figure class="mt-8">
-      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+        <img
+          src="/zfig14.png"
+          alt="Vacuum system"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
       <figcaption class="mt-1 text-sm text-gray-500 text-center">
         Fig. 14: Vacuum system final design
       </figcaption>
@@ -241,21 +258,69 @@ import "../../styles/global.css";
 
     <!-- Fig 15–18 -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 15</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 16</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 17</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 18</figcaption></figure>
+      <figure>
+        <img
+          src="/zfig15.png"
+          alt="Integration"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 15: Electrical preparation</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="/zfig16.png"
+          alt="Integration"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 16: Vacuum system integration</figcaption>
+      </figure>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+      <figure>
+        <img
+          src="/zfig17.png"
+          alt="Vacuum process"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 17: Vacuum system assmebly process</figcaption>
+      </figure>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+      <figure>
+        <img
+          src="/zfig18.png"
+          alt="Vacuum final"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 18: Final vacuum system and setup in laboratory</figcaption>
+      </figure>
     </div>
 
     <!-- ELECTRICAL BOX -->
-    <h2 class="mt-12 text-2xl font-semibold text-gray-900">
-      Electrical Box
-    </h2>
+     <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        To interface with the MicroPirani Vacuum Pressure Transducer chosen for the system, it was necessary to create a custom electrical box to connect the gauge to a computer for pressure data logging. I designed, machined, and soldered a simple reusable box with the necessary port connections, integrating an RS232 cable for simple computer connections.
+      </p>
+    </div>
 
     <!-- Fig 19–20 -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 19</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 20</figcaption></figure>
+      <figure>
+        <img
+          src="/zfig19.png"
+          alt="Box"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 19: Electrical box interior</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="/zfig20.png"
+          alt="Box"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 20: Electrical box system integration</figcaption>
+      </figure>
     </div>
 
     <!-- DATA COLLECTION -->
@@ -263,22 +328,77 @@ import "../../styles/global.css";
       Data Collection
     </h2>
 
+    <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        Once the vacuum system was installed and consistently pumping to the desired pressure, we began testing the PUMA calibration device in vacuum. A LabView program was used to adjust parameters for data collection runs (oscilloscope scales, Xenon lamp flashes, etc.). Experiment runs would proceed as follows: Xenon flash lamp sends 10 flashes to photocathode of little PUMA, which emits electrons. PCBs at cathode and anode of little PUMA capture signal produced by electrons, and the signal is sent through an amplifier circuit and written to a file. Voltages at anode and grid are adjusted as necessary depending on context of tests. This collected data can be then used to find the grid transparency of the device, fulfilling the original goal.
+      </p>
+    </div>
+    
     <!-- Fig 21–25 -->
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 21</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 22</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 23</figcaption></figure>
+      <figure>
+        <div class="w-full aspect-square overflow-hidden rounded-md shadow-lg">
+          <img
+            src="/zfig21.png"
+            alt="Oscilloscope"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 21: Data collection
+        </figcaption>
+      </figure>
+    
+      <figure>
+        <div class="w-full aspect-square overflow-hidden rounded-md shadow-lg">
+          <img
+            src="/zfig22.png"
+            alt="Data"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 22: LabView Data Panel
+        </figcaption>
+      </figure>
+    
+      <figure>
+        <div class="w-full aspect-square overflow-hidden rounded-md shadow-lg">
+          <img
+            src="/zfig23.png"
+            alt="Oscilloscope"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 23: Data collection
+        </figcaption>
+      </figure>
     </div>
 
     <figure class="mt-8">
-      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
-      <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 24: Instrumentation setup
-      </figcaption>
+        <img
+          src="/zfig24.png"
+          alt="Lab"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig, 24: Instrumentation setup in laboratory
+        </figcaption>
     </figure>
 
+   <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        Data analysis was performed in JupyterLab using matplotlib and numpy and files can be found in the GitHub respository listed at the top of the page.
+      </p>
+    </div>
+
     <figure class="mt-8">
-      <div class="w-full aspect-[4/3] bg-gray-200 rounded-md shadow-lg"></div>
+        <img
+          src="/zfig25.png"
+          alt="Data results"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
       <figcaption class="mt-1 text-sm text-gray-500 text-center">
         Fig. 25: Selected data analysis results
       </figcaption>
@@ -289,30 +409,55 @@ import "../../styles/global.css";
       LolX: Remote Data Collection
     </h2>
 
+   <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        A side task which I participated in was collecting PUMA data remotely. While I was at TRIUMF, PUMA itself was being held at McGill for testing in gaseous xenon. It was necessary to remotely access the McGill desktop and instrumentation through various physics software to take data. I used LabView and ISEG to set up oscilloscopes and voltage supplies remotely and perform data collections runs. I documented all of my data runs thoroughly in the team’s eLog.
+      </p>
+    </div>
+
     <!-- Fig 26–27 -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 26</figcaption></figure>
-      <figure><div class="w-full aspect-square bg-gray-200 rounded-md shadow-lg"></div><figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 27</figcaption></figure>
+      <figure>
+        <img
+          src="/zfig26.png"
+          alt="Data results"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 26: LolX data collection</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="/zfig27.png"
+          alt="Data results"
+          class="w-full h-auto rounded-md shadow-lg"
+        />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">Fig. 27: More LolX data</figcaption>
+      </figure>
     </div>
 
     <!-- SUMMARY -->
     <h2 class="mt-12 text-2xl font-semibold text-gray-900">
-      Summary
+      Reflection
     </h2>
 
     <p class="mt-4 text-gray-700 leading-relaxed">
-      Working at TRIUMF was a great experience. I had the opportunity to lead an independent
-      calibration project within a larger international physics collaboration, and I was proud
-      of the progress delivered over my four-month internship.
+      Working at TRIUMF was a great experience, and I enjoyed being in charge of a project within a larger cutting-edge physics context. I had the opportunity to both lead my own work and collaborate with an international group, and I was proud of the significant progress I delivered to the team over my four-month internship.
     </p>
 
-    <!-- POSTER + REPORT (UNCHANGED) -->
+    <p class="mt-4 text-gray-700 leading-relaxed">
+      At the end of my term, I participated in TRIUMF's co-op poster session, for which I created a poster (shown below) to present my work to other engineers and physicists at TRIUMF. I was honoured to be awarded 2nd place out of all undergrad and masters students.
+    </p>
+
     <div class="mt-12">
       <h2 class="text-2xl font-semibold mb-4">
         Poster for TRIUMF undergrad poster session
       </h2>
       <iframe src="/final_poster.pdf" class="w-full h-[600px] border rounded-lg"></iframe>
     </div>
+
+    <p class="mt-4 text-gray-700 leading-relaxed">
+      Below is the final report I wrote as a reference for the team and future co-ops. It provides more details about my time at TRIUMF.
+    </p>
 
     <div class="mt-8">
       <h2 class="text-2xl font-semibold mb-4">
