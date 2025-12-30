@@ -32,7 +32,7 @@ export const siteConfig = {
       name: "Autonomous Competition Robot",
       description:
         "Designed, prototyped, and built an autonomous robot to participate in ENPH 253 course competition, integrating electrical, mechanical, and software modules.",
-      skills: ["Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
+      skills: ["Robotics", "Circuit Design", "C++", "Soldering", "Software Design", "Prototyping"],
       link_name: "Github Repo",
       link: "https://github.com/emajkic/ENPH_253_Robot",
     },
@@ -44,7 +44,7 @@ export const siteConfig = {
       name: "PID Motor Controller",
       description:
         "Built a circuit capable of setting and actively controlling the speed of an electric motor using PI control in hardware.",
-      skills: ["Circuitry", "Electrical Design", "Prototyping"],
+      skills: ["Digital Logic", "Electrical Design", "Prototyping"],
     },
     {
       img1: "/java1.png",
