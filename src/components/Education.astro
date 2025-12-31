@@ -25,10 +25,10 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                   <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                     <div>
                       <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
-                        {edu.degree}
+                        The University of British Columbia - Bachelor of Applied Science
                       </h3>
-                      <p class="text-base sm:text-lg italic">
-                        {edu.school}
+                      <p class="text-base sm:text-lg">
+                        Major in Engineering Physics, Minor in Honours Math
                       </p>
 
                     </div>
@@ -37,6 +37,12 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                     </span>
                   </div>
 
+                  <div class="mt-6 mb-3">
+                  <p class="text-base sm:text-lg italic">
+                    Achievements
+                  </p>
+                  
+                  </div>
                   <ul class="space-y-2">
                     {edu.achievements.map((achievement) => (
                       <li class="flex items-start">
@@ -48,12 +54,12 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                     ))}
                   </ul>
 
-<div class="mt-6 mb-3">
-  <p class="text-base sm:text-lg italic">
-  Selected Relevant Courses
-</p>
-
-</div>
+                  <div class="mt-6 mb-3">
+                    <p class="text-base sm:text-lg italic">
+                    Selected Relevant Courses
+                  </p>
+                  
+                  </div>
 
 
                   <ul class="space-y-2">
