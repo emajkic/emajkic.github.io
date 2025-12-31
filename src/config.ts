@@ -44,7 +44,7 @@ export const siteConfig = {
       name: "PID Motor Controller",
       description:
         "Built a circuit capable of setting and actively controlling the speed of an electric motor using PI control in hardware.",
-      skills: ["Digital Logic", "Electrical Design", "Prototyping"],
+      skills: ["Digital Logic", "Electrical Design", "Prototyping", "DAC", "Counters"],
     },
     {
       img1: "/java1.png",
