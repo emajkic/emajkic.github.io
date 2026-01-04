@@ -16,224 +16,153 @@ import "../../styles/global.css";
     <div class="flex flex-wrap gap-2 mt-6">
       <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">Electrical Design</span>
       <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">Prototyping</span>
-      <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">Digital logic</span>
+      <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">Digital Logic</span>
       <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">FETs</span>
       <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">Latches</span>
       <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">Counters</span>
     </div>
 
-    <br />
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
       <img src="/motor1.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
       <img src="/motor3.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
       <img src="/motor2.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
     </div>
 
-   <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
-      <p class="text-gray-700 leading-relaxed">
-        In this project, a closed-loop servo control system (Fig. 1) was designed, built, tested, and integrated to actively control the rotational speed of a DC motor using analog and digital electronics. 
+    <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        In this project, a closed-loop servo control system was designed, built,
+        tested, and integrated to actively control the rotational speed of a DC
+        motor using analog and digital electronics.
       </p>
-  </div>
-
-  <figure class="mt-8">
-    <img
-      src="/p1.png"
-      alt="Schematic"
-      class="w-full h-auto rounded-md shadow-lg"
-    />
-    <figcaption class="mt-1 text-sm text-gray-500 text-center">
-      Fig. 1: Project schematic
-    </figcaption>
-  </figure>
-
-  <figure class="mt-8">
-    <img
-      src="/p2.png"
-      alt="Final build"
-      class="w-full h-auto rounded-md shadow-lg"
-    />
-    <figcaption class="mt-1 text-sm text-gray-500 text-center">
-      Fig. 2: Final circuit result
-    </figcaption>
-  </figure>
-
-   <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
-      <p class="text-gray-700 leading-relaxed">
-        The system measured motor speed using an optical sensor consisting of an LED, a phototransistor, and a slotted rotating disc attached to the motor shaft. 
-      </p>
-  </div>
-
-   <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
-      <p class="text-gray-700 leading-relaxed">
-        A timing control circuit was constructed to generate synchronized LATCH and RESET signals from a 5 Hz square-wave input. This ensured that motor speed data could be periodically captured and the counter reset in a controlled manner.
-      </p>
-  </div>
-
-  <figure class="mt-8">
-    <img
-      src="/p3.png"
-      alt="Schematic"
-      class="w-full h-auto rounded-md shadow-lg"
-    />
-    <figcaption class="mt-1 text-sm text-gray-500 text-center">
-      Fig. 3: Latch and reset schematic
-    </figcaption>
-  </figure>
-
-   <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
-      <p class="text-gray-700 leading-relaxed">
-        An 8-bit digital counter was built using cascaded divide-by-16 counters to count the number of rotation pulses occurring between reset intervals. The counter output was stored using an 8-bit D-latch, allowing the measured speed to be held stable while processing occurred.
-      </p>
-  </div>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-    <figure>
-      <img
-        src="/p4.png"
-        alt="Circuit"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
-      <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 4: Latch, reset circuit integration with counter
-      </figcaption>
-    </figure>
-  
-    <figure>
-      <img
-        src="/p5.png"
-        alt="Output"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
-      <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 5: Counter logic output
-      </figcaption>
-    </figure>
-  </div>
-
-     <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
-        <p class="text-gray-700 leading-relaxed">
-          The latched digital speed value was converted into an analog voltage using an R–2R ladder digital-to-analog converter (DAC). This analog signal represented the measured motor speed and was verified to scale correctly with the digital input.
-        </p>
     </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-    <figure>
-      <img
-        src="/p6.png"
-        alt="DAC"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
+    <figure class="mt-8">
+      <img src="/p1.png" alt="Schematic" class="w-full rounded-md shadow-lg" />
       <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 6: R2R DAC Pinout
+        Fig. 1: Project schematic
       </figcaption>
     </figure>
-  
-    <figure>
-      <img
-        src="/p7.png"
-        alt="Circuit"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
-      <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 7: DAC Circuit
-      </figcaption>
-    </figure>
-  </div>
 
-     <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
-        <p class="text-gray-700 leading-relaxed">
-          An error signal amplifier was then constructed using operational amplifiers to compare the measured speed voltage to a user-defined setpoint voltage. The resulting error signal was integrated and used to control a power BJT, which regulated the current supplied to the motor, adjusting its speed.
-        </p>
+    <figure class="mt-8">
+      <img src="/p2.png" alt="Final build" class="w-full rounded-md shadow-lg" />
+      <figcaption class="mt-1 text-sm text-gray-500 text-center">
+        Fig. 2: Final circuit result
+      </figcaption>
+    </figure>
+
+    <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        The system measured motor speed using an optical sensor consisting of an
+        LED, a phototransistor, and a slotted rotating disc attached to the motor
+        shaft.
+      </p>
     </div>
 
-
-  <figure class="mt-8">
-    <img
-      src="/p8.png"
-      alt="Circuit"
-      class="w-full h-auto rounded-md shadow-lg"
-    />
-    <figcaption class="mt-1 text-sm text-gray-500 text-center">
-      Fig. 8: Error amplifier circuit
-    </figcaption>
-  </figure>
-
-     <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
-        <p class="text-gray-700 leading-relaxed">
-          Finally, all subsystems were integrated into a complete feedback loop. The finished system successfully adjusted motor speed in response to changes in the setpoint, demonstrating stable closed-loop RPM control. The project used feedback, digital counting, DACs, and analog amplification to create a practical motor control application.
-        </p>
+    <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        A timing control circuit generated synchronized LATCH and RESET signals
+        from a 5 Hz square-wave input, ensuring controlled data capture.
+      </p>
     </div>
 
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-    <figure>
-      <img
-        src="/p9.png"
-        alt="Schematic"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
+    <figure class="mt-8">
+      <img src="/p3.png" alt="Latch schematic" class="w-full rounded-md shadow-lg" />
       <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 9: Motor control schematic
+        Fig. 3: Latch and reset schematic
       </figcaption>
     </figure>
-  
-    <figure>
-      <img
-        src="/p10.png"
-        alt="Circuit"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
+
+    <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        An 8-bit digital counter built from cascaded divide-by-16 counters counted
+        rotation pulses between reset intervals.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure>
+        <img src="/p4.png" alt="Counter integration" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 4: Counter integration
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="/p5.png" alt="Counter output" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 5: Counter output
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        The digital speed value was converted to an analog voltage using an R–2R
+        ladder DAC.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure>
+        <img src="/p6.png" alt="DAC pinout" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 6: DAC pinout
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="/p7.png" alt="DAC circuit" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 7: DAC circuit
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        An error amplifier compared the measured speed to a setpoint and regulated
+        motor current using a power BJT.
+      </p>
+    </div>
+
+    <figure class="mt-8">
+      <img src="/p8.png" alt="Error amplifier" class="w-full rounded-md shadow-lg" />
       <figcaption class="mt-1 text-sm text-gray-500 text-center">
-        Fig. 10: Final circuit
+        Fig. 8: Error amplifier circuit
       </figcaption>
     </figure>
-  </div>
 
-<div class="mt-8">
-  <p class="text-sm text-gray-500 text-center">
-    Lab notebook excerpts:
-  </p>
-</div>
+    <div class="mt-8 text-gray-700 leading-relaxed space-y-4">
+      <p>
+        The complete system demonstrated stable closed-loop RPM control.
+      </p>
+    </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-    <figure>
-      <img
-        src="/n1.png"
-        alt="Schematic"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
-    </figure>
-  
-    <figure>
-      <img
-        src="/n2.png"
-        alt="Circuit"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
-    </figure>
-  </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure>
+        <img src="/p9.png" alt="Motor schematic" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 9: Motor control schematic
+        </figcaption>
+      </figure>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-    <figure>
-      <img
-        src="/n3.png"
-        alt="Schematic"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
-    </figure>
-  
-    <figure>
-      <img
-        src="/n4.png"
-        alt="Circuit"
-        class="w-full h-auto rounded-md shadow-lg"
-      />
-    </figure>
-  </div>
+      <figure>
+        <img src="/p10.png" alt="Final circuit" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 10: Final circuit
+        </figcaption>
+      </figure>
+    </div>
 
+    <p class="mt-12 text-sm text-gray-500 text-center">
+      Lab notebook excerpts
+    </p>
 
-
-
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+      <img src="/n1.png" class="w-full rounded-md shadow-lg" />
+      <img src="/n2.png" class="w-full rounded-md shadow-lg" />
+      <img src="/n3.png" class="w-full rounded-md shadow-lg" />
+      <img src="/n4.png" class="w-full rounded-md shadow-lg" />
+    </div>
   </section>
 </Layout>
