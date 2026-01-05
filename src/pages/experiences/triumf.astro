@@ -129,7 +129,7 @@ import "../../styles/global.css";
         One of my main tasks was to develop precise physics simulations of particle behaviour in PUMA. My simulations were developed with the goal of verifying assumptions and experimental results as well as better understanding interactions in PUMA’s drift region. I developed all simulations on Linux (Ubuntu), running them within a Singularity container from SSH into TRIUMF’s local computer. 
       </p>
       <p>
-        COMSOL Multiphysics is a simulation platform that employs finite element methods to model and solve physics problems. I used the electrostatics module of COMSOL to generate a field map and mesh containing information about the geometry of PUMA for integration with Garfield++. COMSOL study results are shown in Figures 8-9.
+       I used the electrostatics module of COMSOL to generate a field map and mesh containing information about the geometry of PUMA for integration with Garfield++. COMSOL study results are shown in Figures 8-9.
       </p>
     </div>
 
@@ -155,7 +155,7 @@ import "../../styles/global.css";
 
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
       <p>
-        Garfield++ is a C++ library written by CERN for the detailed simulation of particle detectors based on ionisation in gases and semiconductors. I used Garfield++ to produce simulations of electron drift in PUMA using the DriftLineRKF class. DriftLineRKF performs calculation of drift lines based on macroscopic transport coefficients using Runge-Kutta-Fehlberg integration. Further, the TrackHeed class was used to visualize electron drift lines in the drift region when electrons are emitted from the cathode of PUMA. Simulations were initially conducted in gaseous Argon at atmospheric pressure and room temperature; a second version of the simulation was done in liquid xenon.
+        I used Garfield++ (a C++ library written by CERN) to produce simulations of electron drift in PUMA using the DriftLineRKF class. DriftLineRKF performs calculation of drift lines based on macroscopic transport coefficients using Runge-Kutta-Fehlberg integration. Further, the TrackHeed class was used to visualize electron drift lines in the drift region when electrons are emitted from the cathode of PUMA. Simulations were initially conducted in gaseous Argon at atmospheric pressure and room temperature; a second version of the simulation was done in liquid xenon.
       </p>
     </div>
     
@@ -197,7 +197,7 @@ import "../../styles/global.css";
       </p>
 
       <p>
-        Inside of the drift region of PUMA, two grids are mounted (Fig. 12). Some electrons travelling through the drift region will get stopped by this physical mesh; the grid transparency is defined as the number of such electrons that pass successfully through the grid. Due to the precise nature of PUMA’s measurements, PUMA must be calibrated by determining the transparency of the grids mounted inside of it. 
+        Inside of the drift region of PUMA, two grids are mounted (Fig. 12). Due to the precise nature of PUMA’s measurements, PUMA must be calibrated by determining the transparency of the grids mounted inside of it. 
       </p>
     </div>
 
@@ -352,7 +352,7 @@ import "../../styles/global.css";
 
     <div class="mt-4 text-gray-700 leading-relaxed space-y-4">
       <p>
-        Once the vacuum system was installed and consistently pumping to the desired pressure, we began testing the PUMA calibration device in vacuum. A LabView program was used to adjust parameters for data collection runs (oscilloscope scales, xenon lamp flashes, etc.). Experiment runs would proceed as follows: xenon flash lamp sends 10 flashes to photocathode of little PUMA, which emits electrons. PCBs at cathode and anode of little PUMA capture signal produced by electrons, and the signal is sent through an amplifier circuit and written to a file. Voltages at anode and grid are adjusted as necessary depending on context of tests. This collected data can be then used to find the grid transparency of the device, fulfilling the original goal.
+        Once the vacuum system was installed and consistently pumping to the desired pressure, we began testing the PUMA calibration device in vacuum. A LabView program was used to adjust parameters for data collection runs (oscilloscope scales, xenon lamp flashes, etc). Voltages at anode and grid are adjusted as necessary depending on context of tests. This collected data can be then used to find the grid transparency of the device, fulfilling the original goal.
       </p>
     </div>
     
@@ -470,22 +470,52 @@ import "../../styles/global.css";
       At the end of my term, I participated in TRIUMF's co-op poster session, for which I created a poster (shown below) to present my work to other engineers and physicists at TRIUMF. I was honoured to be awarded 2nd place out of all undergrad and masters students.
     </p>
 
-    <div class="mt-12">
-      <h2 class="text-2xl font-semibold mb-4">
-        Poster for TRIUMF undergrad poster session
-      </h2>
-      <iframe src="/final_poster.pdf" class="w-full h-[600px] border rounded-lg"></iframe>
-    </div>
+<div class="mt-12">
+  <h2 class="text-2xl font-semibold mb-4">
+    Poster for TRIUMF undergrad poster session
+  </h2>
 
-    <p class="mt-4 text-gray-700 leading-relaxed">
-      Below is the final report I wrote as a reference for the team and future co-ops. It provides more details about my time at TRIUMF.
-    </p>
+  <iframe
+    src="/final_poster.pdf"
+    class="w-full h-[600px] border rounded-lg"
+  ></iframe>
 
-    <div class="mt-8">
-      <h2 class="text-2xl font-semibold mb-4">
-        Co-op Term Final Report
-      </h2>
-      <iframe src="/final_report.pdf" class="w-full h-[600px] border rounded-lg"></iframe>
-    </div>
+  <p class="mt-2 text-sm text-gray-600">
+    If the PDF does not display,
+    <a
+      href="/final_poster.pdf"
+      download
+      class="text-blue-600 hover:underline font-medium"
+    >
+      download the poster here
+    </a>.
+  </p>
+</div>
+
+<p class="mt-4 text-gray-700 leading-relaxed">
+  Below is the final report I wrote as a reference for the team and future co-ops. It provides more details about my time at TRIUMF.
+</p>
+
+<div class="mt-8">
+  <h2 class="text-2xl font-semibold mb-4">
+    Co-op Term Final Report
+  </h2>
+
+  <iframe
+    src="/final_report.pdf"
+    class="w-full h-[600px] border rounded-lg"
+  ></iframe>
+
+  <p class="mt-2 text-sm text-gray-600">
+    If the PDF does not display,
+    <a
+      href="/final_report.pdf"
+      download
+      class="text-blue-600 hover:underline font-medium"
+    >
+      download the report here
+    </a>.
+  </p>
+</div>
   </section>
 </Layout>
