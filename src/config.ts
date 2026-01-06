@@ -106,7 +106,7 @@ export const siteConfig = {
     {
       school: "Major in Engineering Physics, Minor in Honours Math - University of British Columbia",
       degree: "Bachelor of Applied Science",
-      dateRange: "2023 - 2028",
+      dateRange: "2023 - Present",
       achievements: [
         "2025: Eric P. Newell Award in Engineering",
         "2024: Trek Excellence Scholarship - Awarded to top 5% of students in undergrad",
