@@ -130,5 +130,73 @@ import "../../styles/global.css";
         Fig. 4: Final robot: side
       </figcaption>
     </figure>
-  
+
+     <div class="text-gray-700 leading-relaxed space-y-4 mt-8">
+        <p>
+          My main role on the team consisted of electrical and software development. Me and my teammate Abi worked together to develop and test H-Bridges (Fig. 5-9) to allow for precise motor control. Abi designed a compact PCB version of the final circuit which I soldered and prepared.         
+        </p>
+     </div>
+
+      <figure class="mt-8">
+        <img src="/rfig5.png" alt="robot" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 5: H-Bridge Circuit Design
+        </figcaption>
+      </figure>
+
+      <figure class="mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="aspect-square w-full overflow-hidden rounded-md shadow-lg">
+            <img
+              src="/rfig6.png"
+              alt="H-Bridge PCB design"
+              class="w-full h-full object-cover"
+            />
+          </div>
+      
+          <div class="aspect-square w-full overflow-hidden rounded-md shadow-lg">
+            <img
+              src="/rfig7.png"
+              alt="H-Bridge PCB design"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      
+        <figcaption class="mt-2 text-sm text-gray-500 text-center">
+          Fig. 6-7: H-Bridge PCB design (KiCAD)
+        </figcaption>
+      </figure>
+
+      <figure class="mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="aspect-square w-full overflow-hidden rounded-md shadow-lg">
+            <img
+              src="/rfig8.png"
+              alt="H-Bridge PCB design"
+              class="w-full h-full object-cover"
+            />
+          </div>
+      
+          <div class="aspect-square w-full overflow-hidden rounded-md shadow-lg">
+            <img
+              src="/rfig9.png"
+              alt="H-Bridge PCB design"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      
+        <figcaption class="mt-2 text-sm text-gray-500 text-center">
+          Fig. 8-9: H-Bridge final PCBs
+        </figcaption>
+      </figure>
+
+     <div class="text-gray-700 leading-relaxed space-y-4 mt-8">
+        <p>
+          The H-bridges were integrated with a digital phototransistor circuit that I designed (Figure 10). The phototransistor circuit operated by conditioning the phototransistor outputs and comparing them to a setpoint threshold using LM311 comparators to distinguish between light and dark regions. The resulting digital signals were processed by software-based PID control, which closed the feedback loop between the sensors and the motors, enabling stable and accurate line-following behavior.
+        </p>
+     </div>
+
+    
 </Layout>
