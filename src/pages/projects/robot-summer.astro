@@ -194,9 +194,16 @@ import "../../styles/global.css";
 
      <div class="text-gray-700 leading-relaxed space-y-4 mt-8">
         <p>
-          The H-bridges were integrated with a digital phototransistor circuit that I designed (Figure 10). The phototransistor circuit operated by conditioning the phototransistor outputs and comparing them to a setpoint threshold using LM311 comparators to distinguish between light and dark regions. The resulting digital signals were processed by software-based PID control, which closed the feedback loop between the sensors and the motors, enabling stable and accurate line-following behavior.
+          The H-bridges were integrated with a digital phototransistor circuit that I designed (Figure 10). The phototransistor circuit operated by conditioning the phototransistor outputs and comparing them to a setpoint threshold using LM311 comparators to distinguish between light and dark regions. The resulting digital signals were processed by software-based PID control, which closed the feedback loop between the sensors and the motors, enabling stable and accurate line-following.
         </p>
      </div>
+
+      <figure class="mt-8">
+        <img src="/rfig10.png" alt="robot" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 10: Phototransistor reflectance circuit
+        </figcaption>
+      </figure>
 
     
 </Layout>
