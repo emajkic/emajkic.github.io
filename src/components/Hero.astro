@@ -4,7 +4,7 @@ import { siteConfig } from "../config";
 
 <div
   id="hero"
-  class="relative isolate overflow-hidden bg-white py-24 md:min-h-screen flex flex-col justify-between"
+  class="relative isolate overflow-hidden bg-white py-24 md:min-h-screen flex flex-col"
   style={`--accent-color: ${siteConfig.accentColor}`}
 >
   <div
@@ -110,7 +110,7 @@ import { siteConfig } from "../config";
   </div>
 
   <div
-    class="mt-auto p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
+    class="mt-4 md:mt-0 p-8 sm:p-12 md:px-24 md:py-0 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
   >
     {siteConfig.social?.email && (
       <a
