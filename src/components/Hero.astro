@@ -71,4 +71,73 @@ import { siteConfig } from "../config";
     </defs>
 
     <rect fill="url(#programming-symbols)" width="100%" height="100%" opacity="0.2" />
-    <rect fill="url(#0787a7c5-978c-4f66-83c7
+    <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%" stroke-width={0} />
+  </svg>
+
+  <!-- Main content -->
+  <div class="relative min-h-full p-8 sm:p-12 md:p-24 flex flex-col md:flex-row items-start justify-between gap-12">
+    <!-- Text -->
+    <div class="relative text-left flex-1 max-w-xl lg:max-w-2xl">
+      <h1
+        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
+      >
+        {siteConfig.name}
+      </h1>
+
+      <p
+        class="mt-4 sm:mt-6 md:mt-8 text-pretty text-sm sm:text-base md:text-lg font-medium text-gray-600 animate-fade-in animation-delay-400"
+      >
+        UBC Engineering Physics student passionate about applying engineering theory,
+        mathematics, and software to analyze and solve complex problems.
+      </p>
+
+      <p class="mt-4 sm:mt-6 md:mt-8 animate-fade-in animation-delay-400">
+        <a
+          href="/Ella_Majkic_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-black text-white text-sm sm:text-base md:text-lg font-medium px-4 py-2 rounded-2xl hover:bg-gray-800 transition-colors"
+        >
+          Resume
+        </a>
+      </p>
+
+      <!-- Social links -->
+      <div
+        class="mt-6 flex gap-x-4 sm:gap-x-6 text-gray-700
+               animate-fade-in animation-delay-600
+               md:absolute md:bottom-0 md:left-0 md:right-0 md:p-24"
+      >
+        {siteConfig.social?.email && (
+          <a href={`mailto:${siteConfig.social.email}`} aria-label="Email">
+            <!-- svg unchanged -->
+          </a>
+        )}
+        {siteConfig.social?.linkedin && (
+          <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer">
+            <!-- svg unchanged -->
+          </a>
+        )}
+        {siteConfig.social?.twitter && (
+          <a href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer">
+            <!-- svg unchanged -->
+          </a>
+        )}
+        {siteConfig.social?.github && (
+          <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer">
+            <!-- svg unchanged -->
+          </a>
+        )}
+      </div>
+    </div>
+
+    <!-- Photo -->
+    <div class="flex-shrink-0 animate-fade-in animation-delay-400">
+      <img
+        src="/cover_img.jpg"
+        alt="Profile photo"
+        class="w-80 h-80 md:w-96 md:h-96 rounded-md object-cover shadow-lg"
+      />
+    </div>
+  </div>
+</div>
