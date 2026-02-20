@@ -86,7 +86,7 @@ export const siteConfig = {
     {
       slug: "ubc-rocket",
       company: "UBC Rocket",
-      position: "Avionics Hardware Engineer",
+      position: "Hardware Engineer - Avionics Subteam",
       dateRange: "Jan 2026 - Present",
       description: "Developed and tested hardware, firmware, and embedded systems for single-stage 30km altitude competition rocket,",
       img1_1: "/rocket1.jpeg",
@@ -101,7 +101,7 @@ export const siteConfig = {
     {
       slug: "opbots-experience",
       company: "UBC Open Robotics Design Team",
-      position: "Software Engineer, Navigation Subteam",
+      position: "Software Engineer - Navigation Subteam",
       dateRange: "Sept 2023 - May 2025",
       description: "Developed ROS-based autonomous navigation in Python for international RoboCup@Home competition service robot.",
       img1_1: "/ros2.jpg",
