@@ -83,7 +83,7 @@ export const siteConfig = {
         "Designed and assembled a vacuum system for PUMA testing",
       ],
     },
-        {
+    {
       slug: "ubc-rocket",
       company: "UBC Rocket",
       position: "Avionics Hardware Engineer",
@@ -92,12 +92,6 @@ export const siteConfig = {
       img1_1: "/rocket1.jpeg",
       img1_2: "/rocket2.jpeg",
       img1_3: "/rocket3.jpeg",
-      img2_1: "/vac1.jpg",
-      img2_2: "/vac2.jpg",
-      img2_3: "/vac3.jpg",
-      img3_1: "/test1.jpg",
-      img3_2: "/test2.png",
-      img3_3: "/test3.jpg",
       bullets: [
         "Worked on Purity Monitor Assembly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
