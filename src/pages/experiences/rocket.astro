@@ -43,17 +43,35 @@ import "../../styles/global.css";
 
     <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
       <p>
-        My current project on the team is developing a pyrotechnic PCB board and its firmware. I wrote embedded firmware in C for a custom ignition PCB using an STM32 (ARM Cortex-M0+) MCU, allowing for communication with flight controller and precise logic for critical in-flight parachute deployment.
-        
+        My current project on the team is developing a pyrotechnic PCB board and its firmware. This board ignites the e-matches inside the rocket at apogee and halfway through its descent in order to deploy the recovery parachutes. I wrote embedded firmware in C for a custom ignition PCB using an STM32 (ARM Cortex-M0+) MCU, allowing for communication with flight controller and precise logic for critical in-flight parachute deployment.
+        I validated the hardware and firmware of the board by testing with oscilloscopes and protocol analyzers, simulating SPI communication from a programmable master.
       </p>
     </div>
 
     <br />
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <img src="/ros2.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-      <img src="/ros3.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
-      <img src="/ros1.jpg" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure>
+          <img
+            src="/rocket1.jpeg"
+            alt="pyro"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Pyro Board PCB in Altium
+        </figcaption>
+      </figure>
+
+      <figure>
+          <img
+            src="/rocket2.jpeg"
+            alt="pyro"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Pyro Board SPI tests
+        </figcaption>
+      </figure>
     </div>
 
 
