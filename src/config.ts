@@ -88,7 +88,7 @@ export const siteConfig = {
       company: "UBC Rocket",
       position: "Avionics Hardware Engineer",
       dateRange: "Jan 2026 - Present",
-      description: "Worked with purity monitor assembly for rare pion decay collaboration, PIONEER. Modelled precise electron drift simulations using physics software; designed and built a vacuum system for first-ever device experimental tests.",
+      description: "Developed and tested hardware, firmware, and embedded systems for single-stage 30km altitude competition rocket,",
       img1_1: "/sim2.png",
       img1_2: "/sim1.png",
       img1_3: "/sim3.jpg",
@@ -98,7 +98,6 @@ export const siteConfig = {
       img3_1: "/test1.jpg",
       img3_2: "/test2.png",
       img3_3: "/test3.jpg",
-      link_video: "https://www.youtube.com/watch?v=ad_hZ0_KblQ&t=360s",
       bullets: [
         "Worked on Purity Monitor Assembly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
