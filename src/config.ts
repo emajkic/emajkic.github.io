@@ -8,9 +8,9 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/ella-majkic-951527289/",
     github: "https://github.com/emajkic",
   },
-  aboutMe1: "I am a third-year student at the University of British Columbia majoring in Engineering Physics with a minor in Honours Mathematics. I am passionate about using machine learning, simulations, applied mathematics, software development, electronics, and physics in real-world contexts.",
-  aboutMe2: "I am motivated by problems that require both analytical thinking and hands-on implementation. Whether it’s designing control systems, training models for robotic decision-making, or translating physical models into working code, I enjoy building things that connect theory to practice.",
-  skills: ["Python", "Git", "Java", "Electronics", "C++", "Linux", "Bash Shell", "KiCAD", "ROOT", "ROS", "MATLAB", "Tensorflow", "Data Analysis", "CMake", "GDB", "Simulations"],
+  aboutMe1: "I am entering my fourth year at the University of British Columbia, majoring in Engineering Physics with a minor in Honours Mathematics. I am passionate about working on interdisciplinary problems involving machine learning, simulations, applied mathematics, software development, electronics, and physics in real-world contexts.",
+  aboutMe2: "I am motivated by projects that require both creative, abstract thinking and hands-on implementation. Whether it’s designing control systems, training models for robotic decision-making, or translating physical systems into working software, I enjoy building things that connect theory to practice.",
+  skills: ["Python", "Git", "Java", "Altium", "C++", "Linux", "Unix", "FPGA", "VHDL", "Bash Shell", "KiCAD", "8051 Assembly", "ROS", "MATLAB", "Tensorflow", "Simulink", "CMake", "GDB", "Simscape"],
   projects: [
     {
       slug: "machine-learning-project",
@@ -125,16 +125,17 @@ export const siteConfig = {
       achievements: [
         "2025: Eric P. Newell Award in Engineering",
         "2024: Trek Excellence Scholarship - Awarded to top 5% of students in undergrad",
-        "2023-2025: Dean's Scholar, Dean's List",
+        "2023-2026: Dean's Scholar, Dean's List",
       ],
       courses: [
         "Machine Learning Project (ENPH 353)",
         "Digital Systems and Microcomputers (CPEN 312)",
         "Applied Probability and Stochastic Processes (MATH 318)",
-        "Data Structures and Algorithms (CPEN 211)",
+        "Data Structures and Algorithms (CPEN 221)",
         "Applied Linear Algrebra (MATH 307)",
         "Signals and Systems (ELEC 221)",
         "Partial Differential Equations (MATH 257)",
+        "Complex Analysis (MATH 305)",
       ],
     },
   ],
