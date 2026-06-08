@@ -59,6 +59,27 @@ export const siteConfig = {
     
   ],
   experience: [
+      {
+      slug: "lunr-experience",
+      company: "LUNR Aerospace Corp.",
+      position: "Engineering Intern - Avionics and Controls",
+      dateRange: "May 2026 - Present",
+      description: "Worked with purity monitor assembly for rare pion decay collaboration, PIONEER. Modelled precise electron drift simulations using physics software; designed and built a vacuum system for first-ever device experimental tests.",
+      img1_1: "/sim2.png",
+      img1_2: "/sim1.png",
+      img1_3: "/sim3.jpg",
+      img2_1: "/vac1.jpg",
+      img2_2: "/vac2.jpg",
+      img2_3: "/vac3.jpg",
+      img3_1: "/test1.jpg",
+      img3_2: "/test2.png",
+      img3_3: "/test3.jpg",
+      bullets: [
+        "b1",
+        "b2",
+        "b3",
+      ],
+    },
     {
       slug: "triumf-experience",
       company: "TRIUMF Particle Accelerator",
@@ -123,9 +144,9 @@ export const siteConfig = {
       degree: "Bachelor of Applied Science",
       dateRange: "2023 - Present",
       achievements: [
+        "2023-2026: Dean's Scholar, Dean's List",
         "2025: Eric P. Newell Award in Engineering",
         "2024: Trek Excellence Scholarship - Awarded to top 5% of students in undergrad",
-        "2023-2026: Dean's Scholar, Dean's List",
       ],
       courses: [
         "Machine Learning Project (ENPH 353)",
