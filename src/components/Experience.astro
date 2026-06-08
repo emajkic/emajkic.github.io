@@ -18,7 +18,7 @@ const experiencePageMap = {
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
         {/* Left column */}
         <div class="lg:col-span-4">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900 latex-serif">
             Experience
           </h2>
           <div
@@ -58,29 +58,41 @@ const experiencePageMap = {
                     )}
 
                     {/* Images */}
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {exp.img1_1 && (
-                        <img
-                          src={exp.img1_1}
-                          alt="Experience photo"
-                          class="w-full aspect-square object-cover rounded-md shadow-lg"
-                        />
-                      )}
-                      {exp.img1_2 && (
-                        <img
-                          src={exp.img1_2}
-                          alt="Experience photo"
-                          class="w-full aspect-square object-cover rounded-md shadow-lg"
-                        />
-                      )}
-                      {exp.img1_3 && (
-                        <img
-                          src={exp.img1_3}
-                          alt="Experience photo"
-                          class="w-full aspect-square object-cover rounded-md shadow-lg"
-                        />
-                      )}
-                    </div>
+                    {exp.slug === "lunr-experience" ? (
+                      <div>
+                        {exp.img1_1 && (
+                          <img
+                            src={exp.img1_1}
+                            alt="Experience photo"
+                            class="w-full aspect-[3/1] object-cover rounded-md shadow-lg"
+                          />
+                        )}
+                      </div>
+                    ) : (
+                      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {exp.img1_1 && (
+                          <img
+                            src={exp.img1_1}
+                            alt="Experience photo"
+                            class="w-full aspect-square object-cover rounded-md shadow-lg"
+                          />
+                        )}
+                        {exp.img1_2 && (
+                          <img
+                            src={exp.img1_2}
+                            alt="Experience photo"
+                            class="w-full aspect-square object-cover rounded-md shadow-lg"
+                          />
+                        )}
+                        {exp.img1_3 && (
+                          <img
+                            src={exp.img1_3}
+                            alt="Experience photo"
+                            class="w-full aspect-square object-cover rounded-md shadow-lg"
+                          />
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </a>
