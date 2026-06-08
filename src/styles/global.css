@@ -29,7 +29,26 @@
   font-style: italic;
 }
 
+/* Computer Modern Serif (LaTeX) */
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("/fonts/cmunrm.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("/fonts/cmunbx.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* ONE global rule */
 body {
   font-family: "Latin Modern Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.latex-serif {
+  font-family: "Computer Modern Serif", serif;
 }
