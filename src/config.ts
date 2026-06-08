@@ -65,7 +65,7 @@ export const siteConfig = {
       position: "Engineering Intern - Avionics and Controls",
       dateRange: "May 2026 - Present",
       description: "Worked with purity monitor assembly for rare pion decay collaboration, PIONEER. Modelled precise electron drift simulations using physics software; designed and built a vacuum system for first-ever device experimental tests.",
-      img1_1: "/sim2.png",
+      img1_1: "/lunr1.jpg",
       img1_2: "/sim1.png",
       img1_3: "/sim3.jpg",
       img2_1: "/vac1.jpg",
