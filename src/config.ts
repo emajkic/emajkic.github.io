@@ -62,6 +62,7 @@ export const siteConfig = {
       {
       slug: "lunr-experience",
       company: "LUNR Aerospace Corp.",
+      location: "Toronto, ON",
       position: "Engineering Intern - Avionics and Controls",
       dateRange: "May 2026 - Present",
       description: "Test",
@@ -75,6 +76,7 @@ export const siteConfig = {
     {
       slug: "triumf-experience",
       company: "TRIUMF Particle Accelerator",
+      location: "Vancouver, BC",
       position: "Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 2025",
       description: "Worked with purity monitor assembly for rare pion decay collaboration, PIONEER. Modelled precise electron drift simulations using physics software; designed and built a vacuum system for first-ever device experimental tests.",
@@ -93,6 +95,7 @@ export const siteConfig = {
     {
       slug: "ubc-rocket",
       company: "UBC Rocket",
+      location: "Vancouver, BC",
       position: "Hardware Engineer - Avionics Subteam",
       dateRange: "Jan 2026 - Present",
       description: "Developed and tested hardware, firmware, and embedded systems for single-stage 30km altitude competition rocket,",
@@ -108,6 +111,7 @@ export const siteConfig = {
     {
       slug: "opbots-experience",
       company: "UBC Open Robotics Design Team",
+      location: "Vancouver, BC",
       position: "Software Engineer - Navigation Subteam",
       dateRange: "Sept 2023 - May 2025",
       description: "Developed ROS-based autonomous navigation in Python for international RoboCup@Home competition service robot.",
