@@ -49,6 +49,10 @@ body {
   font-family: "Latin Modern Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
 .latex-serif {
   font-family: "Computer Modern Serif", serif;
 }

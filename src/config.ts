@@ -9,8 +9,8 @@ export const siteConfig = {
     github: "https://github.com/emajkic",
   },
   aboutMe1: "I am entering my fourth year at the University of British Columbia, majoring in Engineering Physics with a minor in Honours Mathematics. I am passionate about working on interdisciplinary problems involving machine learning, simulations, applied mathematics, software development, electronics, and physics in real-world contexts.",
-  aboutMe2: "I am motivated by projects that require both creative, abstract thinking and hands-on implementation. Whether it’s designing control systems, training models for robotic decision-making, or translating physical systems into working software, I enjoy building things that connect theory to practice.",
-  skills: ["Python", "Git", "Java", "Altium", "C++", "Linux", "Unix", "FPGA", "VHDL", "Bash Shell", "KiCAD", "8051 Assembly", "ROS", "MATLAB", "Tensorflow", "Simulink", "CMake", "GDB", "Simscape"],
+  aboutMe2: "I am motivated by projects that require both abstract thinking and hands-on implementation. Whether it’s designing control systems, training models for robotic decision-making, or translating physical systems into working software, I enjoy building things that connect theory to practice.",
+  skills: ["Python", "Git", "Java", "Altium", "C++", "Linux", "Unix", "FPGA", "VHDL", "Bash Shell", "KiCAD", "8051 Assembly", "ROS", "MATLAB", "Tensorflow", "Simulink", "CMake", "GDB", "Simscape", "LabVIEW"],
   projects: [
     {
       slug: "machine-learning-project",
@@ -65,7 +65,7 @@ export const siteConfig = {
       location: "Toronto, ON",
       position: "Engineering Intern - Avionics and Controls",
       dateRange: "May 2026 - Present",
-      description: "Test",
+      description: "Developed thrust vector control system for 5-engine liquid propellant rocket, including hardware design, software development, and testing. Contributed to avionics system design and integration for suborbital launch vehicle.",
       img1_1: "/lunr1.jpg",
       bullets: [
         "b1",
@@ -79,7 +79,7 @@ export const siteConfig = {
       location: "Vancouver, BC",
       position: "Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 2025",
-      description: "Worked with purity monitor assembly for rare pion decay collaboration, PIONEER. Modelled precise electron drift simulations using physics software; designed and built a vacuum system for first-ever device experimental tests.",
+      description: "Worked with purity monitor assembly for rare pion decay experiment, PIONEER. Modelled precise electron drift trajectories using physics software; designed and built a vacuum system for first-ever calibration data collection runs.",
       pdf1: "/final_poster.pdf",
       pdf2: "/final_report.pdf",
       img1_1: "/sim2.png",
@@ -98,7 +98,7 @@ export const siteConfig = {
       location: "Vancouver, BC",
       position: "Hardware Engineer - Avionics Subteam",
       dateRange: "Jan 2026 - Present",
-      description: "Developed and tested hardware, firmware, and embedded systems for single-stage 30km altitude competition rocket,",
+      description: "Developed and tested hardware, firmware, and embedded systems for single-stage 30km altitude competition rocket.",
       img1_1: "/rocket1.jpeg",
       img1_2: "/rocket2.jpeg",
       img1_3: "/rocket3.jpeg",
