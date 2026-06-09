@@ -1,0 +1,123 @@
+---
+interface Props {
+  images: string[];
+  slug: string;
+}
+
+const { images, slug } = Astro.props;
+---
+
+<div class="relative w-full overflow-hidden py-4">
+  <div
+    class="carousel-container flex items-center justify-center gap-4"
+    data-slug={slug}
+  >
+    <div class="carousel-track flex gap-4 transition-transform duration-500">
+      {images.map((img, idx) => (
+        <div
+          key={idx}
+          class="carousel-item flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 transition-opacity duration-300"
+          data-index={idx}
+        >
+          <img
+            src={img}
+            alt="Experience carousel"
+            class="w-full h-full object-cover rounded-md shadow-lg opacity-40"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {images.length > 1 && (
+    <div class="flex justify-center gap-2 mt-4">
+      {images.map((_, idx) => (
+        <button
+          key={idx}
+          class="carousel-dot w-2 h-2 rounded-full bg-gray-300 transition-colors duration-300"
+          data-index={idx}
+          data-slug={slug}
+          aria-label={`Go to slide ${idx + 1}`}
+        />
+      ))}
+    </div>
+  )}
+</div>
+
+<script>
+  function initCarousel(container: Element) {
+    const slug = container.getAttribute("data-slug");
+    const track = container.querySelector(".carousel-track") as HTMLElement;
+    const items = container.querySelectorAll(".carousel-item") as NodeListOf<
+      HTMLElement
+    >;
+    const dots = document.querySelectorAll(
+      `.carousel-dot[data-slug="${slug}"]`
+    ) as NodeListOf<HTMLElement>;
+
+    if (!track || items.length === 0) return;
+
+    let currentIndex = 0;
+    const itemCount = items.length;
+
+    function updateCarousel() {
+      const itemWidth = items[0].offsetWidth;
+      const gap = 16; // gap-4 = 16px
+      const offset = currentIndex * (itemWidth + gap);
+      track.style.transform = `translateX(-${offset}px)`;
+
+      // Update item opacity
+      items.forEach((item, idx) => {
+        const img = item.querySelector("img") as HTMLImageElement;
+        if (img) {
+          // Determine position relative to center
+          let distance = Math.abs(idx - currentIndex);
+          if (distance >= itemCount / 2) {
+            distance = itemCount - distance;
+          }
+
+          if (distance === 0) {
+            img.style.opacity = "1"; // Center image
+          } else {
+            img.style.opacity = "0.4"; // Side images
+          }
+        }
+      });
+
+      // Update dots
+      dots.forEach((dot, idx) => {
+        if (idx === currentIndex) {
+          dot.classList.add("bg-gray-900");
+          dot.classList.remove("bg-gray-300");
+        } else {
+          dot.classList.remove("bg-gray-900");
+          dot.classList.add("bg-gray-300");
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % itemCount;
+      updateCarousel();
+    }
+
+    // Dot click handlers
+    dots.forEach((dot, idx) => {
+      dot.addEventListener("click", () => {
+        currentIndex = idx;
+        updateCarousel();
+      });
+    });
+
+    // Auto-advance every 4 seconds
+    setInterval(nextSlide, 4000);
+
+    // Initial update
+    updateCarousel();
+  }
+
+  // Initialize all carousels on the page
+  document.querySelectorAll(".carousel-container").forEach((container) => {
+    initCarousel(container);
+  });
+</script>
