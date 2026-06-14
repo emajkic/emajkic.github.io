@@ -65,7 +65,7 @@ export const siteConfig = {
       location: "Toronto, ON",
       position: "Engineering Intern - Avionics and Controls",
       dateRange: "May 2026 - Present",
-      description: "Designed and implemented thrust vector control system for 5-engine liquid propellant rocket, including hardware design, software development, and testing. Worked on set up for DAQ system to control and monitor rocket engines during first-ever hot-fire tests.",
+      description: "Designed and implemented thrust vector control system for 5-engine liquid propellant rocket, including quaternion kinematic control derivations, simulations, and mechanical testing. Worked on set up for DAQ system to control and monitor rocket engines during first-ever hot-fire tests.",
       img1_1: "/lunr1.jpg",
       bullets: [
         "b1",
