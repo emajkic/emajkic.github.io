@@ -59,20 +59,6 @@ export const siteConfig = {
     
   ],
   experience: [
-      {
-      slug: "lunr-experience",
-      company: "LUNR Aerospace Corp.",
-      location: "Toronto, ON",
-      position: "Engineering Intern - Avionics and Controls",
-      dateRange: "May 2026 - Present",
-      description: "Designed and implemented thrust vector control system for 5-engine liquid propellant rocket, including quaternion attitude estimation, Python/Simulink PID control, and mechanical testing. Set up LabVIEW DAQ system to monitor rocket engines during first-ever hot-fire tests.",
-      img1_1: "/lunr1.jpg",
-      bullets: [
-        "b1",
-        "b2",
-        "b3",
-      ],
-    },
     {
       slug: "triumf-experience",
       company: "TRIUMF Particle Accelerator",
@@ -90,6 +76,20 @@ export const siteConfig = {
         "Worked on Purity Monitor Assembly (PUMA) instrument for a rare pion decay experiment (PIONEER)",
         "Developed physics simulations of particle behaviour in PUMA",
         "Designed and assembled a vacuum system for PUMA testing",
+      ],
+    },
+      {
+      slug: "lunr-experience",
+      company: "LUNR Aerospace Corp.",
+      location: "Toronto, ON",
+      position: "Engineering Intern - Avionics and Controls",
+      dateRange: "May 2026 - Present",
+      description: "Designed and implemented thrust vector control system for 5-engine liquid propellant rocket, including quaternion attitude estimation, Python/Simulink PID control, and mechanical testing. Set up LabVIEW DAQ system to monitor rocket engines during first-ever hot-fire tests.",
+      img1_1: "/lunr1.jpg",
+      bullets: [
+        "b1",
+        "b2",
+        "b3",
       ],
     },
     {
