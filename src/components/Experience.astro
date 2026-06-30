@@ -10,6 +10,14 @@ const experiencePageMap = {
   "ubc-rocket": "/experiences/rocket",
   "opbots-experience": "/experiences/opbots",
 };
+
+const orderedExperience = siteConfig.experience
+  .slice()
+  .sort((a, b) => {
+    if (a.slug === "triumf-experience") return -1;
+    if (b.slug === "triumf-experience") return 1;
+    return 0;
+  });
 ---
 
 {hasExperience && (
@@ -30,7 +38,7 @@ const experiencePageMap = {
         {/* Right column */}
         <div class="lg:col-span-8">
           <div class="space-y-8">
-            {siteConfig.experience.map((exp) => (
+            {orderedExperience.map((exp) => (
               <a
                 href={experiencePageMap[exp.slug]}
                 key={exp.slug}
