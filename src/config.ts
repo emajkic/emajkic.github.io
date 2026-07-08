@@ -38,9 +38,9 @@ export const siteConfig = {
     },
     {
       slug: "fpga-project",
-      img1: "/fpga1.jpeg",
+      img1: "/fpga4.png",
       img2: "/fpga2.jpeg",
-      img3: "/fpga3.jpeg",
+      img3: "/fpga1.jpeg",
       name: "FPGA 32-bit Calculator",
       description:
         "Designed and implemented a 32-bit calculator using FPGA technology, incorporating custom logic and signal processing techniques.",
