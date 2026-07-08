@@ -1,0 +1,206 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/global.css";
+---
+
+<Layout title="FPGA 32-Bit Calculator">
+  <section class="p-8 sm:p-12 md:p-16 lg:p-24 max-w-4xl mx-auto">
+    <a href="/#projects" class="text-sm text-gray-500 hover:underline">
+      ← Back to Home
+    </a>
+
+    <h1 class="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
+      FPGA 32-Bit Calculator
+    </h1>
+
+
+    <div class="flex flex-wrap gap-2 mt-6">
+      <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">FPGA</span>
+      <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">8051 Assembly</span>
+      <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">Digital Design</span>
+      <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">Timing</span>
+      <span class="px-3 py-1 bg-gray-900 text-white rounded-lg text-sm">VHDL</span>
+    </div>
+
+    <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+      [WIP]
+    </p>
+
+    <br />
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <img src="/ml3.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+      <img src="/ml4.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+      <img src="/ml2.png" class="w-full aspect-square object-cover rounded-md shadow-lg" />
+    </div>
+
+    <div class="mt-10">
+      <h2 class="text-xl font-semibold mb-4" style="color: #00bfff; font-style: italic;">
+        Project Outcomes
+      </h2>
+    
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>Trained and integrated multiple robust machine learning models from scratch to enable a ROS robot agent to autonomously solve a puzzle in Gazebo simulation</li>
+        <li>Built a custom CNN architecture for character recognition with 99.1% validation accuracy across 37 alphanumeric classes</li>
+        <li>Integrated YOLOv8 and OpenCV with geometric and confidence filtering for real-time clue board detection</li>
+        <li>Applied imitation learning to train a neural policy based on NVIDIA’s PilotNet achieving perfect driving through course, integrating modules using ROS node-topic architecture</li>
+      </ul>
+    </div>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">
+      Summary
+    </h2>
+
+   <div class="text-gray-700 leading-relaxed space-y-4">
+      <p>
+        In this project, teams designed and built an autonomous robot agent operating on machine learning models (no pretrained models allowed). The agent’s goal was to drive through a course in Gazebo simulation while reading clue boards placed throughout the course, reporting ‘clues’ written on boards for points.
+      </p>
+    </div>
+
+    <figure class="mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="w-full overflow-hidden rounded-md shadow-lg">
+            <img
+              src="/mfig1.png"
+              alt="course"
+              class="w-full h-full object-cover"
+            />
+          </div>
+      
+          <div class="w-full overflow-hidden rounded-md shadow-lg">
+            <img
+              src="/mfig2.png"
+              alt="board"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      
+        <figcaption class="mt-2 text-sm text-gray-500 text-center">
+          Fig. 1-2: Gazebo course (left) and example clue board (right)
+        </figcaption>
+    </figure>
+
+    <figure class="mt-8">
+        <img src="/mfig3.png" alt="robot" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 3: ROS modules software diagram
+        </figcaption>
+    </figure>
+
+   <div class="text-gray-700 leading-relaxed space-y-4 mt-8">
+      <p>
+        To enable the robot agent to read text written on the course clue boards, I developed and trained a convolutional neural network architecture from scratch using Keras (Figure 3). Our CNN was trained to recognize 37 classes (A-Z, 0-9, and spaces). CNN development was done in Google Colab for use of the T4 GPU available for training. The environment and notebook were linked to Git and can be found in the GitHub repository at the top of the page.
+      </p>
+    </div>
+
+    <figure class="mt-8">
+        <img src="/mfig4.png" alt="robot" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 4: CNN architecture 
+        </figcaption>
+    </figure>
+
+   <div class="text-gray-700 leading-relaxed space-y-4 mt-8">
+      <p>
+        Word extraction and character recognition classes were written using Python. I generated a custom 1000+ image dataset of clue boards consisting of perfect and data-augmented boards for CNN training. The Keras ImageDataGenerator class was used to create distortions in rotation, brightness, and shear to create a more realistic training set.
+      </p>
+    </div>
+
+    <figure class="mt-8">
+        <img src="/mfig5.png" alt="robot" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 5: Training set excerpt 
+        </figcaption>
+    </figure>
+
+    <figure class="mt-8">
+        <img src="/mfig6.png" alt="robot" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 6: Board character extraction pipeline 
+        </figcaption>
+    </figure>
+
+   <div class="text-gray-700 leading-relaxed space-y-4 mt-8">
+      <p>
+        The CNN was trained using categorical crossentropy loss and the adam optimizer. The CNN converged to 99.1% validation accuracy and read all text (characters and numbers) perfectly on competition day.
+      </p>
+    </div>
+
+   <div class="text-gray-700 leading-relaxed space-y-4 mt-4">
+      <p>
+        To recognize clue boards while driving within the Gazebo environment, we used YOLOv8 and OpenCV. RoboFlow was used to annotate our dataset for YOLO training. Dynamic processing on boards passing geometric criteria consisted of extracting inner segments using OpenCV masking and homography. More technical details can be found in the report at the bottom of the page.
+      </p>
+    </div>
+
+      <figure class="mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="w-full overflow-hidden rounded-md shadow-lg">
+            <img
+              src="/mfig7.png"
+              alt="claw"
+              class="w-full h-full object-cover"
+            />
+          </div>
+      
+          <div class="w-full overflow-hidden rounded-md shadow-lg">
+            <img
+              src="/mfig8.png"
+              alt="claw"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      
+        <figcaption class="mt-2 text-sm text-gray-500 text-center">
+          Fig. 7-8: YOLO board detection examples (left) and YOLO training plots (right)
+        </figcaption>
+      </figure>
+
+   <div class="text-gray-700 leading-relaxed space-y-4 mt-8">
+      <p>
+        I also developed a simple GUI using PyQt6 to visualize the clue board synthesis pipeline. Allowing us to see from the perspective of the robot was a major help for debugging incorrect word/character extraction.
+      </p>
+    </div>
+
+    <figure class="mt-8">
+        <img src="/mfig9.png" alt="robot" class="w-full rounded-md shadow-lg" />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 9: Robot in simulation with debugging app
+        </figcaption>
+    </figure>
+
+   <div class="text-gray-700 leading-relaxed space-y-4 mt-8">
+      <p>
+        My teammate focussed on developing the imitation learning policy for the driving aspect of our agent. He implemented a Convolutional Neural Network (CNN) based on NVIDIA’s PilotNet for driving, using a behavioral cloning system mapping camera inputs directly to steering commands.
+      </p>
+    </div>
+
+   <div class="text-gray-700 leading-relaxed space-y-4 mt-4">
+      <p>
+        Our robot placed 2nd in the final competition, achieving a perfect score and driving, with all clues read correctly. This project was a rigorous dive into the world of machine learning which greatly developed my interest in the field!
+      </p>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="text-xl font-semibold mb-4">
+       Project final report
+      </h2>
+      <p>
+        We wrote a report detailing the full process in developing our project. Read it below!
+      </p>
+      <iframe src="/ENPH_353_Machine_Learning_Project_Report.pdf" class="w-full h-[600px] border rounded-lg  mt-4"></iframe>
+    </div>
+    <p class="mt-2 text-sm text-gray-600">
+        If the PDF does not display,
+        <a
+          href="/ENPH_353_Machine_Learning_Project_Report.pdf"
+          download
+          class="text-blue-600 hover:underline font-medium"
+        >
+          download the report here
+        </a>.
+      </p>
+
+  </section>
+</Layout>
