@@ -8,7 +8,7 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/ella-majkic-951527289/",
     github: "https://github.com/emajkic",
   },
-  aboutMe1: "I am entering my fourth year at the University of British Columbia, majoring in Engineering Physics with a minor in Honours Mathematics. I am passionate about working on interdisciplinary problems involving machine learning, simulations, applied mathematics, software development, electronics, and physics in real-world contexts.",
+  aboutMe1: "Hi! I am entering my fourth year at the University of British Columbia, majoring in Engineering Physics with a minor in Honours Mathematics. I am passionate about working on interdisciplinary problems involving machine learning, simulations, applied mathematics, software development, electronics, and physics in real-world contexts.",
   aboutMe2: "I am motivated by projects that require both abstract thinking and hands-on implementation. Whether it’s designing control systems, training models for robotic decision-making, or translating physical systems into working software, I enjoy building things that connect theory to practice.",
   skills: ["Python", "Git", "Java", "Altium", "C++", "Linux", "Unix", "FPGA", "VHDL", "Bash Shell", "KiCAD", "8051 Assembly", "ROS", "MATLAB", "Tensorflow", "Simulink", "CMake", "GDB", "Simscape", "LabVIEW"],
   projects: [
@@ -75,7 +75,7 @@ export const siteConfig = {
       location: "Vancouver, BC",
       position: "Research Assistant - PIONEER Experiment",
       dateRange: "Jan 2025 - May 2025",
-      description: "Worked with purity monitor assembly for rare pion decay experiment, PIONEER. Modelled precise electron drift trajectories using physics software; designed and built a vacuum system for first-ever calibration data collection runs.",
+      description: "Worked with purity monitor assembly for rare pion decay experiment (PIONEER). Modelled precise electron drift trajectories using physics software; designed and built a vacuum system for first-ever calibration data collection runs.",
       pdf1: "/final_poster.pdf",
       pdf2: "/final_report.pdf",
       img1_1: "/sim2.png",

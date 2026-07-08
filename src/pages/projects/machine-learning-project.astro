@@ -69,10 +69,12 @@ import "../../styles/global.css";
       </p>
     </div>
 
-    <video class="w-full rounded-md shadow-lg mt-8" muted autoplay playsinline controls>
-      <source src="/mlvid.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <div class="w-full max-h-[500px] overflow-hidden rounded-md shadow-lg mt-8">
+      <video class="w-full h-full object-contain" muted autoplay playsinline controls>
+        <source src="/mlvid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
     <h2 class="text-xl font-semibold mt-8 mb-4">
       Summary
