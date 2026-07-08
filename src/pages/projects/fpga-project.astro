@@ -75,20 +75,21 @@ import "../../styles/global.css";
     </h2>
 
     <div class="w-full max-w-3xl mx-auto mt-8">
-      <div class="overflow-hidden rounded-md shadow-lg bg-black">
-        <video
-          class="w-full aspect-video defer-play"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          poster="/fpga2.jpeg"
-          src="/fpga_vidclock.mp4"
-          style="transform: rotate(90deg); transform-origin: center;"
-        >
-          <source src="/fpga_vidclock.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div class="overflow-hidden rounded-md shadow-lg bg-black" style="display: flex; align-items: center; justify-content: center;">
+        <div style="width: 100%; transform: rotate(90deg); transform-origin: center;">
+          <video
+            class="w-full aspect-video defer-play"
+            controls
+            muted
+            playsinline
+            preload="metadata"
+            poster="/fpga2.jpeg"
+            src="/fpga_vidclock.mp4"
+          >
+            <source src="/fpga_vidclock.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
 
