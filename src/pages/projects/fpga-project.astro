@@ -71,8 +71,14 @@ import "../../styles/global.css";
 
     <!-- FPGA clock section -->
     <h2 class="text-xl font-semibold mt-8 mb-4">
-      FPGA 12hr Clock
+      FPGA 12-Hour Clock
     </h2>
+
+    <div class="text-gray-700 leading-relaxed space-y-4">
+      <p>
+      Another interesting project which I completed with my DE10-Lite board was programming a 12-hour settable alarm clock. This was done on Quartus Prime (Intel software) using VHDL as the hardware description language. The video below demonstrates the functionality of the clock.
+      </p>
+    </div>
 
     <div class="w-full max-w-3xl mx-auto mt-8">
       <video
@@ -110,6 +116,31 @@ import "../../styles/global.css";
           }
         });
       </script>
+
+    <!-- Fig 1–2 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+      <figure>
+          <img
+            src="/fpgaclock1.png"
+            alt="Quartus code"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Quartus VHDL program
+        </figcaption>
+      </figure>
+
+      <figure>
+          <img
+            src="/fpgaclock2.png"
+            alt="FPGA Clock"
+            class="w-full aspect-square object-cover rounded-md shadow-lg"
+          />
+        <figcaption class="mt-1 text-sm text-gray-500 text-center">
+          Fig. 2: 3D calorimeter render
+        </figcaption>
+      </figure>
+    </div>
 
   </section>
 </Layout>
