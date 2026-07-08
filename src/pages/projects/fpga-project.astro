@@ -54,21 +54,24 @@ import "../../styles/global.css";
       </p>
     </div>
 
-    <video class="w-full rounded-md shadow-lg mt-8" muted autoplay playsinline controls>
-      <source src="/fpga_vid.mov" type="video/quicktime" />
-      Your browser does not support the video tag.
-    </video>
+    <div style="width: 100%; max-width: 720px; margin: 20px auto;">
+      <video width="100%" height="auto" controls muted autoplay playsinline>
+        <source src="/fpga_vid.mov" type="video/quicktime" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
     <!-- FPGA clock section -->
     <h2 class="text-xl font-semibold mt-8 mb-4">
       FPGA 12hr Clock
     </h2>
 
-    
-    <video class="w-full rounded-md shadow-lg mt-8" autoplay controls style="transform: rotate(-90deg);">
-      <source src="/fpga_vidclock.mov" type="video/quicktime" />
-      Your browser does not support the video tag.
-    </video>
+    <div style="width: 100%; max-width: 720px; margin: 20px auto;">
+      <video width="100%" height="auto" controls muted autoplay playsinline>
+        <source src="/fpga_vidclock.mov" type="video/quicktime" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
   
 
   </section>
