@@ -88,7 +88,8 @@ export const siteConfig = {
         "Designed and assembled a vacuum system for PUMA testing",
       ],
     },
-      {
+    /*
+    {
       slug: "lunr-experience",
       company: "LUNR Aerospace Corp.",
       location: "Toronto, ON",
@@ -102,6 +103,7 @@ export const siteConfig = {
         "b3",
       ],
     },
+    */
     {
       slug: "ubc-rocket",
       company: "UBC Rocket",
