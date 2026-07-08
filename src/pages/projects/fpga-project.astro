@@ -56,10 +56,9 @@ import "../../styles/global.css";
 
     <div class="w-full max-w-3xl mx-auto mt-8">
       <video
-        class="w-full aspect-video rounded-md shadow-lg bg-black"
+        class="w-full aspect-video rounded-md shadow-lg bg-black defer-play"
         controls
         muted
-        autoplay
         playsinline
         preload="metadata"
         poster="/fpga1.jpeg"
@@ -77,10 +76,9 @@ import "../../styles/global.css";
 
     <div class="w-full max-w-3xl mx-auto mt-8">
       <video
-        class="w-full aspect-video rounded-md shadow-lg bg-black rotate-90 transform"
+        class="w-full aspect-video rounded-md shadow-lg bg-black defer-play"
         controls
         muted
-        autoplay
         playsinline
         preload="metadata"
         poster="/fpga2.jpeg"
@@ -90,7 +88,28 @@ import "../../styles/global.css";
         Your browser does not support the video tag.
       </video>
     </div>
-  
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const vids = Array.from(document.querySelectorAll('video.defer-play'));
+        if (!vids.length) return;
+        if ('IntersectionObserver' in window) {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              const v = entry.target;
+              if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                v.play().catch(() => {});
+              } else {
+                v.pause();
+              }
+            });
+          }, { threshold: 0.5 });
+          vids.forEach(v => { v.pause(); io.observe(v); });
+        } else {
+          vids.forEach(v => v.play().catch(() => {}));
+        }
+      });
+    </script>
 
   </section>
 </Layout>

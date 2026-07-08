@@ -69,12 +69,35 @@ import "../../styles/global.css";
       </p>
     </div>
 
-    <div style="width: 100%; max-width: 720px; margin: 20px auto;">
-      <video width="100%" height="auto" controls muted autoplay playsinline>
+    <div class="w-full max-w-3xl mx-auto mt-8">
+      <video class="w-full aspect-video rounded-md shadow-lg bg-black defer-play" controls muted playsinline preload="metadata" poster="/mfig3.png" src="/mlvid.mp4">
         <source src="/mlvid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <p class="text-sm text-gray-500 mt-2">If the video does not appear, <a href="/mlvid.mp4" class="underline">download it</a> instead.</p>
     </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const vids = Array.from(document.querySelectorAll('video.defer-play'));
+        if (!vids.length) return;
+        if ('IntersectionObserver' in window) {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              const v = entry.target;
+              if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                v.play().catch(() => {});
+              } else {
+                v.pause();
+              }
+            });
+          }, { threshold: 0.5 });
+          vids.forEach(v => { v.pause(); io.observe(v); });
+        } else {
+          vids.forEach(v => v.play().catch(() => {}));
+        }
+      });
+    </script>
 
     <h2 class="text-xl font-semibold mt-8 mb-4">
       Summary
