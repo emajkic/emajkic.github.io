@@ -43,7 +43,7 @@ export const siteConfig = {
       img3: "/fpga1.jpeg",
       name: "FPGA 32-bit Calculator",
       description:
-        "Designed and implemented a 32-bit calculator using FPGA technology, incorporating custom logic and signal processing techniques.",
+        "Designed and implemented a 32-bit calculator on DE10 Lite FPGA using 8051 assembly, allowing for up to 10-digit arithmetic operations and triangle solving.",
       skills: ["FPGA", "VHDL", "8051 Assembly", "Digital Design", "Digital Logic"],
     },
     {
