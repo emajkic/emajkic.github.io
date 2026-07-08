@@ -48,7 +48,7 @@ import "../../styles/global.css";
       Summary
     </h2>
 
-   <div class="text-gray-700 leading-relaxed space-y-4">
+    <div class="text-gray-700 leading-relaxed space-y-4">
       <p>
         FPGAaaaaaaaaaaaaaaaaa
       </p>
@@ -74,45 +74,42 @@ import "../../styles/global.css";
       FPGA 12hr Clock
     </h2>
 
-    <div class="w-full max-w-sm mx-auto mt-8"> <div class="relative w-full aspect-[9/16] overflow-hidden rounded-md shadow-lg bg-black flex items-center justify-center">
-        
-        <video
-          class="absolute w-[177.78%] h-[56.25%] max-w-none rotate-90 defer-play"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          poster="/fpga2.jpeg"
-          src="/fpga_vidclock.mp4"
-        >
-          <source src="/fpga_vidclock.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-      </div>
+    <div class="w-full max-w-3xl mx-auto mt-8">
+      <video
+        class="w-full aspect-video rounded-md shadow-lg bg-black defer-play"
+        controls
+        muted
+        playsinline
+        preload="metadata"
+        poster="/fpga1.jpeg"
+        src="/fpga_vidclock.mp4"
+      >
+        <source src="/fpga_vid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const vids = Array.from(document.querySelectorAll('video.defer-play'));
-        if (!vids.length) return;
-        if ('IntersectionObserver' in window) {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              const v = entry.target;
-              if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-                v.play().catch(() => {});
-              } else {
-                v.pause();
-              }
-            });
-          }, { threshold: 0.5 });
-          vids.forEach(v => { v.pause(); io.observe(v); });
-        } else {
-          vids.forEach(v => v.play().catch(() => {}));
-        }
-      });
-    </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const vids = Array.from(document.querySelectorAll('video.defer-play'));
+          if (!vids.length) return;
+          if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                const v = entry.target;
+                if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                  v.play().catch(() => {});
+                } else {
+                  v.pause();
+                }
+              });
+            }, { threshold: 0.5 });
+            vids.forEach(v => { v.pause(); io.observe(v); });
+          } else {
+            vids.forEach(v => v.play().catch(() => {}));
+          }
+        });
+      </script>
 
   </section>
 </Layout>
