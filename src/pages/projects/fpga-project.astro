@@ -54,11 +54,23 @@ import "../../styles/global.css";
       </p>
     </div>
 
-    <div style="width: 100%; max-width: 720px; margin: 20px auto;">
-      <video width="100%" height="auto" controls muted autoplay playsinline>
+    <div class="w-full max-w-3xl mx-auto mt-8">
+      <video
+        class="w-full aspect-video rounded-md shadow-lg bg-black"
+        controls
+        muted
+        autoplay
+        playsinline
+        preload="metadata"
+        poster="/fpga1.jpeg"
+        src="/fpga_vid.mp4"
+      >
         <source src="/fpga_vid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <p class="text-sm text-gray-500 mt-2">
+        If the video does not appear, <a href="/fpga_vid.mp4" class="underline">download it</a> instead.
+      </p>
     </div>
 
     <!-- FPGA clock section -->
@@ -66,11 +78,23 @@ import "../../styles/global.css";
       FPGA 12hr Clock
     </h2>
 
-    <div style="width: 100%; max-width: 720px; margin: 20px auto;">
-      <video width="100%" height="auto" controls muted autoplay playsinline>
+    <div class="w-full max-w-3xl mx-auto mt-8">
+      <video
+        class="w-full aspect-video rounded-md shadow-lg bg-black"
+        controls
+        muted
+        autoplay
+        playsinline
+        preload="metadata"
+        poster="/fpga2.jpeg"
+        src="/fpga_vidclock.mp4"
+      >
         <source src="/fpga_vidclock.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <p class="text-sm text-gray-500 mt-2">
+        If the video does not appear, <a href="/fpga_vidclock.mp4" class="underline">download it</a> instead.
+      </p>
     </div>
   
 
