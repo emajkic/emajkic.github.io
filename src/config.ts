@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   aboutMe1: "Hi! I am entering my fourth year at the University of British Columbia, majoring in Engineering Physics with a minor in Honours Mathematics. I am passionate about working on interdisciplinary problems involving machine learning, simulations, applied mathematics, software development, electronics, and physics in real-world contexts.",
   aboutMe2: "I am motivated by projects that require both abstract thinking and hands-on implementation. Whether it’s designing control systems, training models for robotic decision-making, or translating physical systems into working software, I enjoy building things that connect theory to practice.",
-  skills: ["Python", "Git", "Java", "Altium", "C++", "Linux", "Unix", "FPGA", "VHDL", "Bash Shell", "KiCAD", "8051 Assembly", "ROS", "MATLAB", "Tensorflow", "Simulink", "CMake", "GDB", "Simscape", "LabVIEW"],
+  skills: ["Python", "Git", "Java", "Altium", "C++", "Linux", "Unix", "FPGA", "VHDL", "MATLAB", "Bash Shell", "KiCAD", "8051 Assembly", "ROS", "Gazebo", "Tensorflow", "Simulink", "CMake", "GDB", "Simscape", "LabVIEW"],
   projects: [
     {
       slug: "machine-learning-project",
@@ -43,7 +43,7 @@ export const siteConfig = {
       img3: "/fpga1.jpeg",
       name: "FPGA 32-bit Calculator",
       description:
-        "Designed and implemented a 32-bit calculator on DE10 Lite FPGA using 8051 assembly, allowing for up to 10-digit arithmetic operations and triangle solving.",
+        "Designed and implemented a 32-bit calculator on DE10 Lite FPGA using 8051 assembly, allowing for up to 10-digit arithmetic operations (add, sub, mul, div) and right triangle solving.",
       skills: ["FPGA", "VHDL", "8051 Assembly", "Digital Design", "Digital Logic"],
     },
     {
