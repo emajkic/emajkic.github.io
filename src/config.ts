@@ -8,7 +8,7 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/ella-majkic-951527289/",
     github: "https://github.com/emajkic",
   },
-  aboutMe1: "Hi! I am entering my fourth year at the University of British Columbia, majoring in Engineering Physics with a minor in Honours Mathematics. I am passionate about working on interdisciplinary problems involving machine learning, simulations, applied mathematics, software development, electronics, and physics in real-world contexts.",
+  aboutMe1: "I am entering my fourth year at the University of British Columbia, majoring in Engineering Physics with a minor in Honours Mathematics. I am passionate about working on interdisciplinary problems involving machine learning, simulations, applied mathematics, software development, electronics, and physics in real-world contexts.",
   aboutMe2: "I am motivated by projects that require both abstract thinking and hands-on implementation. Whether it’s designing control systems, training models for robotic decision-making, or translating physical systems into working software, I enjoy building things that connect theory to practice.",
   skills: ["Python", "Git", "Java", "Altium", "C++", "Linux", "Unix", "FPGA", "VHDL", "MATLAB", "Bash Shell", "KiCAD", "8051 Assembly", "ROS", "Gazebo", "Tensorflow", "Simulink", "CMake", "GDB", "Simscape", "LabVIEW"],
   projects: [
