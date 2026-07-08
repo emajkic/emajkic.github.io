@@ -39,7 +39,7 @@ export const siteConfig = {
     {
       slug: "fpga-project",
       img1: "/fpga4.png",
-      img2: "/fpga2.jpeg",
+      img2: "/fpgacalc1.png",
       img3: "/fpga1.jpeg",
       name: "FPGA 32-bit Calculator",
       description:
