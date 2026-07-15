@@ -11,15 +11,16 @@ const experiencePageMap = {
   "opbots-experience": "/experiences/opbots",
 };
 
+const order = [
+  "lunr-experience",
+  "triumf-experience",
+  "ubc-rocket",
+  "opbots-experience",
+];
+
 const orderedExperience = siteConfig.experience
   .slice()
-  .sort((a, b) => {
-    if (a.slug === "lunr-experience") return -1;
-    if (b.slug === "lunr-experience") return 1;
-    if (a.slug === "triumf-experience") return 1;
-    if (b.slug === "triumf-experience") return -1;
-    return 0;
-  });
+  .sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
 ---
 
 {hasExperience && (
