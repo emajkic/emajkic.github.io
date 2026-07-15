@@ -96,7 +96,7 @@ export const siteConfig = {
       position: "Engineering Intern - Avionics and Controls",
       dateRange: "May 2026 - Present",
       description: "Designed and implemented thrust vector control system for 5-engine liquid propellant rocket, including quaternion attitude estimation, Python/Simulink PID control, and mechanical testing. Set up LabVIEW DAQ system to monitor rocket engines during first-ever hot-fire tests.",
-      img1_1: "/lunr3.png",
+      img1_1: "/lunr4.png",
       img1_2: "/lunr1.png",
       img1_3: "/lunr2.png",
       bullets: [
